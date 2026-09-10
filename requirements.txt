@@ -1,0 +1,11 @@
+fastapi
+uvicorn[standard]
+pydantic
+python-dotenv
+requests
+beautifulsoup4
+numpy
+faiss-cpu
+pytest
+httpx
+ddgs

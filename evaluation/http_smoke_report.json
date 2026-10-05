@@ -1,0 +1,76 @@
+[
+  {
+    "endpoint": "/health",
+    "status": 200,
+    "response": {
+      "status": "ok",
+      "llm_provider": "disabled",
+      "rag_index_ready": true
+    }
+  },
+  {
+    "message": "When will my sales be deposited?",
+    "user_id": "cliente1988",
+    "status": 200,
+    "agent": "support",
+    "tool": "payment_status",
+    "escalated": false,
+    "metadata": {
+      "duration_ms": 2.37,
+      "routing_confidence": 0.89,
+      "routing_reason": "Request appears account-specific or asks for troubleshooting/settlement data",
+      "records": 1
+    }
+  },
+  {
+    "message": "Getnet payment link WhatsApp",
+    "user_id": "cliente1988",
+    "status": 200,
+    "agent": "knowledge",
+    "tool": "rag_search",
+    "escalated": false,
+    "metadata": {
+      "duration_ms": 1.12,
+      "routing_confidence": 0.86,
+      "routing_reason": "Getnet/product knowledge request",
+      "retrieved_documents": 2,
+      "best_score": 0.22052715718746185
+    }
+  },
+  {
+    "message": "When will my sales be deposited?",
+    "user_id": "unknown",
+    "status": 200,
+    "agent": "escalation",
+    "tool": "human_handoff",
+    "escalated": true,
+    "metadata": {
+      "duration_ms": 0.18,
+      "routing_confidence": 0.89,
+      "routing_reason": "Request appears account-specific or asks for troubleshooting/settlement data",
+      "handoff_reason": "customer_not_verified",
+      "handoff_status": "recommended",
+      "ticket_created": false,
+      "previous_agent": "support",
+      "previous_tool": "customer_lookup"
+    }
+  },
+  {
+    "message": "What is the weather today?",
+    "user_id": "cliente1988",
+    "status": 200,
+    "agent": "escalation",
+    "tool": "human_handoff",
+    "escalated": true,
+    "metadata": {
+      "duration_ms": 0.09,
+      "routing_confidence": 0.78,
+      "routing_reason": "General/current-information request",
+      "handoff_reason": "no_evidence",
+      "handoff_status": "recommended",
+      "ticket_created": false,
+      "previous_agent": "knowledge",
+      "previous_tool": "web_search"
+    }
+  }
+]

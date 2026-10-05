@@ -1,0 +1,16 @@
+[
+  {
+    "user_id": "cliente1988",
+    "name": "Demo Customer",
+    "segment": "SMB",
+    "terminal_id": "TERM-001",
+    "account_status": "active"
+  },
+  {
+    "user_id": "cliente2026",
+    "name": "Second Demo",
+    "segment": "MEI",
+    "terminal_id": "TERM-002",
+    "account_status": "active"
+  }
+]

@@ -1,0 +1,4 @@
+Command: python -m pytest -q
+Observed result: 77 passed, 1 warning in 5.19s
+Warning: StarletteDeprecationWarning for httpx TestClient
+Independent agent C rerun, available Linux environment. See independent-manifest.json.

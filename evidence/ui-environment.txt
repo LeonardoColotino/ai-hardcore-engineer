@@ -1,0 +1,10 @@
+2026-10-12 — current environment checks
+node --check scripts/browser_smoke.cjs: passed
+Inline JavaScript compiled with new Function: passed
+Playwright package available; Chromium executable absent.
+Official playwright install chromium attempted; five download attempts returned invalid/truncated archives; installer exit 1.
+No chromium/chromium-browser/google-chrome/firefox found on PATH.
+Browser E2E and desktop/mobile visual QA: PENDING, not approved.
+Docker executable absent. Docker build/run/persistence: PENDING.
+http://127.0.0.1:11434/api/tags: connection unavailable (URLError).
+Ollama semantic generation and latency: PENDING.

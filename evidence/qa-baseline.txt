@@ -1,0 +1,132 @@
+............................FFFFFFF....................................  [100%]
+=================================== FAILURES ===================================
+_ test_clear_policy_overrides_misleading_llm[Gostaria de aderir ao Link de Pagamento] _
+
+text = 'Gostaria de aderir ao Link de Pagamento'
+
+    @pytest.mark.parametrize('text', ['Gostaria de aderir ao Link de Pagamento', 'Quero falar com um atendente humano', 'Quais taxas do Link de Pagamento?'])
+    def test_clear_policy_overrides_misleading_llm(text):
+        llm = Mock(); llm.generate.return_value = '{"agent":"support","confidence":0.99,"reason":"Getnet garante aprovação"}'
+        router = RouterAgent(replace(get_settings(), llm_provider='ollama'), llm)
+        result = router.route(text)
+        expected = AgentName.ESCALATION if 'humano' in text else AgentName.KNOWLEDGE
+>       assert result.agent == expected
+E       AssertionError: assert <AgentName.SUPPORT: 'support'> == <AgentName.KN...: 'knowledge'>
+E         
+E         - knowledge
+E         + support
+
+tests/integration/test_audit_regressions.py:32: AssertionError
+_ test_clear_policy_overrides_misleading_llm[Quero falar com um atendente humano] _
+
+text = 'Quero falar com um atendente humano'
+
+    @pytest.mark.parametrize('text', ['Gostaria de aderir ao Link de Pagamento', 'Quero falar com um atendente humano', 'Quais taxas do Link de Pagamento?'])
+    def test_clear_policy_overrides_misleading_llm(text):
+        llm = Mock(); llm.generate.return_value = '{"agent":"support","confidence":0.99,"reason":"Getnet garante aprovação"}'
+        router = RouterAgent(replace(get_settings(), llm_provider='ollama'), llm)
+        result = router.route(text)
+        expected = AgentName.ESCALATION if 'humano' in text else AgentName.KNOWLEDGE
+>       assert result.agent == expected
+E       AssertionError: assert <AgentName.SUPPORT: 'support'> == <AgentName.ES... 'escalation'>
+E         
+E         - escalation
+E         + support
+
+tests/integration/test_audit_regressions.py:32: AssertionError
+_ test_clear_policy_overrides_misleading_llm[Quais taxas do Link de Pagamento?] _
+
+text = 'Quais taxas do Link de Pagamento?'
+
+    @pytest.mark.parametrize('text', ['Gostaria de aderir ao Link de Pagamento', 'Quero falar com um atendente humano', 'Quais taxas do Link de Pagamento?'])
+    def test_clear_policy_overrides_misleading_llm(text):
+        llm = Mock(); llm.generate.return_value = '{"agent":"support","confidence":0.99,"reason":"Getnet garante aprovação"}'
+        router = RouterAgent(replace(get_settings(), llm_provider='ollama'), llm)
+        result = router.route(text)
+        expected = AgentName.ESCALATION if 'humano' in text else AgentName.KNOWLEDGE
+>       assert result.agent == expected
+E       AssertionError: assert <AgentName.SUPPORT: 'support'> == <AgentName.KN...: 'knowledge'>
+E         
+E         - knowledge
+E         + support
+
+tests/integration/test_audit_regressions.py:32: AssertionError
+____________________ test_persisted_handoff_metadata_truth _____________________
+
+client = <starlette.testclient.TestClient object at 0x7fe6c5c88b90>
+api_auth = <function api_auth.<locals>.<lambda> at 0x7fe6c5c3b380>
+
+    def test_persisted_handoff_metadata_truth(client, api_auth):
+        h = api_auth('cliente1988')
+        r = send(client, h, 'Quero atendimento humano')
+        ticket = client.get('/tickets/' + r['ticket_id'], headers=h).json()
+        assert ticket['status'] == 'OPEN'
+>       assert r['metadata']['ticket_created'] is True
+E       assert False is True
+
+tests/integration/test_audit_regressions.py:41: AssertionError
+_______________ test_knowledge_failure_stage_tool_is_not_handoff _______________
+
+client = <starlette.testclient.TestClient object at 0x7fe6c5c8a840>
+api_auth = <function api_auth.<locals>.<lambda> at 0x7fe6c5c3b9c0>
+
+    def test_knowledge_failure_stage_tool_is_not_handoff(client, api_auth):
+        orch = app.dependency_overrides[get_orchestrator]()
+        orch.knowledge.web.run = Mock(return_value=ToolResult(success=False, error='unavailable'))
+        r = send(client, api_auth('cliente1988'), 'Qual é a cotação do euro hoje?')
+        assert r['escalated']
+        assert r['metadata']['stages'][0]['agent'] == 'knowledge'
+>       assert r['metadata']['stages'][0]['tool'] == 'web_search'
+E       AssertionError: assert 'human_handoff' == 'web_search'
+E         
+E         - web_search
+E         + human_handoff
+
+tests/integration/test_audit_regressions.py:54: AssertionError
+_________________ test_high_score_wrong_product_not_resolution _________________
+
+client = <starlette.testclient.TestClient object at 0x7fe6c5bdeb40>
+api_auth = <function api_auth.<locals>.<lambda> at 0x7fe6c5c3b2e0>
+
+    def test_high_score_wrong_product_not_resolution(client, api_auth):
+        orch = app.dependency_overrides[get_orchestrator]()
+        orch.knowledge.rag.run = Mock(return_value=ToolResult(success=True, data={'contexts':['Conta Digital: cartão virtual grátis e antecipação.']}, sources=[SourceItem(title='Conta Digital',url='https://site.getnet.com.br/conta-digital/',snippet='Conta Digital: cartão virtual grátis e antecipação.',score=.99)]))
+        orch.knowledge.web.run = Mock(return_value=ToolResult(success=False,error='unavailable'))
+        r = send(client, api_auth('cliente1988'), 'Minha maquininha não conecta à internet')
+>       assert r['escalated'] and r['ticket_id']
+E       assert (False)
+
+tests/integration/test_audit_regressions.py:63: AssertionError
+______________ test_memory_paraphrase_after_intermediate_message _______________
+
+client = <starlette.testclient.TestClient object at 0x7fe6c5bddb50>
+api_auth = <function api_auth.<locals>.<lambda> at 0x7fe6c5c3b920>
+
+    def test_memory_paraphrase_after_intermediate_message(client, api_auth):
+        h = api_auth('cliente1988')
+        r = send(client,h,'Como funciona o Link de Pagamento Getnet?')
+        sid = r['session_id']
+        send(client,h,'Obrigado',sid)
+        r = send(client,h,'E para aderir a ele?',sid)
+>       assert r['metadata']['products'] == ['Link de Pagamento']
+E       AssertionError: assert [] == ['Link de Pagamento']
+E         
+E         Right contains one more item: 'Link de Pagamento'
+E         Use -v to get more diff
+
+tests/integration/test_audit_regressions.py:73: AssertionError
+=============================== warnings summary ===============================
+../../../../../root/.local/lib/python3.12/site-packages/fastapi/testclient.py:1
+  /root/.local/lib/python3.12/site-packages/fastapi/testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+    from starlette.testclient import TestClient as TestClient  # noqa
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED tests/integration/test_audit_regressions.py::test_clear_policy_overrides_misleading_llm[Gostaria de aderir ao Link de Pagamento]
+FAILED tests/integration/test_audit_regressions.py::test_clear_policy_overrides_misleading_llm[Quero falar com um atendente humano]
+FAILED tests/integration/test_audit_regressions.py::test_clear_policy_overrides_misleading_llm[Quais taxas do Link de Pagamento?]
+FAILED tests/integration/test_audit_regressions.py::test_persisted_handoff_metadata_truth
+FAILED tests/integration/test_audit_regressions.py::test_knowledge_failure_stage_tool_is_not_handoff
+FAILED tests/integration/test_audit_regressions.py::test_high_score_wrong_product_not_resolution
+FAILED tests/integration/test_audit_regressions.py::test_memory_paraphrase_after_intermediate_message
+7 failed, 64 passed, 1 warning in 4.62s

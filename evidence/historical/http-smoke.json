@@ -1,0 +1,9 @@
+{
+  "transport": "real HTTP uvicorn",
+  "provider": "disabled",
+  "corpus": "offline-seed",
+  "login": true,
+  "multi_turn": true,
+  "human_reply": true,
+  "frontend_html_served": true
+}

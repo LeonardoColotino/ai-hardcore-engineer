@@ -1,0 +1,12 @@
+.git
+.venv
+.env
+__pycache__
+.pytest_cache
+*.sqlite3
+app/data/demo_users.json
+
+backup-correcoes-*
+backup-atualizacao-*
+evidence
+*.zip

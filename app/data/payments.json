@@ -1,0 +1,16 @@
+[
+  {
+    "user_id": "cliente1988",
+    "reference": "ST-5001",
+    "status": "scheduled",
+    "expected_date": "2026-10-05",
+    "amount": "R$ 250,00"
+  },
+  {
+    "user_id": "cliente2026",
+    "reference": "ST-4001",
+    "status": "paid",
+    "expected_date": "2026-10-03",
+    "amount": "R$ 80,00"
+  }
+]

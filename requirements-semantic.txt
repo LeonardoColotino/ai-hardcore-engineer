@@ -1,0 +1,8 @@
+# Optional learned multilingual reranker, validated versions.
+# Use --extra-index-url https://download.pytorch.org/whl/cpu for CPU wheels.
+sentence-transformers==5.7.0
+transformers==5.19.0
+torch==2.14.1
+huggingface-hub==2.2.0
+tokenizers==0.23.3
+socksio==1.0.0

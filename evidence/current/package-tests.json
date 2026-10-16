@@ -1,0 +1,15 @@
+{
+  "command": "python -m pytest tests -q -p no:cacheprovider",
+  "passed": 248,
+  "warnings": 1,
+  "seconds": 8.51,
+  "environment": "assistant_local_python_not_windows_or_docker",
+  "provider_mode": "simulated_in_automated_tests",
+  "pip_check": "No broken requirements found.",
+  "offline_snapshot_rebuild": {
+    "documents": 23,
+    "snapshot_files": 14,
+    "network_used": false
+  },
+  "raw_user_windows_output_provenance": "see user-local-validation.json"
+}

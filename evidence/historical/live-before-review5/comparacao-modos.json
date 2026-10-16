@@ -1,0 +1,542 @@
+{
+  "quality_status": "pending_human_review",
+  "same_retrieval_for_both_modes": true,
+  "rows": [
+    {
+      "question": "O cartão virtual grátis é da Conta Digital ou do Link de Pagamento?",
+      "records": [
+        {
+          "text": "Com a conta digital, vai dar negócio\nVocê no controle da operação\nCartão virtual grátis\nReceba todos os pagamentos na mesma conta\nAntecipação de recebíveis\nEU QUERO\nMais benefícios",
+          "product": "Conta Digital",
+          "section": "Com a conta digital, vai dar negócio",
+          "source_id": "168fb615b947bae22cea",
+          "url": "https://site.getnet.com.br/conta-digital/",
+          "source_index": 0,
+          "scope_basis": "section"
+        },
+        {
+          "text": "Veja como é fácil vender com o Link de Pagamento\n1\nAcesse o Portal Minha Conta\nVocê pode acessar o portal com seu login e senha ou pelo Aplicativo Getnet Brasil.\n2\nCrie seu Link de Pagamento\nEm Produtos e Serviços, selecione Link de Pagamento e depois Criar Link de Pagamento\n3\nConfigure\nPreencha as informações do produto, frete e opções para pagamento.\n4\nPronto para vender\nClique em compartilhar ou copiar e compartilhe por onde quiser.",
+          "product": "Link de Pagamento",
+          "section": "Veja como é fácil vender com o Link de Pagamento",
+          "source_id": "383e1f8869a52ac8213d",
+          "url": "https://site.getnet.com.br/link-de-pagamento/",
+          "source_index": 1,
+          "scope_basis": "section"
+        },
+        {
+          "text": "Venda online de forma prática e segura com Link de Pagamento\nRecomendado\nLeve agora\nLink de pagamento Inicial\nGrátis\nR$1,00 por link pago.\nPague somente quando o pagamento do link for aprovado.\nTaxas exclusivas para você.\nQuero contratar\nBásico\nPor\nR$28\n/mês\n60 transações de cartão por mês\n+ R$0,50 por transação excedente\nTaxas exclusivas para você.\nQuero contratar",
+          "product": "Link de Pagamento",
+          "section": "Venda online de forma prática e segura com Link de Pagamento",
+          "source_id": "f3afcfa1fe6126856d64",
+          "url": "https://site.getnet.com.br/link-de-pagamento/",
+          "source_index": 2,
+          "scope_basis": "section"
+        },
+        {
+          "text": "Benefícios para você vender mais com Link de Pagamento na Black Friday\nNovo\nExpanda seu negócio\nVenda para estrangeiros com documento de identificação (RNE)\nno pagamento\nVenda de onde estiver\nFaça vendas usando o WhatsApp ou sua rede social\nNovo\nLink completo\nInsira diversos produtos no mesmo carrinho\nNovo\nPersonalizável\nPersonalize o link com a imagem do produto\nSegurança\nConte com a segurança do Antifraude da Getnet\nCliente livre\nVocê pode optar por deixar seu comprador escolher entre\ndébito, crédito, Pix, Wallet e boleto\nMais opções de venda\nCom o Link de Pagamento inicial você pode vender também\natravés do aplicativo com o antifraude da Getnet\nFrete\nOpção de inclusão do valor de frete de cobrança\nQuero contratar",
+          "product": "Link de Pagamento",
+          "section": "Benefícios para você vender mais com Link de Pagamento na Black Friday",
+          "source_id": "c5a99259a21f200d13d5",
+          "url": "https://site.getnet.com.br/link-de-pagamento/",
+          "source_index": 3,
+          "scope_basis": "section"
+        }
+      ],
+      "modes": [
+        {
+          "mode": "evidence",
+          "answer_before_review": "Nos trechos selecionados:\n- **Conta Digital**: Cartão virtual grátis\n- **Conta Digital**: Receba todos os pagamentos na mesma conta\n- **Conta Digital**: Antecipação de recebíveis\n\nNos trechos selecionados, não consegui confirmar essa associação com Link de Pagamento. Isso não demonstra que esses produtos não ofereçam o recurso.",
+          "answer_after_review": "Nos trechos selecionados:\n- **Conta Digital**: Cartão virtual grátis\n- **Conta Digital**: Receba todos os pagamentos na mesma conta\n- **Conta Digital**: Antecipação de recebíveis\n\nNos trechos selecionados, não consegui confirmar essa associação com Link de Pagamento. Isso não demonstra que esses produtos não ofereçam o recurso.\n\nResposta parcial: os trechos apresentados não cobrem todos os detalhes da pergunta. Você pode especificar qual parte deseja aprofundar.",
+          "escalated": false,
+          "metadata": {
+            "generation_kind": "llm_evidence_selection",
+            "llm_used_for": "evidence_selection",
+            "grounding_status": "source_spans_verified_relevance_requires_review",
+            "selected_evidence_ids": [
+              0,
+              2,
+              3
+            ],
+            "selected_evidence": [
+              {
+                "id": 0,
+                "source_index": 0,
+                "text": "Cartão virtual grátis",
+                "product": "Conta Digital",
+                "section": "Com a conta digital, vai dar negócio",
+                "source_id": "168fb615b947bae22cea",
+                "url": "https://site.getnet.com.br/conta-digital/",
+                "scope_basis": "section"
+              },
+              {
+                "id": 2,
+                "source_index": 0,
+                "text": "Receba todos os pagamentos na mesma conta",
+                "product": "Conta Digital",
+                "section": "Com a conta digital, vai dar negócio",
+                "source_id": "168fb615b947bae22cea",
+                "url": "https://site.getnet.com.br/conta-digital/",
+                "scope_basis": "section"
+              },
+              {
+                "id": 3,
+                "source_index": 0,
+                "text": "Antecipação de recebíveis",
+                "product": "Conta Digital",
+                "section": "Com a conta digital, vai dar negócio",
+                "source_id": "168fb615b947bae22cea",
+                "url": "https://site.getnet.com.br/conta-digital/",
+                "scope_basis": "section"
+              }
+            ],
+            "attribution_method": "source_scope_not_entailment",
+            "answer_mode": "evidence",
+            "evidence_records": [
+              {
+                "text": "Com a conta digital, vai dar negócio\nVocê no controle da operação\nCartão virtual grátis\nReceba todos os pagamentos na mesma conta\nAntecipação de recebíveis\nEU QUERO\nMais benefícios",
+                "product": "Conta Digital",
+                "section": "Com a conta digital, vai dar negócio",
+                "source_id": "168fb615b947bae22cea",
+                "url": "https://site.getnet.com.br/conta-digital/",
+                "source_index": 0,
+                "scope_basis": "section"
+              },
+              {
+                "text": "Veja como é fácil vender com o Link de Pagamento\n1\nAcesse o Portal Minha Conta\nVocê pode acessar o portal com seu login e senha ou pelo Aplicativo Getnet Brasil.\n2\nCrie seu Link de Pagamento\nEm Produtos e Serviços, selecione Link de Pagamento e depois Criar Link de Pagamento\n3\nConfigure\nPreencha as informações do produto, frete e opções para pagamento.\n4\nPronto para vender\nClique em compartilhar ou copiar e compartilhe por onde quiser.",
+                "product": "Link de Pagamento",
+                "section": "Veja como é fácil vender com o Link de Pagamento",
+                "source_id": "383e1f8869a52ac8213d",
+                "url": "https://site.getnet.com.br/link-de-pagamento/",
+                "source_index": 1,
+                "scope_basis": "section"
+              },
+              {
+                "text": "Venda online de forma prática e segura com Link de Pagamento\nRecomendado\nLeve agora\nLink de pagamento Inicial\nGrátis\nR$1,00 por link pago.\nPague somente quando o pagamento do link for aprovado.\nTaxas exclusivas para você.\nQuero contratar\nBásico\nPor\nR$28\n/mês\n60 transações de cartão por mês\n+ R$0,50 por transação excedente\nTaxas exclusivas para você.\nQuero contratar",
+                "product": "Link de Pagamento",
+                "section": "Venda online de forma prática e segura com Link de Pagamento",
+                "source_id": "f3afcfa1fe6126856d64",
+                "url": "https://site.getnet.com.br/link-de-pagamento/",
+                "source_index": 2,
+                "scope_basis": "section"
+              },
+              {
+                "text": "Benefícios para você vender mais com Link de Pagamento na Black Friday\nNovo\nExpanda seu negócio\nVenda para estrangeiros com documento de identificação (RNE)\nno pagamento\nVenda de onde estiver\nFaça vendas usando o WhatsApp ou sua rede social\nNovo\nLink completo\nInsira diversos produtos no mesmo carrinho\nNovo\nPersonalizável\nPersonalize o link com a imagem do produto\nSegurança\nConte com a segurança do Antifraude da Getnet\nCliente livre\nVocê pode optar por deixar seu comprador escolher entre\ndébito, crédito, Pix, Wallet e boleto\nMais opções de venda\nCom o Link de Pagamento inicial você pode vender também\natravés do aplicativo com o antifraude da Getnet\nFrete\nOpção de inclusão do valor de frete de cobrança\nQuero contratar",
+                "product": "Link de Pagamento",
+                "section": "Benefícios para você vender mais com Link de Pagamento na Black Friday",
+                "source_id": "c5a99259a21f200d13d5",
+                "url": "https://site.getnet.com.br/link-de-pagamento/",
+                "source_index": 3,
+                "scope_basis": "section"
+              }
+            ],
+            "evidence_review": {
+              "coverage": "incomplete",
+              "reason": "A resposta não confirma se o cartão virtual grátis é exclusivo da Conta Digital ou se o Link de Pagamento também oferece esse recurso. Embora não seja possível confirmar a associação com o Link de Pagamento, a resposta sugere que o cartão virtual grátis é um recurso da Conta Digital, mas não fornece informações claras sobre a relação com o Link de Pagamento.",
+              "support": "supported"
+            },
+            "coverage": "partial",
+            "outcome": "partial",
+            "resolved": false
+          },
+          "duration_ms": 66671.15
+        },
+        {
+          "mode": "prose",
+          "answer_before_review": "Não há evidência específica de que o cartão virtual grátis seja oferecido pela Conta Digital. No entanto, há um cartão virtual grátis oferecido pelo Link de Pagamento, que é gratuito e tem taxas exclusivas para o vendedor. Portanto, não é possível afirmar com certeza que o cartão virtual grátis seja da Conta Digital, pois não há evidência suficiente para apoiar essa afirmação.",
+          "answer_after_review": "Não há evidência específica de que o cartão virtual grátis seja oferecido pela Conta Digital. No entanto, há um cartão virtual grátis oferecido pelo Link de Pagamento, que é gratuito e tem taxas exclusivas para o vendedor. Portanto, não é possível afirmar com certeza que o cartão virtual grátis seja da Conta Digital, pois não há evidência suficiente para apoiar essa afirmação.",
+          "escalated": true,
+          "metadata": {
+            "generation_kind": "llm_abstention",
+            "abstained": true,
+            "grounding_status": "insufficient_evidence",
+            "evidence_records": [
+              {
+                "text": "Com a conta digital, vai dar negócio\nVocê no controle da operação\nCartão virtual grátis\nReceba todos os pagamentos na mesma conta\nAntecipação de recebíveis\nEU QUERO\nMais benefícios",
+                "product": "Conta Digital",
+                "section": "Com a conta digital, vai dar negócio",
+                "source_id": "168fb615b947bae22cea",
+                "url": "https://site.getnet.com.br/conta-digital/",
+                "source_index": 0,
+                "scope_basis": "section"
+              },
+              {
+                "text": "Veja como é fácil vender com o Link de Pagamento\n1\nAcesse o Portal Minha Conta\nVocê pode acessar o portal com seu login e senha ou pelo Aplicativo Getnet Brasil.\n2\nCrie seu Link de Pagamento\nEm Produtos e Serviços, selecione Link de Pagamento e depois Criar Link de Pagamento\n3\nConfigure\nPreencha as informações do produto, frete e opções para pagamento.\n4\nPronto para vender\nClique em compartilhar ou copiar e compartilhe por onde quiser.",
+                "product": "Link de Pagamento",
+                "section": "Veja como é fácil vender com o Link de Pagamento",
+                "source_id": "383e1f8869a52ac8213d",
+                "url": "https://site.getnet.com.br/link-de-pagamento/",
+                "source_index": 1,
+                "scope_basis": "section"
+              },
+              {
+                "text": "Venda online de forma prática e segura com Link de Pagamento\nRecomendado\nLeve agora\nLink de pagamento Inicial\nGrátis\nR$1,00 por link pago.\nPague somente quando o pagamento do link for aprovado.\nTaxas exclusivas para você.\nQuero contratar\nBásico\nPor\nR$28\n/mês\n60 transações de cartão por mês\n+ R$0,50 por transação excedente\nTaxas exclusivas para você.\nQuero contratar",
+                "product": "Link de Pagamento",
+                "section": "Venda online de forma prática e segura com Link de Pagamento",
+                "source_id": "f3afcfa1fe6126856d64",
+                "url": "https://site.getnet.com.br/link-de-pagamento/",
+                "source_index": 2,
+                "scope_basis": "section"
+              },
+              {
+                "text": "Benefícios para você vender mais com Link de Pagamento na Black Friday\nNovo\nExpanda seu negócio\nVenda para estrangeiros com documento de identificação (RNE)\nno pagamento\nVenda de onde estiver\nFaça vendas usando o WhatsApp ou sua rede social\nNovo\nLink completo\nInsira diversos produtos no mesmo carrinho\nNovo\nPersonalizável\nPersonalize o link com a imagem do produto\nSegurança\nConte com a segurança do Antifraude da Getnet\nCliente livre\nVocê pode optar por deixar seu comprador escolher entre\ndébito, crédito, Pix, Wallet e boleto\nMais opções de venda\nCom o Link de Pagamento inicial você pode vender também\natravés do aplicativo com o antifraude da Getnet\nFrete\nOpção de inclusão do valor de frete de cobrança\nQuero contratar",
+                "product": "Link de Pagamento",
+                "section": "Benefícios para você vender mais com Link de Pagamento na Black Friday",
+                "source_id": "c5a99259a21f200d13d5",
+                "url": "https://site.getnet.com.br/link-de-pagamento/",
+                "source_index": 3,
+                "scope_basis": "section"
+              }
+            ]
+          },
+          "duration_ms": 43934.45
+        }
+      ]
+    },
+    {
+      "question": "O Link de Pagamento ou a Conta Digital lista cartão virtual grátis?",
+      "records": [
+        {
+          "text": "Com a conta digital, vai dar negócio\nVocê no controle da operação\nCartão virtual grátis\nReceba todos os pagamentos na mesma conta\nAntecipação de recebíveis\nEU QUERO\nMais benefícios",
+          "product": "Conta Digital",
+          "section": "Com a conta digital, vai dar negócio",
+          "source_id": "168fb615b947bae22cea",
+          "url": "https://site.getnet.com.br/conta-digital/",
+          "source_index": 0,
+          "scope_basis": "section"
+        },
+        {
+          "text": "Veja como é fácil vender com o Link de Pagamento\n1\nAcesse o Portal Minha Conta\nVocê pode acessar o portal com seu login e senha ou pelo Aplicativo Getnet Brasil.\n2\nCrie seu Link de Pagamento\nEm Produtos e Serviços, selecione Link de Pagamento e depois Criar Link de Pagamento\n3\nConfigure\nPreencha as informações do produto, frete e opções para pagamento.\n4\nPronto para vender\nClique em compartilhar ou copiar e compartilhe por onde quiser.",
+          "product": "Link de Pagamento",
+          "section": "Veja como é fácil vender com o Link de Pagamento",
+          "source_id": "383e1f8869a52ac8213d",
+          "url": "https://site.getnet.com.br/link-de-pagamento/",
+          "source_index": 1,
+          "scope_basis": "section"
+        },
+        {
+          "text": "Venda online de forma prática e segura com Link de Pagamento\nRecomendado\nLeve agora\nLink de pagamento Inicial\nGrátis\nR$1,00 por link pago.\nPague somente quando o pagamento do link for aprovado.\nTaxas exclusivas para você.\nQuero contratar\nBásico\nPor\nR$28\n/mês\n60 transações de cartão por mês\n+ R$0,50 por transação excedente\nTaxas exclusivas para você.\nQuero contratar",
+          "product": "Link de Pagamento",
+          "section": "Venda online de forma prática e segura com Link de Pagamento",
+          "source_id": "f3afcfa1fe6126856d64",
+          "url": "https://site.getnet.com.br/link-de-pagamento/",
+          "source_index": 2,
+          "scope_basis": "section"
+        },
+        {
+          "text": "Prepare-se com Link de Pagamento para Black Friday\nLink personalizável\nSegurança antifraude\nVenda online\nAceite débito, crédito, Pix, Wallet e boleto\nQuero contratar",
+          "product": "Link de Pagamento",
+          "section": "Prepare-se com Link de Pagamento para Black Friday",
+          "source_id": "effe508df661964f21d2",
+          "url": "https://site.getnet.com.br/link-de-pagamento/",
+          "source_index": 3,
+          "scope_basis": "section"
+        }
+      ],
+      "modes": [
+        {
+          "mode": "evidence",
+          "answer_before_review": "Nos trechos selecionados:\n- **Conta Digital**: Antecipação de recebíveis\n- **Conta Digital**: Cartão virtual grátis\n\nNos trechos selecionados, não consegui confirmar essa associação com Link de Pagamento. Isso não demonstra que esses produtos não ofereçam o recurso.",
+          "answer_after_review": "Nos trechos selecionados:\n- **Conta Digital**: Antecipação de recebíveis\n- **Conta Digital**: Cartão virtual grátis\n\nNos trechos selecionados, não consegui confirmar essa associação com Link de Pagamento. Isso não demonstra que esses produtos não ofereçam o recurso.\n\nResposta parcial: os trechos apresentados não cobrem todos os detalhes da pergunta. Você pode especificar qual parte deseja aprofundar.",
+          "escalated": false,
+          "metadata": {
+            "generation_kind": "llm_evidence_selection",
+            "llm_used_for": "evidence_selection",
+            "grounding_status": "source_spans_verified_relevance_requires_review",
+            "selected_evidence_ids": [
+              2,
+              0
+            ],
+            "selected_evidence": [
+              {
+                "id": 2,
+                "source_index": 0,
+                "text": "Antecipação de recebíveis",
+                "product": "Conta Digital",
+                "section": "Com a conta digital, vai dar negócio",
+                "source_id": "168fb615b947bae22cea",
+                "url": "https://site.getnet.com.br/conta-digital/",
+                "scope_basis": "section"
+              },
+              {
+                "id": 0,
+                "source_index": 0,
+                "text": "Cartão virtual grátis",
+                "product": "Conta Digital",
+                "section": "Com a conta digital, vai dar negócio",
+                "source_id": "168fb615b947bae22cea",
+                "url": "https://site.getnet.com.br/conta-digital/",
+                "scope_basis": "section"
+              }
+            ],
+            "attribution_method": "source_scope_not_entailment",
+            "answer_mode": "evidence",
+            "evidence_records": [
+              {
+                "text": "Com a conta digital, vai dar negócio\nVocê no controle da operação\nCartão virtual grátis\nReceba todos os pagamentos na mesma conta\nAntecipação de recebíveis\nEU QUERO\nMais benefícios",
+                "product": "Conta Digital",
+                "section": "Com a conta digital, vai dar negócio",
+                "source_id": "168fb615b947bae22cea",
+                "url": "https://site.getnet.com.br/conta-digital/",
+                "source_index": 0,
+                "scope_basis": "section"
+              },
+              {
+                "text": "Veja como é fácil vender com o Link de Pagamento\n1\nAcesse o Portal Minha Conta\nVocê pode acessar o portal com seu login e senha ou pelo Aplicativo Getnet Brasil.\n2\nCrie seu Link de Pagamento\nEm Produtos e Serviços, selecione Link de Pagamento e depois Criar Link de Pagamento\n3\nConfigure\nPreencha as informações do produto, frete e opções para pagamento.\n4\nPronto para vender\nClique em compartilhar ou copiar e compartilhe por onde quiser.",
+                "product": "Link de Pagamento",
+                "section": "Veja como é fácil vender com o Link de Pagamento",
+                "source_id": "383e1f8869a52ac8213d",
+                "url": "https://site.getnet.com.br/link-de-pagamento/",
+                "source_index": 1,
+                "scope_basis": "section"
+              },
+              {
+                "text": "Venda online de forma prática e segura com Link de Pagamento\nRecomendado\nLeve agora\nLink de pagamento Inicial\nGrátis\nR$1,00 por link pago.\nPague somente quando o pagamento do link for aprovado.\nTaxas exclusivas para você.\nQuero contratar\nBásico\nPor\nR$28\n/mês\n60 transações de cartão por mês\n+ R$0,50 por transação excedente\nTaxas exclusivas para você.\nQuero contratar",
+                "product": "Link de Pagamento",
+                "section": "Venda online de forma prática e segura com Link de Pagamento",
+                "source_id": "f3afcfa1fe6126856d64",
+                "url": "https://site.getnet.com.br/link-de-pagamento/",
+                "source_index": 2,
+                "scope_basis": "section"
+              },
+              {
+                "text": "Prepare-se com Link de Pagamento para Black Friday\nLink personalizável\nSegurança antifraude\nVenda online\nAceite débito, crédito, Pix, Wallet e boleto\nQuero contratar",
+                "product": "Link de Pagamento",
+                "section": "Prepare-se com Link de Pagamento para Black Friday",
+                "source_id": "effe508df661964f21d2",
+                "url": "https://site.getnet.com.br/link-de-pagamento/",
+                "source_index": 3,
+                "scope_basis": "section"
+              }
+            ],
+            "evidence_review": {
+              "coverage": "incomplete",
+              "reason": "A resposta não confirma se o cartão virtual grátis está disponível no Link de Pagamento, apenas afirma que não conseguiu confirmar a associação, o que não é suficiente para responder à pergunta original. Além disso, a resposta não aborda se o cartão virtual grátis é um recurso exclusivo da Conta Digital ou se está disponível em outros produtos da GetNet.",
+              "support": "supported"
+            },
+            "coverage": "partial",
+            "outcome": "partial",
+            "resolved": false
+          },
+          "duration_ms": 50914.53
+        },
+        {
+          "mode": "prose",
+          "answer_before_review": "Não há evidência específica de que o Link de Pagamento ofereça um cartão virtual grátis. No entanto, há uma menção a um \"Link de pagamento Inicial\" que é gratuito, mas isso não é claro se é um cartão virtual ou apenas um link de pagamento. Além disso, há uma seção que lista as taxas exclusivas para o Link de Pagamento, o que sugere que o cartão virtual pode ter taxas associadas. Portanto, não é possível afirmar com certeza se o Link de Pagamento oferece um cartão virtual grátis.",
+          "answer_after_review": "Não há evidência específica de que o Link de Pagamento ofereça um cartão virtual grátis. No entanto, há uma menção a um \"Link de pagamento Inicial\" que é gratuito, mas isso não é claro se é um cartão virtual ou apenas um link de pagamento. Além disso, há uma seção que lista as taxas exclusivas para o Link de Pagamento, o que sugere que o cartão virtual pode ter taxas associadas. Portanto, não é possível afirmar com certeza se o Link de Pagamento oferece um cartão virtual grátis.",
+          "escalated": true,
+          "metadata": {
+            "generation_kind": "llm_abstention",
+            "abstained": true,
+            "grounding_status": "insufficient_evidence",
+            "evidence_records": [
+              {
+                "text": "Com a conta digital, vai dar negócio\nVocê no controle da operação\nCartão virtual grátis\nReceba todos os pagamentos na mesma conta\nAntecipação de recebíveis\nEU QUERO\nMais benefícios",
+                "product": "Conta Digital",
+                "section": "Com a conta digital, vai dar negócio",
+                "source_id": "168fb615b947bae22cea",
+                "url": "https://site.getnet.com.br/conta-digital/",
+                "source_index": 0,
+                "scope_basis": "section"
+              },
+              {
+                "text": "Veja como é fácil vender com o Link de Pagamento\n1\nAcesse o Portal Minha Conta\nVocê pode acessar o portal com seu login e senha ou pelo Aplicativo Getnet Brasil.\n2\nCrie seu Link de Pagamento\nEm Produtos e Serviços, selecione Link de Pagamento e depois Criar Link de Pagamento\n3\nConfigure\nPreencha as informações do produto, frete e opções para pagamento.\n4\nPronto para vender\nClique em compartilhar ou copiar e compartilhe por onde quiser.",
+                "product": "Link de Pagamento",
+                "section": "Veja como é fácil vender com o Link de Pagamento",
+                "source_id": "383e1f8869a52ac8213d",
+                "url": "https://site.getnet.com.br/link-de-pagamento/",
+                "source_index": 1,
+                "scope_basis": "section"
+              },
+              {
+                "text": "Venda online de forma prática e segura com Link de Pagamento\nRecomendado\nLeve agora\nLink de pagamento Inicial\nGrátis\nR$1,00 por link pago.\nPague somente quando o pagamento do link for aprovado.\nTaxas exclusivas para você.\nQuero contratar\nBásico\nPor\nR$28\n/mês\n60 transações de cartão por mês\n+ R$0,50 por transação excedente\nTaxas exclusivas para você.\nQuero contratar",
+                "product": "Link de Pagamento",
+                "section": "Venda online de forma prática e segura com Link de Pagamento",
+                "source_id": "f3afcfa1fe6126856d64",
+                "url": "https://site.getnet.com.br/link-de-pagamento/",
+                "source_index": 2,
+                "scope_basis": "section"
+              },
+              {
+                "text": "Prepare-se com Link de Pagamento para Black Friday\nLink personalizável\nSegurança antifraude\nVenda online\nAceite débito, crédito, Pix, Wallet e boleto\nQuero contratar",
+                "product": "Link de Pagamento",
+                "section": "Prepare-se com Link de Pagamento para Black Friday",
+                "source_id": "effe508df661964f21d2",
+                "url": "https://site.getnet.com.br/link-de-pagamento/",
+                "source_index": 3,
+                "scope_basis": "section"
+              }
+            ]
+          },
+          "duration_ms": 51515.91
+        }
+      ]
+    },
+    {
+      "question": "Quais funcionalidades a Conta Digital da Getnet oferece?",
+      "records": [
+        {
+          "text": "Confira os benefícios da Get Conta\nSaiba mais sobre os principais benefícios da conta Getnet.\nGestão na palma da sua mão\nJá tem a sua Get Conta? Aproveite para utilizar o\nAplicativo Getnet Brasil\npara facilitar o seu dia a dia e turbinar o seu negócio.\nMantenha o seu Aplicativo Getnet Brasil sempre atualizado\nAponte a sua câmera para o QR Code ao lado e fique por dentro das novidades da sua conta.",
+          "product": "Conta Digital",
+          "section": "Confira os benefícios da Get Conta",
+          "source_id": "dadf3053f1116d10f536",
+          "url": "https://site.getnet.com.br/conta-digital/",
+          "source_index": 0,
+          "scope_basis": "section"
+        },
+        {
+          "text": "Com a conta digital, vai dar negócio\nVocê no controle da operação\nCartão virtual grátis\nReceba todos os pagamentos na mesma conta\nAntecipação de recebíveis\nEU QUERO\nMais benefícios",
+          "product": "Conta Digital",
+          "section": "Com a conta digital, vai dar negócio",
+          "source_id": "168fb615b947bae22cea",
+          "url": "https://site.getnet.com.br/conta-digital/",
+          "source_index": 1,
+          "scope_basis": "section"
+        },
+        {
+          "text": "Escolha o melhor produto e abra a sua conta\nA Getnet tem soluções físicas e digitais para alavancar o seu negócio.\nMaquininhas\nLink de pagamento\nGet Tap",
+          "product": null,
+          "section": "Escolha o melhor produto e abra a sua conta",
+          "source_id": "70cca20b01db952be85f",
+          "url": "https://site.getnet.com.br/conta-digital/",
+          "source_index": 2,
+          "scope_basis": "mixed_product_passage"
+        }
+      ],
+      "modes": [
+        {
+          "mode": "evidence",
+          "answer_before_review": "Nos trechos selecionados:\n- **Conta Digital**: Cartão virtual grátis\n- **Conta Digital**: Receba todos os pagamentos na mesma conta\n- **Conta Digital**: Antecipação de recebíveis",
+          "answer_after_review": "Nos trechos selecionados:\n- **Conta Digital**: Cartão virtual grátis\n- **Conta Digital**: Receba todos os pagamentos na mesma conta\n- **Conta Digital**: Antecipação de recebíveis",
+          "escalated": false,
+          "metadata": {
+            "generation_kind": "llm_evidence_selection",
+            "llm_used_for": "evidence_selection",
+            "grounding_status": "source_spans_verified_relevance_requires_review",
+            "selected_evidence_ids": [
+              4,
+              5,
+              6
+            ],
+            "selected_evidence": [
+              {
+                "id": 4,
+                "source_index": 1,
+                "text": "Cartão virtual grátis",
+                "product": "Conta Digital",
+                "section": "Com a conta digital, vai dar negócio",
+                "source_id": "168fb615b947bae22cea",
+                "url": "https://site.getnet.com.br/conta-digital/",
+                "scope_basis": "section"
+              },
+              {
+                "id": 5,
+                "source_index": 1,
+                "text": "Receba todos os pagamentos na mesma conta",
+                "product": "Conta Digital",
+                "section": "Com a conta digital, vai dar negócio",
+                "source_id": "168fb615b947bae22cea",
+                "url": "https://site.getnet.com.br/conta-digital/",
+                "scope_basis": "section"
+              },
+              {
+                "id": 6,
+                "source_index": 1,
+                "text": "Antecipação de recebíveis",
+                "product": "Conta Digital",
+                "section": "Com a conta digital, vai dar negócio",
+                "source_id": "168fb615b947bae22cea",
+                "url": "https://site.getnet.com.br/conta-digital/",
+                "scope_basis": "section"
+              }
+            ],
+            "attribution_method": "source_scope_not_entailment",
+            "answer_mode": "evidence",
+            "evidence_records": [
+              {
+                "text": "Confira os benefícios da Get Conta\nSaiba mais sobre os principais benefícios da conta Getnet.\nGestão na palma da sua mão\nJá tem a sua Get Conta? Aproveite para utilizar o\nAplicativo Getnet Brasil\npara facilitar o seu dia a dia e turbinar o seu negócio.\nMantenha o seu Aplicativo Getnet Brasil sempre atualizado\nAponte a sua câmera para o QR Code ao lado e fique por dentro das novidades da sua conta.",
+                "product": "Conta Digital",
+                "section": "Confira os benefícios da Get Conta",
+                "source_id": "dadf3053f1116d10f536",
+                "url": "https://site.getnet.com.br/conta-digital/",
+                "source_index": 0,
+                "scope_basis": "section"
+              },
+              {
+                "text": "Com a conta digital, vai dar negócio\nVocê no controle da operação\nCartão virtual grátis\nReceba todos os pagamentos na mesma conta\nAntecipação de recebíveis\nEU QUERO\nMais benefícios",
+                "product": "Conta Digital",
+                "section": "Com a conta digital, vai dar negócio",
+                "source_id": "168fb615b947bae22cea",
+                "url": "https://site.getnet.com.br/conta-digital/",
+                "source_index": 1,
+                "scope_basis": "section"
+              },
+              {
+                "text": "Escolha o melhor produto e abra a sua conta\nA Getnet tem soluções físicas e digitais para alavancar o seu negócio.\nMaquininhas\nLink de pagamento\nGet Tap",
+                "product": null,
+                "section": "Escolha o melhor produto e abra a sua conta",
+                "source_id": "70cca20b01db952be85f",
+                "url": "https://site.getnet.com.br/conta-digital/",
+                "source_index": 2,
+                "scope_basis": "mixed_product_passage"
+              }
+            ],
+            "evidence_review": {
+              "coverage": "complete",
+              "reason": "A resposta aborda todas as funcionalidades da Conta Digital da Getnet mencionadas no trecho selecionado, de acordo com a evidência fornecida.",
+              "support": "supported"
+            }
+          },
+          "duration_ms": 37222.47
+        },
+        {
+          "mode": "prose",
+          "answer_before_review": "A Conta Digital da Getnet oferece as seguintes funcionalidades:\n\n1. Gestão na palma da mão: permite controlar a conta Getnet diretamente no aplicativo Getnet Brasil.\n2. Cartão virtual grátis: permite receber todos os pagamentos na mesma conta.\n3. Antecipação de recebíveis: permite antecipar os recebíveis.\n4. Controle da operação: permite controlar a operação da conta.\n5. Recebimento de todos os pagamentos na mesma conta.\n6. Oportunidade de antecipar recebíveis.\n7. Acesso a mais benefícios (não especificados).\n\nEssas funcionalidades são mencionadas nas seções \"Confira os benefícios da Get Conta\", \"Com a conta digital, vai dar negócio\" e \"Escolha o melhor produto e abra a sua conta\".",
+          "answer_after_review": "A Conta Digital da Getnet oferece as seguintes funcionalidades:\n\n1. Gestão na palma da mão: permite controlar a conta Getnet diretamente no aplicativo Getnet Brasil.\n2. Cartão virtual grátis: permite receber todos os pagamentos na mesma conta.\n3. Antecipação de recebíveis: permite antecipar os recebíveis.\n4. Controle da operação: permite controlar a operação da conta.\n5. Recebimento de todos os pagamentos na mesma conta.\n6. Oportunidade de antecipar recebíveis.\n7. Acesso a mais benefícios (não especificados).\n\nEssas funcionalidades são mencionadas nas seções \"Confira os benefícios da Get Conta\", \"Com a conta digital, vai dar negócio\" e \"Escolha o melhor produto e abra a sua conta\".\n\nResposta parcial: os trechos apresentados não cobrem todos os detalhes da pergunta. Você pode especificar qual parte deseja aprofundar.",
+          "escalated": false,
+          "metadata": {
+            "generation_kind": "llm",
+            "grounding_status": "requires_factual_review",
+            "evidence_records": [
+              {
+                "text": "Confira os benefícios da Get Conta\nSaiba mais sobre os principais benefícios da conta Getnet.\nGestão na palma da sua mão\nJá tem a sua Get Conta? Aproveite para utilizar o\nAplicativo Getnet Brasil\npara facilitar o seu dia a dia e turbinar o seu negócio.\nMantenha o seu Aplicativo Getnet Brasil sempre atualizado\nAponte a sua câmera para o QR Code ao lado e fique por dentro das novidades da sua conta.",
+                "product": "Conta Digital",
+                "section": "Confira os benefícios da Get Conta",
+                "source_id": "dadf3053f1116d10f536",
+                "url": "https://site.getnet.com.br/conta-digital/",
+                "source_index": 0,
+                "scope_basis": "section"
+              },
+              {
+                "text": "Com a conta digital, vai dar negócio\nVocê no controle da operação\nCartão virtual grátis\nReceba todos os pagamentos na mesma conta\nAntecipação de recebíveis\nEU QUERO\nMais benefícios",
+                "product": "Conta Digital",
+                "section": "Com a conta digital, vai dar negócio",
+                "source_id": "168fb615b947bae22cea",
+                "url": "https://site.getnet.com.br/conta-digital/",
+                "source_index": 1,
+                "scope_basis": "section"
+              },
+              {
+                "text": "Escolha o melhor produto e abra a sua conta\nA Getnet tem soluções físicas e digitais para alavancar o seu negócio.\nMaquininhas\nLink de pagamento\nGet Tap",
+                "product": null,
+                "section": "Escolha o melhor produto e abra a sua conta",
+                "source_id": "70cca20b01db952be85f",
+                "url": "https://site.getnet.com.br/conta-digital/",
+                "source_index": 2,
+                "scope_basis": "mixed_product_passage"
+              }
+            ],
+            "evidence_review": {
+              "coverage": "incomplete",
+              "reason": "A resposta menciona apenas algumas das funcionalidades da Conta Digital, mas não aborda todas as funcionalidades mencionadas no texto de evidência.",
+              "support": "supported"
+            },
+            "coverage": "partial",
+            "outcome": "partial",
+            "resolved": false
+          },
+          "duration_ms": 98201.28
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "archives": {
+    "ai-hardcore-engineer-v4-COMPLETO(1).zip": "ec7d6581a4a92b716558ddc0928febf40dcd7f66105a25581a4303de0716dd9e",
+    "ai-hardcore-engineer-v4-final(1).zip": "5fc395e5cc30df5175f48962c293159216fcf7cbed63f28285a63accba30b6c6"
+  },
+  "restored_v3_files_original_sha256": {
+    "test_fourth_live_regressions.py": "eb01f3aa5ee5fa819017c669561ae8c7ae46bfc52fea32039ed9463a0db58e08",
+    "test_second_live_regressions.py": "a354943901373fc42a5060580253706811ec3d76bf42dc750879be179a6630a4",
+    "test_third_live_regressions.py": "2aa96814880be669bce4271a070ee8f92c299cff02926784e837125bd52a1bcc",
+    "test_live_regressions.py": "2abd4016e1d4cdce98e179c11b436e7d19d7b9da709637e0c7c49eddb662a269"
+  },
+  "restoration_note": "Earlier V3 1.4 workspace snapshot; HTML fixtures adapted to guarded streaming transport. Old reports remain historical."
+}

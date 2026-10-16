@@ -1,0 +1,10 @@
+{
+  "total_cases": 17,
+  "routing_accuracy": 1.0,
+  "tool_selection_accuracy": 1.0,
+  "retrieval_source_presence_accuracy": 1.0,
+  "source_excerpt_presence_accuracy": 1.0,
+  "failure_behavior_accuracy": 1.0,
+  "note": "Deterministic offline end-to-end evaluation. Web is stubbed and LLM generation is disabled; Source excerpt presence is not factual grounding or retrieval relevance. Live quality/latency must be validated after Ollama and internet are connected."
+}
+Detailed report: /workspace/scratch/cbb0110b887b/candidate/evaluation/report.json

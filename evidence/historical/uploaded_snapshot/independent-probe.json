@@ -1,0 +1,133 @@
+{
+  "scope": "Independent deterministic API + direct SQLite inspection. No real LLM/web/browser/Docker.",
+  "response": {
+    "request_id": "req-d99af9e1fa36",
+    "agent": "escalation",
+    "answer": "Não consegui resolver esta solicitação com evidência suficiente. Vou encaminhá-la para atendimento humano.\nAtendimento humano solicitado. Protocolo: T-44b831bae1f94563",
+    "tool": "human_handoff",
+    "sources": [],
+    "escalated": true,
+    "metadata": {
+      "duration_ms": 2.81,
+      "routing_confidence": 1.0,
+      "routing_reason": "Explicit human assistance requested",
+      "handoff_reason": "Explicit human assistance requested",
+      "handoff_status": "OPEN",
+      "ticket_created": true,
+      "ticket_id": "T-44b831bae1f94563",
+      "outcome": "escalated",
+      "resolved": false,
+      "agents": [
+        "escalation"
+      ],
+      "products": [],
+      "conversation_state": {
+        "selected_product": null,
+        "candidates": [],
+        "intent": "Explicit human assistance requested",
+        "stage": "escalated",
+        "last_ticket": "T-44b831bae1f94563"
+      },
+      "context_messages": 0,
+      "stages": [
+        {
+          "agent": "escalation",
+          "duration_ms": 0.55,
+          "tool": "human_handoff"
+        }
+      ]
+    },
+    "session_id": "e771cfeaae8a43268c2be3c5dac5dd65",
+    "ticket_id": "T-44b831bae1f94563"
+  },
+  "transition_results": [
+    {
+      "requested": "IN_PROGRESS",
+      "http": 200,
+      "stored": "IN_PROGRESS"
+    },
+    {
+      "requested": "RESOLVED",
+      "http": 200,
+      "stored": "RESOLVED"
+    },
+    {
+      "requested": "CLOSED",
+      "http": 200,
+      "stored": "CLOSED"
+    }
+  ],
+  "raw_sqlite_ticket_rows": [
+    [
+      "T-44b831bae1f94563",
+      "e771cfeaae8a43268c2be3c5dac5dd65",
+      "cliente1988",
+      "CLOSED",
+      "operador",
+      "Resposta humana de validação — não envie senhas."
+    ]
+  ],
+  "raw_history": [
+    {
+      "id": 1,
+      "session": "e771cfeaae8a43268c2be3c5dac5dd65",
+      "role": "user",
+      "content": "Quero falar com um atendente humano",
+      "metadata": {},
+      "created": "2026-10-12 19:15:47"
+    },
+    {
+      "id": 2,
+      "session": "e771cfeaae8a43268c2be3c5dac5dd65",
+      "role": "assistant",
+      "content": "Não consegui resolver esta solicitação com evidência suficiente. Vou encaminhá-la para atendimento humano.\nAtendimento humano solicitado. Protocolo: T-44b831bae1f94563",
+      "metadata": {
+        "duration_ms": 2.81,
+        "routing_confidence": 1.0,
+        "routing_reason": "Explicit human assistance requested",
+        "handoff_reason": "Explicit human assistance requested",
+        "handoff_status": "OPEN",
+        "ticket_created": true,
+        "ticket_id": "T-44b831bae1f94563",
+        "outcome": "escalated",
+        "resolved": false,
+        "agents": [
+          "escalation"
+        ],
+        "products": [],
+        "conversation_state": {
+          "selected_product": null,
+          "candidates": [],
+          "intent": "Explicit human assistance requested",
+          "stage": "escalated",
+          "last_ticket": "T-44b831bae1f94563"
+        },
+        "context_messages": 0,
+        "stages": [
+          {
+            "agent": "escalation",
+            "duration_ms": 0.55,
+            "tool": "human_handoff"
+          }
+        ],
+        "sources": []
+      },
+      "created": "2026-10-12 19:15:47"
+    },
+    {
+      "id": 3,
+      "session": "e771cfeaae8a43268c2be3c5dac5dd65",
+      "role": "human",
+      "content": "Resposta humana de validação — não envie senhas.",
+      "metadata": {
+        "ticket_id": "T-44b831bae1f94563"
+      },
+      "created": "2026-10-12 19:15:47"
+    }
+  ],
+  "foreign_ticket_http": 404,
+  "foreign_session_http": 404,
+  "client_transition_http": 403,
+  "ready_missing_index_http": 503,
+  "passive_signup_disclaimer_accepted": false
+}

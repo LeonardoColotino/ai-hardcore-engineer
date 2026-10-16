@@ -1,0 +1,143 @@
+[
+  {
+    "id": "link-methods",
+    "split": "dev",
+    "message": "Quais pagamentos o Link de Pagamento aceita?",
+    "relevant_chunk_ids": [
+      "72ab2c4570ec:0"
+    ],
+    "expected_facts": [
+      "débito",
+      "crédito",
+      "Pix",
+      "boleto"
+    ]
+  },
+  {
+    "id": "link-whatsapp",
+    "split": "holdout",
+    "message": "Posso vender pelo WhatsApp com Link de Pagamento?",
+    "relevant_chunk_ids": [
+      "72ab2c4570ec:0"
+    ],
+    "expected_facts": [
+      "WhatsApp"
+    ]
+  },
+  {
+    "id": "link-cart",
+    "split": "dev",
+    "message": "Posso inserir vários produtos no carrinho do Link de Pagamento?",
+    "relevant_chunk_ids": [
+      "72ab2c4570ec:0"
+    ],
+    "expected_facts": [
+      "diversos produtos"
+    ]
+  },
+  {
+    "id": "link-image",
+    "split": "holdout",
+    "message": "O Link de Pagamento permite imagem do produto?",
+    "relevant_chunk_ids": [
+      "72ab2c4570ec:0"
+    ],
+    "expected_facts": [
+      "imagem do produto"
+    ]
+  },
+  {
+    "id": "link-create",
+    "split": "dev",
+    "message": "Como criar um Link de Pagamento no portal?",
+    "relevant_chunk_ids": [
+      "72ab2c4570ec:3"
+    ],
+    "expected_facts": [
+      "Produtos e Serviços",
+      "Criar Link"
+    ]
+  },
+  {
+    "id": "link-shipping",
+    "split": "holdout",
+    "message": "Posso incluir frete no Link de Pagamento?",
+    "relevant_chunk_ids": [
+      "72ab2c4570ec:0",
+      "72ab2c4570ec:1"
+    ],
+    "expected_facts": [
+      "frete"
+    ]
+  },
+  {
+    "id": "credit-limit",
+    "split": "dev",
+    "message": "Até quantas parcelas posso fazer no crediário?",
+    "relevant_chunk_ids": [
+      "8c645263d073:0",
+      "8c645263d073:1",
+      "8c645263d073:4",
+      "8c645263d073:5"
+    ],
+    "expected_facts": [
+      "emissor"
+    ]
+  },
+  {
+    "id": "credit-settlement",
+    "split": "holdout",
+    "message": "Em quanto tempo recebo uma venda no crediário Getnet?",
+    "relevant_chunk_ids": [
+      "8c645263d073:6"
+    ],
+    "expected_facts": [
+      "2 dias úteis"
+    ]
+  },
+  {
+    "id": "credit-simulation",
+    "split": "dev",
+    "message": "Como consultar os juros no crediário?",
+    "relevant_chunk_ids": [
+      "8c645263d073:5"
+    ],
+    "expected_facts": [
+      "simulação"
+    ]
+  },
+  {
+    "id": "credit-enable",
+    "split": "holdout",
+    "message": "Como habilitar crediário na Getnet?",
+    "relevant_chunk_ids": [
+      "8c645263d073:3",
+      "8c645263d073:4"
+    ],
+    "expected_facts": [
+      "aplicativo"
+    ]
+  },
+  {
+    "id": "credit-disable",
+    "split": "dev",
+    "message": "Como desabilitar o crediário?",
+    "relevant_chunk_ids": [
+      "8c645263d073:6"
+    ],
+    "expected_facts": [
+      "Central de Atendimento"
+    ]
+  },
+  {
+    "id": "credit-eligibility",
+    "split": "holdout",
+    "message": "Qualquer estabelecimento pode ter o crediário Getnet?",
+    "relevant_chunk_ids": [
+      "8c645263d073:6"
+    ],
+    "expected_facts": [
+      "sujeita à análise"
+    ]
+  }
+]

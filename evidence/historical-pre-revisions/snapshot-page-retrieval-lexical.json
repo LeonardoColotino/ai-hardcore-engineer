@@ -1,0 +1,187 @@
+{
+  "category": "exposed_page_retrieval_regression",
+  "label_sha256": "24805c67edd0cec3d21a51f6ad540cddaf988a2f16a6a0ea893f64eee4224bf0",
+  "corpus_manifest_sha256": "c7b1af372080e8fc5bf0b4fca51f278d3e04af35254bba7a94df572a6035e9e0",
+  "profile": "hybrid",
+  "reranker": "lexical",
+  "cases": 12,
+  "k": 4,
+  "mean_recall_pages": 1.0,
+  "mrr_pages": 1.0,
+  "rows": [
+    {
+      "id": "link-methods",
+      "query": "Quais pagamentos o Link de Pagamento aceita?",
+      "expected_urls": [
+        "https://site.getnet.com.br/link-de-pagamento/"
+      ],
+      "retrieved_urls": [
+        "https://site.getnet.com.br/link-de-pagamento/",
+        "https://site.getnet.com.br/link-de-pagamento/",
+        "https://www.getnet.net/en/our-solutions/online-payments"
+      ],
+      "recall_at_k_pages": 1.0,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "link-whatsapp",
+      "query": "Posso vender pelo WhatsApp com Link de Pagamento?",
+      "expected_urls": [
+        "https://site.getnet.com.br/link-de-pagamento/"
+      ],
+      "retrieved_urls": [
+        "https://site.getnet.com.br/link-de-pagamento/",
+        "https://site.getnet.com.br/link-de-pagamento/",
+        "https://www.getnet.net/en/our-solutions/online-payments"
+      ],
+      "recall_at_k_pages": 1.0,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "link-cart",
+      "query": "Posso inserir vários produtos no carrinho do Link de Pagamento?",
+      "expected_urls": [
+        "https://site.getnet.com.br/link-de-pagamento/"
+      ],
+      "retrieved_urls": [
+        "https://site.getnet.com.br/link-de-pagamento/",
+        "https://site.getnet.com.br/link-de-pagamento/",
+        "https://www.getnet.net/en/our-solutions/online-payments"
+      ],
+      "recall_at_k_pages": 1.0,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "link-image",
+      "query": "O Link de Pagamento permite imagem do produto?",
+      "expected_urls": [
+        "https://site.getnet.com.br/link-de-pagamento/"
+      ],
+      "retrieved_urls": [
+        "https://site.getnet.com.br/link-de-pagamento/",
+        "https://site.getnet.com.br/link-de-pagamento/",
+        "https://www.getnet.net/en/our-solutions/online-payments"
+      ],
+      "recall_at_k_pages": 1.0,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "link-create",
+      "query": "Como criar um Link de Pagamento no portal?",
+      "expected_urls": [
+        "https://site.getnet.com.br/link-de-pagamento/"
+      ],
+      "retrieved_urls": [
+        "https://site.getnet.com.br/link-de-pagamento/",
+        "https://site.getnet.com.br/link-de-pagamento/",
+        "https://www.getnet.net/en/our-solutions/online-payments"
+      ],
+      "recall_at_k_pages": 1.0,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "link-shipping",
+      "query": "Posso incluir frete no Link de Pagamento?",
+      "expected_urls": [
+        "https://site.getnet.com.br/link-de-pagamento/"
+      ],
+      "retrieved_urls": [
+        "https://site.getnet.com.br/link-de-pagamento/",
+        "https://site.getnet.com.br/link-de-pagamento/",
+        "https://www.getnet.net/en/our-solutions/online-payments"
+      ],
+      "recall_at_k_pages": 1.0,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "credit-limit",
+      "query": "Até quantas parcelas posso fazer no crediário?",
+      "expected_urls": [
+        "https://site.getnet.com.br/crediario/"
+      ],
+      "retrieved_urls": [
+        "https://site.getnet.com.br/crediario/",
+        "https://site.getnet.com.br/crediario/",
+        "https://site.getnet.com.br/crediario/",
+        "https://site.getnet.com.br/maquininha/get-classica/"
+      ],
+      "recall_at_k_pages": 1.0,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "credit-settlement",
+      "query": "Em quanto tempo recebo uma venda no crediário Getnet?",
+      "expected_urls": [
+        "https://site.getnet.com.br/crediario/"
+      ],
+      "retrieved_urls": [
+        "https://site.getnet.com.br/crediario/",
+        "https://site.getnet.com.br/crediario/",
+        "https://site.getnet.com.br/crediario/",
+        "https://site.getnet.com.br/maquininha/get-classica/"
+      ],
+      "recall_at_k_pages": 1.0,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "credit-simulation",
+      "query": "Como consultar os juros no crediário?",
+      "expected_urls": [
+        "https://site.getnet.com.br/crediario/"
+      ],
+      "retrieved_urls": [
+        "https://site.getnet.com.br/crediario/",
+        "https://site.getnet.com.br/crediario/",
+        "https://site.getnet.com.br/crediario/",
+        "https://site.getnet.com.br/maquininha/get-classica/"
+      ],
+      "recall_at_k_pages": 1.0,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "credit-enable",
+      "query": "Como habilitar crediário na Getnet?",
+      "expected_urls": [
+        "https://site.getnet.com.br/crediario/"
+      ],
+      "retrieved_urls": [
+        "https://site.getnet.com.br/crediario/",
+        "https://site.getnet.com.br/crediario/",
+        "https://site.getnet.com.br/crediario/",
+        "https://site.getnet.com.br/maquininha/get-classica/"
+      ],
+      "recall_at_k_pages": 1.0,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "credit-disable",
+      "query": "Como desabilitar o crediário?",
+      "expected_urls": [
+        "https://site.getnet.com.br/crediario/"
+      ],
+      "retrieved_urls": [
+        "https://site.getnet.com.br/crediario/",
+        "https://site.getnet.com.br/crediario/",
+        "https://site.getnet.com.br/crediario/"
+      ],
+      "recall_at_k_pages": 1.0,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "credit-eligibility",
+      "query": "Qualquer estabelecimento pode ter o crediário Getnet?",
+      "expected_urls": [
+        "https://site.getnet.com.br/crediario/"
+      ],
+      "retrieved_urls": [
+        "https://site.getnet.com.br/crediario/",
+        "https://site.getnet.com.br/crediario/",
+        "https://site.getnet.com.br/crediario/",
+        "https://site.getnet.com.br/maquininha/get-classica/"
+      ],
+      "recall_at_k_pages": 1.0,
+      "reciprocal_rank": 1.0
+    }
+  ],
+  "limitations": "Previously exposed questions and page labels; no exact-span relevance, new holdout, factuality, live freshness or neural embedding quality proven."
+}

@@ -1,0 +1,11 @@
+{
+  "issue": "Packaging filter excluded app/models by matching every path component named models. Root weights directory only must be excluded.",
+  "restored": [
+    "app/models/__init__.py",
+    "app/models/api.py",
+    "app/models/routing.py",
+    "app/models/tools.py",
+    "app/models/plan.py"
+  ],
+  "validation": "193 passed, 1 warning, 8.65s, running from freshly extracted corrected archive"
+}

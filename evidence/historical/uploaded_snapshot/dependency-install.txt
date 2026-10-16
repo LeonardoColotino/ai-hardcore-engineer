@@ -1,0 +1,15 @@
+Defaulting to user installation because normal site-packages is not writeable
+Collecting fastapi==0.142.4 (from -r requirements.txt (line 1))
+  Downloading fastapi-0.142.4-py3-none-any.whl.metadata (26 kB)
+Requirement already satisfied: starlette==1.7.0 in /root/.local/lib/python3.12/site-packages (from -r requirements.txt (line 2)) (1.7.0)
+Requirement already satisfied: pydantic==2.13.5 in /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages (from -r requirements.txt (line 3)) (2.13.5)
+Requirement already satisfied: pydantic-core==2.46.5 in /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages (from -r requirements.txt (line 4)) (2.46.5)
+Requirement already satisfied: annotated-types==0.8.0 in /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages (from -r requirements.txt (line 5)) (0.8.0)
+Requirement already satisfied: annotated-doc==0.0.5 in /root/.local/lib/python3.12/site-packages (from -r requirements.txt (line 6)) (0.0.5)
+Requirement already satisfied: typing-extensions==4.16.0 in /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages (from -r requirements.txt (line 7)) (4.16.0)
+Requirement already satisfied: typing-inspection==0.4.4 in /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages (from -r requirements.txt (line 8)) (0.4.4)
+Requirement already satisfied: opentelemetry-api==1.45.1 in /root/.local/lib/python3.12/site-packages (from -r requirements.txt (line 9)) (1.45.1)
+WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'OSError('Tunnel connection failed: 403 Forbidden')': /simple/uvicorn/
+WARNING: Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'OSError('Tunnel connection failed: 403 Forbidden')': /simple/uvicorn/
+WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'OSError('Tunnel connection failed: 403 Forbidden')': /simple/uvicorn/
+WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'OSError('Tunnel connection failed: 403 Forbidden')': /simple/uvicorn/

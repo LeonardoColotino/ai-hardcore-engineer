@@ -1,0 +1,5 @@
+# RAG release contract
+
+Before implementation: preserve the existing retrieval/tool API and offline seed opt-in. Ingestion accepts only HTTPS on enumerated official hosts, validates every redirect, limits redirects/bytes/time, and replaces the corpus rather than appending stale chunks. HTML headings, numbered procedures and table rows survive extraction. Section chunks preserve ordinary procedures; oversized sections split at block boundaries with section context and an explicit continuation marker.
+
+Manifest binds corpus and vector hashes, dimension, provider and model. Retrieval profiles compare identical frozen synthetic chunks with exact-ID recall@k/MRR/nDCG; these metrics do not establish Getnet factual quality or neural embedding benefit. RRF is rank fusion, not learned reranking. Portuguese synthesis has configurable context/output budgets and retains steps/conditions. Missing comparison sides and unsupported numeric claims trigger a limited output gate; this heuristic is not entailment verification. Runtime Ollama and factual review remain separate gates.

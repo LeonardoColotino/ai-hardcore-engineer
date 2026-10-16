@@ -1,0 +1,276 @@
+{
+  "fixture_sha256": "8660d4bb8d8861ff031bc1bdba951b4e014ed0b3208e36cd0fb19918b45755cf",
+  "corpus_kind": "synthetic_not_getnet_facts",
+  "queries": 6,
+  "k": 3,
+  "embedding_provider": "hashing",
+  "embedding_model": "hashing-384",
+  "factual_quality": "not_measured",
+  "learned_reranker": "not_enabled_no_measured_benefit",
+  "profiles": {
+    "vector": {
+      "recall_at_3": 1.0,
+      "mrr": 1.0,
+      "ndcg_at_3": 1.0,
+      "cases": [
+        {
+          "query": "Aurora criar link portal dados compartilhar",
+          "retrieved_chunk_ids": [
+            "aurora:0"
+          ],
+          "relevant_chunk_ids": [
+            "aurora:0"
+          ],
+          "recall_at_3": 1.0,
+          "reciprocal_rank": 1.0,
+          "ndcg_at_3": 1.0
+        },
+        {
+          "query": "Aurora adesão formulário análise",
+          "retrieved_chunk_ids": [
+            "aurora:1",
+            "cobalto:0",
+            "aurora:2"
+          ],
+          "relevant_chunk_ids": [
+            "aurora:1"
+          ],
+          "recall_at_3": 1.0,
+          "reciprocal_rank": 1.0,
+          "ndcg_at_3": 1.0
+        },
+        {
+          "query": "Boreal falha conexão rede roteador",
+          "retrieved_chunk_ids": [
+            "boreal:0",
+            "aurora:1",
+            "boreal:1"
+          ],
+          "relevant_chunk_ids": [
+            "boreal:0"
+          ],
+          "recall_at_3": 1.0,
+          "reciprocal_rank": 1.0,
+          "ndcg_at_3": 1.0
+        },
+        {
+          "query": "Cobalto consultar extrato período",
+          "retrieved_chunk_ids": [
+            "cobalto:0",
+            "aurora:2",
+            "aurora:1"
+          ],
+          "relevant_chunk_ids": [
+            "cobalto:0"
+          ],
+          "recall_at_3": 1.0,
+          "reciprocal_rank": 1.0,
+          "ndcg_at_3": 1.0
+        },
+        {
+          "query": "Aurora condições contrato aprovado",
+          "retrieved_chunk_ids": [
+            "aurora:2",
+            "aurora:0",
+            "cobalto:0"
+          ],
+          "relevant_chunk_ids": [
+            "aurora:2"
+          ],
+          "recall_at_3": 1.0,
+          "reciprocal_rank": 1.0,
+          "ndcg_at_3": 1.0
+        },
+        {
+          "query": "Boreal venda recusada código cobrança",
+          "retrieved_chunk_ids": [
+            "boreal:1",
+            "boreal:0",
+            "aurora:2"
+          ],
+          "relevant_chunk_ids": [
+            "boreal:1"
+          ],
+          "recall_at_3": 1.0,
+          "reciprocal_rank": 1.0,
+          "ndcg_at_3": 1.0
+        }
+      ]
+    },
+    "lexical": {
+      "recall_at_3": 1.0,
+      "mrr": 1.0,
+      "ndcg_at_3": 1.0,
+      "cases": [
+        {
+          "query": "Aurora criar link portal dados compartilhar",
+          "retrieved_chunk_ids": [
+            "aurora:0"
+          ],
+          "relevant_chunk_ids": [
+            "aurora:0"
+          ],
+          "recall_at_3": 1.0,
+          "reciprocal_rank": 1.0,
+          "ndcg_at_3": 1.0
+        },
+        {
+          "query": "Aurora adesão formulário análise",
+          "retrieved_chunk_ids": [
+            "aurora:1",
+            "aurora:0",
+            "aurora:2"
+          ],
+          "relevant_chunk_ids": [
+            "aurora:1"
+          ],
+          "recall_at_3": 1.0,
+          "reciprocal_rank": 1.0,
+          "ndcg_at_3": 1.0
+        },
+        {
+          "query": "Boreal falha conexão rede roteador",
+          "retrieved_chunk_ids": [
+            "boreal:0",
+            "boreal:1"
+          ],
+          "relevant_chunk_ids": [
+            "boreal:0"
+          ],
+          "recall_at_3": 1.0,
+          "reciprocal_rank": 1.0,
+          "ndcg_at_3": 1.0
+        },
+        {
+          "query": "Cobalto consultar extrato período",
+          "retrieved_chunk_ids": [
+            "cobalto:0",
+            "boreal:1"
+          ],
+          "relevant_chunk_ids": [
+            "cobalto:0"
+          ],
+          "recall_at_3": 1.0,
+          "reciprocal_rank": 1.0,
+          "ndcg_at_3": 1.0
+        },
+        {
+          "query": "Aurora condições contrato aprovado",
+          "retrieved_chunk_ids": [
+            "aurora:2",
+            "aurora:0",
+            "aurora:1"
+          ],
+          "relevant_chunk_ids": [
+            "aurora:2"
+          ],
+          "recall_at_3": 1.0,
+          "reciprocal_rank": 1.0,
+          "ndcg_at_3": 1.0
+        },
+        {
+          "query": "Boreal venda recusada código cobrança",
+          "retrieved_chunk_ids": [
+            "boreal:1",
+            "boreal:0"
+          ],
+          "relevant_chunk_ids": [
+            "boreal:1"
+          ],
+          "recall_at_3": 1.0,
+          "reciprocal_rank": 1.0,
+          "ndcg_at_3": 1.0
+        }
+      ]
+    },
+    "hybrid": {
+      "recall_at_3": 1.0,
+      "mrr": 1.0,
+      "ndcg_at_3": 1.0,
+      "cases": [
+        {
+          "query": "Aurora criar link portal dados compartilhar",
+          "retrieved_chunk_ids": [
+            "aurora:0"
+          ],
+          "relevant_chunk_ids": [
+            "aurora:0"
+          ],
+          "recall_at_3": 1.0,
+          "reciprocal_rank": 1.0,
+          "ndcg_at_3": 1.0
+        },
+        {
+          "query": "Aurora adesão formulário análise",
+          "retrieved_chunk_ids": [
+            "aurora:1",
+            "aurora:2",
+            "aurora:0"
+          ],
+          "relevant_chunk_ids": [
+            "aurora:1"
+          ],
+          "recall_at_3": 1.0,
+          "reciprocal_rank": 1.0,
+          "ndcg_at_3": 1.0
+        },
+        {
+          "query": "Boreal falha conexão rede roteador",
+          "retrieved_chunk_ids": [
+            "boreal:0",
+            "boreal:1",
+            "aurora:1"
+          ],
+          "relevant_chunk_ids": [
+            "boreal:0"
+          ],
+          "recall_at_3": 1.0,
+          "reciprocal_rank": 1.0,
+          "ndcg_at_3": 1.0
+        },
+        {
+          "query": "Cobalto consultar extrato período",
+          "retrieved_chunk_ids": [
+            "cobalto:0",
+            "boreal:1",
+            "aurora:2"
+          ],
+          "relevant_chunk_ids": [
+            "cobalto:0"
+          ],
+          "recall_at_3": 1.0,
+          "reciprocal_rank": 1.0,
+          "ndcg_at_3": 1.0
+        },
+        {
+          "query": "Aurora condições contrato aprovado",
+          "retrieved_chunk_ids": [
+            "aurora:2",
+            "aurora:0",
+            "aurora:1"
+          ],
+          "relevant_chunk_ids": [
+            "aurora:2"
+          ],
+          "recall_at_3": 1.0,
+          "reciprocal_rank": 1.0,
+          "ndcg_at_3": 1.0
+        },
+        {
+          "query": "Boreal venda recusada código cobrança",
+          "retrieved_chunk_ids": [
+            "boreal:1",
+            "boreal:0",
+            "aurora:2"
+          ],
+          "relevant_chunk_ids": [
+            "boreal:1"
+          ],
+          "recall_at_3": 1.0,
+          "reciprocal_rank": 1.0,
+          "ndcg_at_3": 1.0
+        }
+      ]
+    }
+  }
+}

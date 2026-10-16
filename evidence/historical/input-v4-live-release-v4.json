@@ -1,0 +1,770 @@
+{
+  "corpus_sha256": "2bb2558b030a3a8e757c933e4a828519de170367817398d57b4ed3ded4f736a7",
+  "provider": "llama_cpp",
+  "model": "qwen2.5-3b.gguf",
+  "cases": 5,
+  "http_success_rate": 1.0,
+  "answer_coverage": 1.0,
+  "provenance_rate": 1.0,
+  "fact_anchor_case_pass_rate": 1.0,
+  "manual_quality_status": "review_completed_with_known_limitations",
+  "rows": [
+    {
+      "id": "repair-disable",
+      "split": "release",
+      "message": "Como desabilitar o crediário?",
+      "relevant_chunk_ids": [],
+      "expected_facts": [
+        "Central de Atendimento",
+        "desabilitação"
+      ],
+      "http_status": 200,
+      "duration_ms": 30410.49,
+      "answer": "Trecho oficial recuperado (fallback sem interpretação):\n\nCaso você não deseje ter o Crediário como mais uma opção de pagamento, basta entrar em contato com a Central de Atendimento da Getnet e solicitar a desabilitação desta modalidade.",
+      "sources": [
+        {
+          "title": "Crediário - Getnet",
+          "url": "https://site.getnet.com.br/crediario/",
+          "snippet": "e em que prazo eu recebo?\nAs informações de pagamento podem ser consultadas no Aplicativo Getnet (Vendas) e/ou no Portal do Cliente.\nTodas as vendas realizadas na modalidade Crediário são pagas em até 2 dias úteis após a captura da transação, de uma única vez, independente da quantidade de parcelas escolhida pelo portador. Lembrando que do valor da transação original é subtraído o valor da taxa de desconto.\nQualquer estabelecimento pode ter o Crediário? E se eu não quiser ter o produto?\nA habilitação do produto Crediário está sujeita à análise pela Getnet.\nCaso você não deseje ter o Crediário como mais uma opção de pagamento, basta entrar em contato com a Central de Atendimento da Getnet e solicitar a desabilitação desta modalidade.\nainda tem dúvidas?\nVamos começar o seu atendimento?\nAinda não é cliente?\nAdquira agora e venda mais!\nCENTRAL DE VENDAS\nJá é nosso cliente?\nCENTRAL DE AJUDA",
+          "score": 0.2325
+        }
+      ],
+      "escalated": false,
+      "metadata": {
+        "generation_kind": "extractive_verified_fallback",
+        "fallback": "literal_policy_repair",
+        "outcome": "fallback",
+        "grounding_status": "verified_source_span_not_independent_truth",
+        "selected_evidence": [
+          {
+            "id": 0,
+            "source_index": 0,
+            "text": "Caso você não deseje ter o Crediário como mais uma opção de pagamento, basta entrar em contato com a Central de Atendimento da Getnet e solicitar a desabilitação desta modalidade."
+          }
+        ],
+        "literal_repair": true,
+        "routing_reason": "General product policy without account ownership",
+        "routing_confidence": 0.98,
+        "plans": [
+          {
+            "step": 0,
+            "observed_agent": "knowledge",
+            "failed": true,
+            "next_action": "finish",
+            "reviewer": "verified_literal_fallback",
+            "allowed": [
+              "escalate"
+            ]
+          }
+        ],
+        "replans": 0,
+        "max_steps": 4,
+        "supervisor": "observe_replan",
+        "termination": "finish",
+        "resolved": false,
+        "llm_usage": [
+          {
+            "provider": "llama_cpp",
+            "model": "qwen2.5-3b.gguf",
+            "input_tokens": 521,
+            "output_tokens": 5
+          }
+        ],
+        "agents": [
+          "knowledge"
+        ],
+        "products": [
+          "crediário"
+        ],
+        "conversation_state": {
+          "visited_products": [
+            "crediário"
+          ],
+          "last_account_tool": null,
+          "selected_product": "crediário",
+          "candidates": [
+            "crediário"
+          ],
+          "intent": "General product policy without account ownership",
+          "stage": "fallback",
+          "last_ticket": null
+        },
+        "context_messages": 0,
+        "duration_ms": 28780.36,
+        "stages": [
+          {
+            "agent": "knowledge",
+            "duration_ms": 26535.77,
+            "tool": "rag_search",
+            "step": 0
+          }
+        ]
+      },
+      "span_provenance": true,
+      "fact_anchor_hits": {
+        "Central de Atendimento": true,
+        "desabilitação": true
+      }
+    },
+    {
+      "id": "repair-eligibility",
+      "split": "release",
+      "message": "Qualquer estabelecimento pode ter o crediário Getnet?",
+      "relevant_chunk_ids": [],
+      "expected_facts": [
+        "sujeita à análise"
+      ],
+      "http_status": 200,
+      "duration_ms": 37068.79,
+      "answer": "Trecho oficial recuperado (fallback sem interpretação):\n\nA habilitação do produto Crediário está sujeita à análise pela Getnet.",
+      "sources": [
+        {
+          "title": "Crediário - Getnet",
+          "url": "https://site.getnet.com.br/crediario/",
+          "snippet": "e em que prazo eu recebo?\nAs informações de pagamento podem ser consultadas no Aplicativo Getnet (Vendas) e/ou no Portal do Cliente.\nTodas as vendas realizadas na modalidade Crediário são pagas em até 2 dias úteis após a captura da transação, de uma única vez, independente da quantidade de parcelas escolhida pelo portador. Lembrando que do valor da transação original é subtraído o valor da taxa de desconto.\nQualquer estabelecimento pode ter o Crediário? E se eu não quiser ter o produto?\nA habilitação do produto Crediário está sujeita à análise pela Getnet.\nCaso você não deseje ter o Crediário como mais uma opção de pagamento, basta entrar em contato com a Central de Atendimento da Getnet e solicitar a desabilitação desta modalidade.\nainda tem dúvidas?\nVamos começar o seu atendimento?\nAinda não é cliente?\nAdquira agora e venda mais!\nCENTRAL DE VENDAS\nJá é nosso cliente?\nCENTRAL DE AJUDA",
+          "score": 0.3635
+        }
+      ],
+      "escalated": false,
+      "metadata": {
+        "generation_kind": "extractive_verified_fallback",
+        "fallback": "literal_policy_repair",
+        "outcome": "fallback",
+        "grounding_status": "verified_source_span_not_independent_truth",
+        "selected_evidence": [
+          {
+            "id": 0,
+            "source_index": 0,
+            "text": "A habilitação do produto Crediário está sujeita à análise pela Getnet."
+          }
+        ],
+        "literal_repair": true,
+        "routing_reason": "General product policy without account ownership",
+        "routing_confidence": 0.98,
+        "plans": [
+          {
+            "step": 0,
+            "observed_agent": "knowledge",
+            "failed": false,
+            "next_action": "knowledge",
+            "reviewer": "llm",
+            "allowed": [
+              "finish",
+              "knowledge",
+              "escalate"
+            ]
+          },
+          {
+            "step": 1,
+            "observed_agent": "knowledge",
+            "failed": false,
+            "next_action": "finish",
+            "reviewer": "verified_literal_fallback",
+            "allowed": [
+              "finish",
+              "escalate"
+            ]
+          }
+        ],
+        "replans": 1,
+        "max_steps": 4,
+        "supervisor": "observe_replan",
+        "termination": "finish",
+        "resolved": false,
+        "llm_usage": [
+          {
+            "provider": "llama_cpp",
+            "model": "qwen2.5-3b.gguf",
+            "input_tokens": 580,
+            "output_tokens": 7
+          },
+          {
+            "provider": "llama_cpp",
+            "model": "qwen2.5-3b.gguf",
+            "input_tokens": 146,
+            "output_tokens": 51
+          },
+          {
+            "provider": "llama_cpp",
+            "model": "qwen2.5-3b.gguf",
+            "input_tokens": 583,
+            "output_tokens": 7
+          },
+          {
+            "provider": "llama_cpp",
+            "model": "qwen2.5-3b.gguf",
+            "input_tokens": 143,
+            "output_tokens": 69
+          }
+        ],
+        "agents": [
+          "knowledge",
+          "knowledge"
+        ],
+        "products": [
+          "crediário"
+        ],
+        "conversation_state": {
+          "visited_products": [
+            "crediário"
+          ],
+          "last_account_tool": null,
+          "selected_product": "crediário",
+          "candidates": [
+            "crediário"
+          ],
+          "intent": "General product policy without account ownership",
+          "stage": "fallback",
+          "last_ticket": null
+        },
+        "context_messages": 0,
+        "duration_ms": 37061.46,
+        "stages": [
+          {
+            "agent": "knowledge",
+            "duration_ms": 8162.39,
+            "tool": "rag_search",
+            "step": 0
+          },
+          {
+            "agent": "knowledge",
+            "duration_ms": 12400.16,
+            "tool": "rag_search",
+            "step": 1
+          }
+        ]
+      },
+      "span_provenance": true,
+      "fact_anchor_hits": {
+        "sujeita à análise": true
+      }
+    },
+    {
+      "id": "advance-app",
+      "split": "release",
+      "message": "Como funciona a antecipação de vendas pelo aplicativo Getnet?",
+      "relevant_chunk_ids": [],
+      "expected_facts": [
+        "crédito"
+      ],
+      "http_status": 200,
+      "duration_ms": 76534.6,
+      "answer": "Trechos documentados para sua pergunta:\n\n- É possível antecipar o recebimento das vendas realizadas no crédito, à vista ou parcelado, por meio do aplicativo Getnet Brasil, disponível para Android e iOS.\n- Você pode habilitar a antecipação automática direto pelo App Getnet Brasil.\n- Insira sua senha, leia os termos e condições e clique Habilitar;",
+      "sources": [
+        {
+          "title": "Como antecipar suas vendas pelo app - Getnet",
+          "url": "https://site.getnet.com.br/get-ajuda-antecipacao-de-venda/como-antecipar-sua-vendas-pelo-app/",
+          "snippet": "É possível antecipar o recebimento das vendas realizadas no crédito, à vista ou parcelado, por meio do aplicativo Getnet Brasil, disponível para Android e iOS.\nPasso a passo para antecipar suas vendas pelo APP:\n1. Acesse com seu login e senha.\n2. Clique no menu Serviços.\n3. Selecione Antecipação de Vendas.\n4. Na tela vai mostrar o valor disponível para antecipar e suas contas bancárias cadastradas. Escolha qual você deseja receber o valor antecipado.\n5. Leia e aceite os termos.\n6. Faça simulação da antecipação, conferindo os valores, bandeiras e taxas. Clique em confirmar.\n7. Verifique o valor final e clique em Antecipar.\n8. Insira sua senha.\n9. Pronto sua solicitação foi realizado.\nAcesse a área de \"Meus Pedidos\" para acompanhar o status da sua solicitação. Lembrando que o valor mínimo para antecipação é de R$50,00.\nRespondeu à sua dúvida?\nVeja os nossos vídeos",
+          "score": 0.2219
+        },
+        {
+          "title": "Como habilitar antecipação automática pelo App - Getnet",
+          "url": "https://site.getnet.com.br/get-ajuda-antecipacao-de-venda/como-habilitar-antecipacao-automatica-pelo-app/",
+          "snippet": "Você pode habilitar a antecipação automática direto pelo App Getnet Brasil. Contudo, lembre-se que para qualquer solicitação de ativação e desativação é necessário ter um perfil administrativo e senha para conseguir seguir.\nPasso a passo para habilitar a antecipação automática:\n1. Acesse o App com seu login e senha;\n2. Clique no menu Serviços;\n3. Selecione Antecipação Automática;\n4. Clique Habilitar;\n5. Insira sua senha, leia os termos e condições e clique Habilitar;\n6. Pronto! Sua solicitação foi enviada e pode demorar até 48 horas.\n7. Verifique o valor final e clique em Antecipar.\nCaso deseje desabilitar, basta selecionar Antecipação Automática na área Serviços e desabilitar.\nA habilitação é livre, porém para a antecipação de fato ocorrer, é necessário ao menos saldo de R$ 50,00\nRespondeu à sua dúvida?\nVeja os nossos vídeos\nCom as principais dicas e informações:\nAinda não tem o",
+          "score": 0.2474
+        },
+        {
+          "title": "Getnet | Maquininha + Conta Digital - Getnet",
+          "url": "https://site.getnet.com.br/conta-digital/",
+          "snippet": "Com a conta digital,\nvai dar negócio\nVocê no controle da operação\nCartão virtual grátis\nReceba todos os pagamentos na mesma conta\nAntecipação de recebíveis\nEU QUERO\nMais benefícios\nEscolha o melhor produto e abra a sua conta\nA Getnet tem soluções físicas e digitais para alavancar o seu negócio.\nMaquininhas\nLink de pagamento\nGet Tap\nConfira os benefícios da Get Conta\nSaiba mais sobre os principais benefícios da conta Getnet.\nGestão na palma da sua mão\nJá tem a sua Get Conta? Aproveite para utilizar o\nAplicativo Getnet Brasil\npara facilitar o seu dia a dia e turbinar o seu negócio.\nMantenha o seu Aplicativo Getnet Brasil sempre atualizado\nAponte a sua câmera para o QR Code ao lado e fique por dentro das novidades da sua conta.\nTire todas as suas dúvidas sobre:\nVamos começar o seu atendimento?\nAinda não é cliente?\nAdquira agora e venda mais!\nCENTRAL DE VENDAS\nJá é nosso cliente?",
+          "score": 0.1995
+        },
+        {
+          "title": "Como antecipar suas vendas pelo app - Getnet",
+          "url": "https://site.getnet.com.br/get-ajuda-antecipacao-de-venda/como-antecipar-sua-vendas-pelo-app/",
+          "snippet": "o status da sua solicitação. Lembrando que o valor mínimo para antecipação é de R$50,00.\nRespondeu à sua dúvida?\nVeja os nossos vídeos\nCom as principais dicas e informações:\nAinda não tem o\nAplicativo Getnet Brasil?\nClique abaixo e baixe agora\nAcesse o manual da sua maquininha\nAcesse a nossa lista de manuais navegáveis.\nClique aqui\nVamos começar o seu atendimento?\nAinda não é cliente?\nAdquira agora e venda mais!\nCENTRAL DE VENDAS\nJá é nosso cliente?\nCENTRAL DE AJUDA\nNão é cliente?\nAdquira nossos produtos e impulsione suas vendas​​\nwhatsApp\n4002-4000\nJá é cliente?\nTenha suporte:\nPor telefone\nLigue 4002-4000\nPor WhatsApp\nPrático e rápido.\nNossas ofertas imperdíveis te aguardam: selecione uma opção e acesse agora!\nJá sou cliente!\nAinda não sou cliente",
+          "score": 0.214
+        }
+      ],
+      "escalated": false,
+      "metadata": {
+        "retrieved_documents": 4,
+        "best_score": 0.24744322896003723,
+        "corpus_kind": "official",
+        "chunk_ids": [
+          "9b0c7a7d2efe:0",
+          "ddd6a42001c0:0",
+          "955826a0526a:0",
+          "9b0c7a7d2efe:1"
+        ],
+        "generation_kind": "llm_evidence_selection",
+        "llm_used_for": "evidence_selection",
+        "grounding_status": "source_spans_verified_relevance_requires_review",
+        "selected_evidence_ids": [
+          0,
+          1,
+          6
+        ],
+        "selected_evidence": [
+          {
+            "id": 0,
+            "source_index": 0,
+            "text": "É possível antecipar o recebimento das vendas realizadas no crédito, à vista ou parcelado, por meio do aplicativo Getnet Brasil, disponível para Android e iOS."
+          },
+          {
+            "id": 1,
+            "source_index": 1,
+            "text": "Você pode habilitar a antecipação automática direto pelo App Getnet Brasil."
+          },
+          {
+            "id": 6,
+            "source_index": 1,
+            "text": "Insira sua senha, leia os termos e condições e clique Habilitar;"
+          }
+        ],
+        "generation_duration_ms": 22502.13,
+        "routing_reason": "General product policy without account ownership",
+        "routing_confidence": 0.98,
+        "plans": [
+          {
+            "step": 0,
+            "observed_agent": "knowledge",
+            "failed": false,
+            "next_action": "knowledge",
+            "reviewer": "llm",
+            "allowed": [
+              "finish",
+              "knowledge",
+              "escalate"
+            ]
+          },
+          {
+            "step": 1,
+            "observed_agent": "knowledge",
+            "failed": false,
+            "next_action": "finish",
+            "reviewer": "llm",
+            "allowed": [
+              "finish",
+              "escalate"
+            ]
+          }
+        ],
+        "replans": 1,
+        "max_steps": 4,
+        "supervisor": "observe_replan",
+        "termination": "finish",
+        "outcome": "answered",
+        "resolved": true,
+        "llm_usage": [
+          {
+            "provider": "llama_cpp",
+            "model": "qwen2.5-3b.gguf",
+            "input_tokens": 537,
+            "output_tokens": 9
+          },
+          {
+            "provider": "llama_cpp",
+            "model": "qwen2.5-3b.gguf",
+            "input_tokens": 171,
+            "output_tokens": 62
+          },
+          {
+            "provider": "llama_cpp",
+            "model": "qwen2.5-3b.gguf",
+            "input_tokens": 544,
+            "output_tokens": 9
+          },
+          {
+            "provider": "llama_cpp",
+            "model": "qwen2.5-3b.gguf",
+            "input_tokens": 179,
+            "output_tokens": 50
+          }
+        ],
+        "agents": [
+          "knowledge",
+          "knowledge"
+        ],
+        "products": [
+          "antecipação"
+        ],
+        "conversation_state": {
+          "visited_products": [
+            "antecipação"
+          ],
+          "last_account_tool": null,
+          "selected_product": "antecipação",
+          "candidates": [
+            "antecipação"
+          ],
+          "intent": "General product policy without account ownership",
+          "stage": "answered",
+          "last_ticket": null
+        },
+        "context_messages": 0,
+        "duration_ms": 76529.74,
+        "stages": [
+          {
+            "agent": "knowledge",
+            "duration_ms": 13179.3,
+            "tool": "rag_search",
+            "step": 0
+          },
+          {
+            "agent": "knowledge",
+            "duration_ms": 26329.69,
+            "tool": "rag_search",
+            "step": 1
+          }
+        ]
+      },
+      "span_provenance": true,
+      "fact_anchor_hits": {
+        "crédito": true
+      }
+    },
+    {
+      "id": "advance-auto",
+      "split": "release",
+      "message": "Como habilitar antecipação automática no aplicativo Getnet?",
+      "relevant_chunk_ids": [],
+      "expected_facts": [
+        "automática"
+      ],
+      "http_status": 200,
+      "duration_ms": 35271.72,
+      "answer": "Trechos documentados para sua pergunta:\n\n- Você pode habilitar a antecipação automática direto pelo App Getnet Brasil.\n- Selecione Antecipação Automática;\n- Verifique o valor final e clique em Antecipar.",
+      "sources": [
+        {
+          "title": "Como habilitar antecipação automática pelo App - Getnet",
+          "url": "https://site.getnet.com.br/get-ajuda-antecipacao-de-venda/como-habilitar-antecipacao-automatica-pelo-app/",
+          "snippet": "Você pode habilitar a antecipação automática direto pelo App Getnet Brasil. Contudo, lembre-se que para qualquer solicitação de ativação e desativação é necessário ter um perfil administrativo e senha para conseguir seguir.\nPasso a passo para habilitar a antecipação automática:\n1. Acesse o App com seu login e senha;\n2. Clique no menu Serviços;\n3. Selecione Antecipação Automática;\n4. Clique Habilitar;\n5. Insira sua senha, leia os termos e condições e clique Habilitar;\n6. Pronto! Sua solicitação foi enviada e pode demorar até 48 horas.\n7. Verifique o valor final e clique em Antecipar.\nCaso deseje desabilitar, basta selecionar Antecipação Automática na área Serviços e desabilitar.\nA habilitação é livre, porém para a antecipação de fato ocorrer, é necessário ao menos saldo de R$ 50,00\nRespondeu à sua dúvida?\nVeja os nossos vídeos\nCom as principais dicas e informações:\nAinda não tem o",
+          "score": 0.2253
+        },
+        {
+          "title": "Como antecipar suas vendas pelo app - Getnet",
+          "url": "https://site.getnet.com.br/get-ajuda-antecipacao-de-venda/como-antecipar-sua-vendas-pelo-app/",
+          "snippet": "É possível antecipar o recebimento das vendas realizadas no crédito, à vista ou parcelado, por meio do aplicativo Getnet Brasil, disponível para Android e iOS.\nPasso a passo para antecipar suas vendas pelo APP:\n1. Acesse com seu login e senha.\n2. Clique no menu Serviços.\n3. Selecione Antecipação de Vendas.\n4. Na tela vai mostrar o valor disponível para antecipar e suas contas bancárias cadastradas. Escolha qual você deseja receber o valor antecipado.\n5. Leia e aceite os termos.\n6. Faça simulação da antecipação, conferindo os valores, bandeiras e taxas. Clique em confirmar.\n7. Verifique o valor final e clique em Antecipar.\n8. Insira sua senha.\n9. Pronto sua solicitação foi realizado.\nAcesse a área de \"Meus Pedidos\" para acompanhar o status da sua solicitação. Lembrando que o valor mínimo para antecipação é de R$50,00.\nRespondeu à sua dúvida?\nVeja os nossos vídeos",
+          "score": 0.1688
+        },
+        {
+          "title": "Como antecipar suas vendas pelo app - Getnet",
+          "url": "https://site.getnet.com.br/get-ajuda-antecipacao-de-venda/como-antecipar-sua-vendas-pelo-app/",
+          "snippet": "o status da sua solicitação. Lembrando que o valor mínimo para antecipação é de R$50,00.\nRespondeu à sua dúvida?\nVeja os nossos vídeos\nCom as principais dicas e informações:\nAinda não tem o\nAplicativo Getnet Brasil?\nClique abaixo e baixe agora\nAcesse o manual da sua maquininha\nAcesse a nossa lista de manuais navegáveis.\nClique aqui\nVamos começar o seu atendimento?\nAinda não é cliente?\nAdquira agora e venda mais!\nCENTRAL DE VENDAS\nJá é nosso cliente?\nCENTRAL DE AJUDA\nNão é cliente?\nAdquira nossos produtos e impulsione suas vendas​​\nwhatsApp\n4002-4000\nJá é cliente?\nTenha suporte:\nPor telefone\nLigue 4002-4000\nPor WhatsApp\nPrático e rápido.\nNossas ofertas imperdíveis te aguardam: selecione uma opção e acesse agora!\nJá sou cliente!\nAinda não sou cliente",
+          "score": 0.1409
+        },
+        {
+          "title": "Getnet | Maquininha + Conta Digital - Getnet",
+          "url": "https://site.getnet.com.br/conta-digital/",
+          "snippet": "Com a conta digital,\nvai dar negócio\nVocê no controle da operação\nCartão virtual grátis\nReceba todos os pagamentos na mesma conta\nAntecipação de recebíveis\nEU QUERO\nMais benefícios\nEscolha o melhor produto e abra a sua conta\nA Getnet tem soluções físicas e digitais para alavancar o seu negócio.\nMaquininhas\nLink de pagamento\nGet Tap\nConfira os benefícios da Get Conta\nSaiba mais sobre os principais benefícios da conta Getnet.\nGestão na palma da sua mão\nJá tem a sua Get Conta? Aproveite para utilizar o\nAplicativo Getnet Brasil\npara facilitar o seu dia a dia e turbinar o seu negócio.\nMantenha o seu Aplicativo Getnet Brasil sempre atualizado\nAponte a sua câmera para o QR Code ao lado e fique por dentro das novidades da sua conta.\nTire todas as suas dúvidas sobre:\nVamos começar o seu atendimento?\nAinda não é cliente?\nAdquira agora e venda mais!\nCENTRAL DE VENDAS\nJá é nosso cliente?",
+          "score": 0.161
+        }
+      ],
+      "escalated": false,
+      "metadata": {
+        "retrieved_documents": 4,
+        "best_score": 0.2252839207649231,
+        "corpus_kind": "official",
+        "chunk_ids": [
+          "ddd6a42001c0:0",
+          "9b0c7a7d2efe:0",
+          "9b0c7a7d2efe:1",
+          "955826a0526a:0"
+        ],
+        "generation_kind": "llm_evidence_selection",
+        "llm_used_for": "evidence_selection",
+        "grounding_status": "source_spans_verified_relevance_requires_review",
+        "selected_evidence_ids": [
+          0,
+          6,
+          7
+        ],
+        "selected_evidence": [
+          {
+            "id": 0,
+            "source_index": 0,
+            "text": "Você pode habilitar a antecipação automática direto pelo App Getnet Brasil."
+          },
+          {
+            "id": 6,
+            "source_index": 0,
+            "text": "Selecione Antecipação Automática;"
+          },
+          {
+            "id": 7,
+            "source_index": 0,
+            "text": "Verifique o valor final e clique em Antecipar."
+          }
+        ],
+        "generation_duration_ms": 9672.55,
+        "routing_reason": "General product policy without account ownership",
+        "routing_confidence": 0.98,
+        "plans": [
+          {
+            "step": 0,
+            "observed_agent": "knowledge",
+            "failed": false,
+            "next_action": "knowledge",
+            "reviewer": "llm",
+            "allowed": [
+              "finish",
+              "knowledge",
+              "escalate"
+            ]
+          },
+          {
+            "step": 1,
+            "observed_agent": "knowledge",
+            "failed": false,
+            "next_action": "finish",
+            "reviewer": "llm",
+            "allowed": [
+              "finish",
+              "escalate"
+            ]
+          }
+        ],
+        "replans": 1,
+        "max_steps": 4,
+        "supervisor": "observe_replan",
+        "termination": "finish",
+        "outcome": "answered",
+        "resolved": true,
+        "llm_usage": [
+          {
+            "provider": "llama_cpp",
+            "model": "qwen2.5-3b.gguf",
+            "input_tokens": 571,
+            "output_tokens": 7
+          },
+          {
+            "provider": "llama_cpp",
+            "model": "qwen2.5-3b.gguf",
+            "input_tokens": 134,
+            "output_tokens": 48
+          },
+          {
+            "provider": "llama_cpp",
+            "model": "qwen2.5-3b.gguf",
+            "input_tokens": 576,
+            "output_tokens": 9
+          },
+          {
+            "provider": "llama_cpp",
+            "model": "qwen2.5-3b.gguf",
+            "input_tokens": 145,
+            "output_tokens": 39
+          }
+        ],
+        "agents": [
+          "knowledge",
+          "knowledge"
+        ],
+        "products": [
+          "antecipação"
+        ],
+        "conversation_state": {
+          "visited_products": [
+            "antecipação"
+          ],
+          "last_account_tool": null,
+          "selected_product": "antecipação",
+          "candidates": [
+            "antecipação"
+          ],
+          "intent": "General product policy without account ownership",
+          "stage": "answered",
+          "last_ticket": null
+        },
+        "context_messages": 0,
+        "duration_ms": 35266.05,
+        "stages": [
+          {
+            "agent": "knowledge",
+            "duration_ms": 11432.22,
+            "tool": "rag_search",
+            "step": 0
+          },
+          {
+            "agent": "knowledge",
+            "duration_ms": 12654.64,
+            "tool": "rag_search",
+            "step": 1
+          }
+        ]
+      },
+      "span_provenance": true,
+      "fact_anchor_hits": {
+        "automática": true
+      }
+    },
+    {
+      "id": "smart-apps",
+      "split": "release",
+      "message": "Como instalar soluções e aplicativos na Get Smart?",
+      "relevant_chunk_ids": [],
+      "expected_facts": [
+        "Getstore"
+      ],
+      "http_status": 200,
+      "duration_ms": 40619.51,
+      "answer": "Trechos documentados para sua pergunta:\n\n- Escolha e instale o aplicativo validando o acesso com seu usuário e senha do Portal Minha Conta.\n- Os aplicativos de sistema, como Pagamento, Getstore e Configurar, já estão instalados.\n- Selecione a aba “Todos os Aplicativos”;",
+      "sources": [
+        {
+          "title": "Soluções Get Smart - Getnet",
+          "url": "https://site.getnet.com.br/get-ajuda-maquininha/solucoes-get-smart/",
+          "snippet": "O que é Get Smart em modo quiosque?\nEsta funcionalidade transforma o terminal em um sistema de autoatendimento com as seguintes características:\nApenas um aplicativo aberto por vez;\nConfigurações protegidas por senha;\nTela sempre ligada, ideal para totens de autoatendimento.\nO modo quiosque é gerenciado pelo aplicativo \"Configurar\" da Get Smart.\nComo escolher a automação que será usada na Get Smart?\nVocê pode escolher diretamente pelo nosso site ou através da Getstore na Get Smart.\nApós receber a Get Smart, como eu começo a usar o aplicativo escolhido?\n1. Acesse a Getstore;\n2. Selecione a aba “Todos os Aplicativos”;\n3. Escolha e instale o aplicativo validando o acesso com seu usuário e senha do Portal Minha Conta.\nQuais aplicativos vêm instalados quando eu recebo o terminal?\nOs aplicativos de sistema, como Pagamento, Getstore e Configurar, já estão instalados.",
+          "score": 0.3477
+        },
+        {
+          "title": "Soluções Get Smart - Getnet",
+          "url": "https://site.getnet.com.br/get-ajuda-maquininha/solucoes-get-smart/",
+          "snippet": "vêm instalados quando eu recebo o terminal?\nOs aplicativos de sistema, como Pagamento, Getstore e Configurar, já estão instalados. Eles não podem ser removidos nem ocultados.\nQual o fluxo de entrada de uma nova automação na Get Smart?\nEmpresas desenvolvedoras podem se cadastrar no Portal para Desenvolvedores , acessar documentação técnica e integrar suas soluções após validações e testes rigorosos realizados pelo time de tecnologia da Getnet.\nRespondeu à sua dúvida?\nVeja os nossos vídeos\nCom as principais dicas e informações:\nAinda não tem o\nAplicativo Getnet Brasil?\nClique abaixo e baixe agora\nAcesse o manual da sua maquininha\nAcesse a nossa lista de manuais navegáveis.\nClique aqui\nVamos começar o seu atendimento?\nAinda não é cliente?\nAdquira agora e venda mais!\nCENTRAL DE VENDAS\nJá é nosso cliente?\nCENTRAL DE AJUDA\nNão é cliente?\nAdquira nossos produtos e impulsione suas vendas​​",
+          "score": 0.2106
+        },
+        {
+          "title": "Getnet | Maquininha POS 3G + Wi-Fi | 4020-4011",
+          "url": "https://site.getnet.com.br/maquininha/get-smart/",
+          "snippet": "Get Smart o impulso para o seu negócio\nGet Smart Aumente a força do seu negócio\nMaquininha de cartão Grátis*\nConta e cartão grátis\nRecebimento em 2 dias\nExclusivo para CNPJ com faturamento acima de R$10 mil/mês\nTaxa única nas principais bandeiras\nSAIBA MAIS\n*Mediante vendas a partir de R$60.000\nReceba seu dinheiro mais rápido com a Get Conta *\nPROMO\nDÉBITO\n1,69 %\nPROMO\nCRÉDITO À VISTA\n3,79 %\nPROMO\nCRÉDITO PARCELADO\n1x\n2x\n3x\n4x\n5x\n6x\n7x\n8x\n9x\n10x\n11x\n12x\n12,88 %\n*Recebimento em 2 dias úteis\nEu quero",
+          "score": 0.2121
+        },
+        {
+          "title": "Manual Maquinas - Getnet",
+          "url": "https://site.getnet.com.br/boas-vindas/manual-maquinas/",
+          "snippet": "Qual a sua máquina?\nGet Lite\nPortátil com Chip + Wi-Fi\nGet Mini\nPortátil com Chip + Wi-Fi\nGet Clássica\nChip de dados + Wi-Fi\nGet Smart\nChip de dados + Wi-Fi\nGet Renova\nSem Bobina\nGet Renova\nCom Bobina\nVamos começar o seu atendimento?\nAinda não é cliente?\nAdquira agora e venda mais!\nCENTRAL DE VENDAS\nJá é nosso cliente?\nCENTRAL DE AJUDA\nNão é cliente?\nAdquira nossos produtos e impulsione suas vendas​​\nwhatsApp\n4002-4000\nJá é cliente?\nTenha suporte:\nPor telefone\nLigue 4002-4000\nPor WhatsApp\nPrático e rápido.\nNossas ofertas imperdíveis te aguardam: selecione uma opção e acesse agora!\nJá sou cliente!\nAinda não sou cliente",
+          "score": 0.2259
+        }
+      ],
+      "escalated": false,
+      "metadata": {
+        "retrieved_documents": 4,
+        "best_score": 0.3476540148258209,
+        "corpus_kind": "official",
+        "chunk_ids": [
+          "841680a87226:0",
+          "841680a87226:1",
+          "c4ae80118f7a:0",
+          "aa596fbf0504:0"
+        ],
+        "generation_kind": "llm_evidence_selection",
+        "llm_used_for": "evidence_selection",
+        "grounding_status": "source_spans_verified_relevance_requires_review",
+        "selected_evidence_ids": [
+          3,
+          4,
+          0
+        ],
+        "selected_evidence": [
+          {
+            "id": 3,
+            "source_index": 0,
+            "text": "Escolha e instale o aplicativo validando o acesso com seu usuário e senha do Portal Minha Conta."
+          },
+          {
+            "id": 4,
+            "source_index": 0,
+            "text": "Os aplicativos de sistema, como Pagamento, Getstore e Configurar, já estão instalados."
+          },
+          {
+            "id": 0,
+            "source_index": 0,
+            "text": "Selecione a aba “Todos os Aplicativos”;"
+          }
+        ],
+        "generation_duration_ms": 10290.64,
+        "routing_reason": "General product policy without account ownership",
+        "routing_confidence": 0.98,
+        "plans": [
+          {
+            "step": 0,
+            "observed_agent": "knowledge",
+            "failed": false,
+            "next_action": "knowledge",
+            "reviewer": "llm",
+            "allowed": [
+              "finish",
+              "knowledge",
+              "escalate"
+            ]
+          },
+          {
+            "step": 1,
+            "observed_agent": "knowledge",
+            "failed": false,
+            "next_action": "finish",
+            "reviewer": "llm",
+            "allowed": [
+              "finish",
+              "escalate"
+            ]
+          }
+        ],
+        "replans": 1,
+        "max_steps": 4,
+        "supervisor": "observe_replan",
+        "termination": "finish",
+        "outcome": "answered",
+        "resolved": true,
+        "llm_usage": [
+          {
+            "provider": "llama_cpp",
+            "model": "qwen2.5-3b.gguf",
+            "input_tokens": 554,
+            "output_tokens": 9
+          },
+          {
+            "provider": "llama_cpp",
+            "model": "qwen2.5-3b.gguf",
+            "input_tokens": 166,
+            "output_tokens": 63
+          },
+          {
+            "provider": "llama_cpp",
+            "model": "qwen2.5-3b.gguf",
+            "input_tokens": 556,
+            "output_tokens": 9
+          },
+          {
+            "provider": "llama_cpp",
+            "model": "qwen2.5-3b.gguf",
+            "input_tokens": 157,
+            "output_tokens": 76
+          }
+        ],
+        "agents": [
+          "knowledge",
+          "knowledge"
+        ],
+        "products": [
+          "Get Smart"
+        ],
+        "conversation_state": {
+          "visited_products": [
+            "Get Smart"
+          ],
+          "last_account_tool": null,
+          "selected_product": "Get Smart",
+          "candidates": [
+            "Get Smart"
+          ],
+          "intent": "General product policy without account ownership",
+          "stage": "answered",
+          "last_ticket": null
+        },
+        "context_messages": 0,
+        "duration_ms": 40615.2,
+        "stages": [
+          {
+            "agent": "knowledge",
+            "duration_ms": 11171.73,
+            "tool": "rag_search",
+            "step": 0
+          },
+          {
+            "agent": "knowledge",
+            "duration_ms": 12854.53,
+            "tool": "rag_search",
+            "step": 1
+          }
+        ]
+      },
+      "span_provenance": true,
+      "fact_anchor_hits": {
+        "Getstore": true
+      }
+    }
+  ],
+  "note": "Actual model inference. Anchor checks do not prove entailment, completeness, external truth or absence of omitted qualifiers. Review evaluation/reviewed_v4.json for semantic judgments.",
+  "manual_review_file": "evaluation/reviewed_v4.json"
+}

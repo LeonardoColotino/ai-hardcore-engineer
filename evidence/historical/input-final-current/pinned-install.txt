@@ -1,0 +1,58 @@
+Defaulting to user installation because normal site-packages is not writeable
+Collecting fastapi==0.142.4 (from -r requirements.txt (line 1))
+  Downloading fastapi-0.142.4-py3-none-any.whl.metadata (26 kB)
+Collecting starlette==1.7.0 (from -r requirements.txt (line 2))
+  Downloading starlette-1.7.0-py3-none-any.whl.metadata (6.6 kB)
+Requirement already satisfied: pydantic==2.13.5 in /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages (from -r requirements.txt (line 3)) (2.13.5)
+Requirement already satisfied: pydantic-core==2.46.5 in /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages (from -r requirements.txt (line 4)) (2.46.5)
+Requirement already satisfied: annotated-types==0.8.0 in /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages (from -r requirements.txt (line 5)) (0.8.0)
+Requirement already satisfied: annotated-doc==0.0.5 in /root/.local/lib/python3.12/site-packages (from -r requirements.txt (line 6)) (0.0.5)
+Requirement already satisfied: typing-extensions==4.16.0 in /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages (from -r requirements.txt (line 7)) (4.16.0)
+Requirement already satisfied: typing-inspection==0.4.4 in /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages (from -r requirements.txt (line 8)) (0.4.4)
+Requirement already satisfied: opentelemetry-api==1.45.1 in /root/.local/lib/python3.12/site-packages (from -r requirements.txt (line 9)) (1.45.1)
+Requirement already satisfied: uvicorn==0.54.0 in /root/.local/lib/python3.12/site-packages (from -r requirements.txt (line 10)) (0.54.0)
+Requirement already satisfied: click==8.5.0 in /root/.local/lib/python3.12/site-packages (from -r requirements.txt (line 11)) (8.5.0)
+Requirement already satisfied: h11==0.16.0 in /root/.local/lib/python3.12/site-packages (from -r requirements.txt (line 12)) (0.16.0)
+Requirement already satisfied: requests==2.34.2 in /root/.local/lib/python3.12/site-packages (from -r requirements.txt (line 13)) (2.34.2)
+Requirement already satisfied: certifi==2026.7.22 in /root/.local/lib/python3.12/site-packages (from -r requirements.txt (line 14)) (2026.7.22)
+Collecting charset-normalizer==3.4.4 (from -r requirements.txt (line 15))
+  Downloading charset_normalizer-3.4.4-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (37 kB)
+Requirement already satisfied: idna==3.19 in /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages (from -r requirements.txt (line 16)) (3.19)
+Requirement already satisfied: urllib3==2.8.0 in /root/.local/lib/python3.12/site-packages (from -r requirements.txt (line 17)) (2.8.0)
+Requirement already satisfied: beautifulsoup4==4.15.0 in /root/.local/lib/python3.12/site-packages (from -r requirements.txt (line 18)) (4.15.0)
+Collecting soupsieve==2.10 (from -r requirements.txt (line 19))
+  Downloading soupsieve-2.10-py3-none-any.whl.metadata (4.4 kB)
+Requirement already satisfied: numpy==2.3.5 in /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages (from -r requirements.txt (line 20)) (2.3.5)
+Requirement already satisfied: pytest==9.1.1 in /root/.local/lib/python3.12/site-packages (from -r requirements.txt (line 21)) (9.1.1)
+Requirement already satisfied: iniconfig==2.3.1 in /root/.local/lib/python3.12/site-packages (from -r requirements.txt (line 22)) (2.3.1)
+Requirement already satisfied: packaging==26.3 in /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages (from -r requirements.txt (line 23)) (26.3)
+Requirement already satisfied: pluggy==1.6.0 in /root/.local/lib/python3.12/site-packages (from -r requirements.txt (line 24)) (1.6.0)
+Requirement already satisfied: pygments==2.21.0 in /root/.local/lib/python3.12/site-packages (from -r requirements.txt (line 25)) (2.21.0)
+Requirement already satisfied: httpx==0.28.1 in /root/.local/lib/python3.12/site-packages (from -r requirements.txt (line 26)) (0.28.1)
+Requirement already satisfied: httpcore==1.0.9 in /root/.local/lib/python3.12/site-packages (from -r requirements.txt (line 27)) (1.0.9)
+Requirement already satisfied: anyio==4.15.1 in /root/.local/lib/python3.12/site-packages (from -r requirements.txt (line 28)) (4.15.1)
+Requirement already satisfied: python-dotenv==1.2.4 in /root/.local/lib/python3.12/site-packages (from -r requirements.txt (line 29)) (1.2.4)
+Downloading fastapi-0.142.4-py3-none-any.whl (144 kB)
+Downloading starlette-1.7.0-py3-none-any.whl (78 kB)
+Downloading charset_normalizer-3.4.4-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (153 kB)
+Downloading soupsieve-2.10-py3-none-any.whl (38 kB)
+Installing collected packages: soupsieve, charset-normalizer, starlette, fastapi
+  Attempting uninstall: soupsieve
+    Found existing installation: soupsieve 3.0.3
+    Uninstalling soupsieve-3.0.3:
+      Successfully uninstalled soupsieve-3.0.3
+  WARNING: The script normalizer is installed in '/root/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  Attempting uninstall: starlette
+    Found existing installation: starlette 1.8.0
+    Uninstalling starlette-1.8.0:
+      Successfully uninstalled starlette-1.8.0
+  Attempting uninstall: fastapi
+    Found existing installation: fastapi 0.143.1
+    Uninstalling fastapi-0.143.1:
+      Successfully uninstalled fastapi-0.143.1
+  WARNING: The script fastapi is installed in '/root/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+
+Successfully installed charset-normalizer-3.4.4 fastapi-0.142.4 soupsieve-2.10 starlette-1.7.0
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.

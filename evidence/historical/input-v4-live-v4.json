@@ -1,0 +1,2023 @@
+{
+  "corpus_sha256": "48d84ea953281217f7eacde6dd01ac5e7c7387c954f7d6f1d2a904765a432e41",
+  "provider": "llama_cpp",
+  "model": "qwen2.5-3b.gguf",
+  "cases": 12,
+  "http_success_rate": 1.0,
+  "answer_coverage": 0.8333333333333334,
+  "provenance_rate": 1.0,
+  "fact_anchor_case_pass_rate": 0.8333333333333334,
+  "manual_quality_status": "review_completed_with_known_limitations",
+  "rows": [
+    {
+      "id": "link-methods",
+      "split": "dev",
+      "message": "Quais pagamentos o Link de Pagamento aceita?",
+      "relevant_chunk_ids": [
+        "72ab2c4570ec:0"
+      ],
+      "expected_facts": [
+        "débito",
+        "crédito",
+        "Pix",
+        "boleto"
+      ],
+      "http_status": 200,
+      "duration_ms": 55597.49,
+      "answer": "Trechos documentados para sua pergunta:\n\n- Aceite débito, crédito, Pix e boleto\n- Choose the payment method: debit or credit.",
+      "sources": [
+        {
+          "title": "Getnet | Link de Pagamento: venda mais online | Getnet",
+          "url": "https://site.getnet.com.br/link-de-pagamento/",
+          "snippet": "Venda sem complicação com Link de Pagamento Getnet, é mais negócio\nLink personalizável\nSegurança antifraude\nVenda online\nAceite débito, crédito, Pix e boleto\nQuero contratar\nLink de pagamento com benefícios para você e seu cliente. Com Getnet, dá negócio\nNovo\nExpanda seu negócio\nVenda para estrangeiros com documento de identificação (RNE)\nno pagamento\nVenda de onde estiver\nFaça vendas usando o WhatsApp ou sua rede social\nNovo\nLink completo\nInsira diversos produtos no mesmo carrinho\nNovo\nPersonalizável\nPersonalize o link com a imagem do produto\nSegurança\nConte com a segurança do Antifraude da Getnet\nCliente livre\nVocê pode optar por deixar seu comprador escolher entre débito, crédito, Pix e boleto\nMais opções de venda\nCom o Link de Pagamento inicial você pode vender também\natravés do aplicativo com o antifraude da Getnet\nFrete\nOpção de inclusão do valor de frete de cobrança",
+          "score": 0.3733
+        },
+        {
+          "title": "Getnet - Online Payments",
+          "url": "https://www.getnet.net/en/our-solutions/online-payments",
+          "snippet": "Online Payments\nGoing digital? We have the tools you need\nIncrease your sales with Getnet´s solutions without taking risks.\nDIGITAL PAYMENTS\nRevolutionize your business online transactions\nBoost your experience with Getnet's innovative online payment offerings.\nGet Link & Pay\nCreate payment links and sell anywhere.\nMake sales using WhatsApp, SMS or your preferred social network.\nWith security and anti-fraud tolos.\nCustomizable link with product details.\nChoose the payment method: debit or credit.\nCreate payment links and sell anywhere.\nGet Checkout\nOnline payment solutions for your eCommerce store.\nModular : Include a seamless and easy to plug-in payment module on your ecommerce.\nSimple integration : Collect shopper payment quickly and get a full responsive design for mobile devices.\nSafe and sound : Sensitive card data travels only on Getnet platform which simplify PCI requirements.",
+          "score": 0.2636
+        },
+        {
+          "title": "Getnet | Link de Pagamento: venda mais online | Getnet",
+          "url": "https://site.getnet.com.br/link-de-pagamento/",
+          "snippet": "inicial você pode vender também\natravés do aplicativo com o antifraude da Getnet\nFrete\nOpção de inclusão do valor de frete de cobrança\nQuero contratar\nVenda online de forma prática e segura com Link de Pagamento\nRecomendado\nLeve agora\nLink de pagamento Inicial\nGrátis\nR$1,00 por link pago.\nPague somente quando o pagamento do link for aprovado.\nTaxas exclusivas para você.\nQuero contratar\nBásico\nPor\nR$28\n/mês\n60 transações de cartão por mês\n+ R$0,50 por transação excedente\nTaxas exclusivas para você.\nQuero contratar\nSimule o recebimento das suas vendas com o Link de Pagamento\nValor da venda\nR$\nForma de Recebimento\nComo quer receber?\n*Taxa única para compras com:\nCom a Getnet, você recebe:\nR$\n0\n,00\nTaxa 1,90%\nEu quero\nConfira\nnossas taxas\n*Taxa única para compras com:\nTermos e condições",
+          "score": 0.3114
+        },
+        {
+          "title": "Getnet | Link de Pagamento: venda mais online | Getnet",
+          "url": "https://site.getnet.com.br/link-de-pagamento/",
+          "snippet": "acordo com as condições dos produtos e serviços contratados.\nVeja como é fácil vender com o Link de Pagamento\n1\nAcesse o Portal Minha Conta\nVocê pode acessar o portal com seu login e senha ou pelo Aplicativo Getnet Brasil.\n2\nCrie seu Link de Pagamento\nEm Produtos e Serviços, selecione Link de Pagamento e depois Criar Link de Pagamento\n3\nConfigure\nPreencha as informações do produto, frete e opções para pagamento.\n4\nPronto para vender\nClique em compartilhar ou copiar e compartilhe por onde quiser.\nDúvidas sobre Link de Pagamento?\nVeja nosso FAQ e conte com a gente para tirar todas as suas dúvidas.\nVamos começar o seu atendimento?\nAinda não é cliente?\nAdquira agora e venda mais!\nCENTRAL DE VENDAS\nJá é nosso cliente?\nCENTRAL DE AJUDA\nNão é cliente?\nAdquira nossos produtos e impulsione suas vendas​​\nwhatsApp\n4002-4000\nJá é cliente?\nTenha suporte:\nPor telefone\nLigue 4002-4000\nPor WhatsApp",
+          "score": 0.3237
+        }
+      ],
+      "escalated": false,
+      "metadata": {
+        "retrieved_documents": 4,
+        "best_score": 0.3733173906803131,
+        "corpus_kind": "official",
+        "chunk_ids": [
+          "72ab2c4570ec:0",
+          "e00fb1cee7b3:0",
+          "72ab2c4570ec:1",
+          "72ab2c4570ec:3"
+        ],
+        "generation_kind": "llm_evidence_selection",
+        "llm_used_for": "evidence_selection",
+        "grounding_status": "source_spans_verified_relevance_requires_review",
+        "selected_evidence_ids": [
+          1,
+          2
+        ],
+        "selected_evidence": [
+          {
+            "id": 1,
+            "source_index": 0,
+            "text": "Aceite débito, crédito, Pix e boleto"
+          },
+          {
+            "id": 2,
+            "source_index": 1,
+            "text": "Choose the payment method: debit or credit."
+          }
+        ],
+        "generation_duration_ms": 8143.27,
+        "routing_reason": "General product policy without account ownership",
+        "routing_confidence": 0.98,
+        "plans": [
+          {
+            "step": 0,
+            "observed_agent": "knowledge",
+            "failed": false,
+            "next_action": "knowledge",
+            "reviewer": "llm",
+            "allowed": [
+              "finish",
+              "knowledge",
+              "escalate"
+            ]
+          },
+          {
+            "step": 1,
+            "observed_agent": "knowledge",
+            "failed": false,
+            "next_action": "finish",
+            "reviewer": "llm",
+            "allowed": [
+              "finish",
+              "escalate"
+            ]
+          }
+        ],
+        "replans": 1,
+        "max_steps": 4,
+        "supervisor": "observe_replan",
+        "termination": "finish",
+        "outcome": "answered",
+        "resolved": true,
+        "llm_usage": [
+          {
+            "provider": "llama_cpp",
+            "model": "qwen2.5-3b.gguf",
+            "input_tokens": 482,
+            "output_tokens": 9
+          },
+          {
+            "provider": "llama_cpp",
+            "model": "qwen2.5-3b.gguf",
+            "input_tokens": 141,
+            "output_tokens": 58
+          },
+          {
+            "provider": "llama_cpp",
+            "model": "qwen2.5-3b.gguf",
+            "input_tokens": 487,
+            "output_tokens": 8
+          },
+          {
+            "provider": "llama_cpp",
+            "model": "qwen2.5-3b.gguf",
+            "input_tokens": 120,
+            "output_tokens": 60
+          }
+        ],
+        "agents": [
+          "knowledge",
+          "knowledge"
+        ],
+        "products": [
+          "Link de Pagamento"
+        ],
+        "conversation_state": {
+          "visited_products": [
+            "Link de Pagamento"
+          ],
+          "last_account_tool": null,
+          "selected_product": "Link de Pagamento",
+          "candidates": [
+            "Link de Pagamento"
+          ],
+          "intent": "General product policy without account ownership",
+          "stage": "answered",
+          "last_ticket": null
+        },
+        "context_messages": 0,
+        "duration_ms": 53708.07,
+        "stages": [
+          {
+            "agent": "knowledge",
+            "duration_ms": 27959.63,
+            "tool": "rag_search",
+            "step": 0
+          },
+          {
+            "agent": "knowledge",
+            "duration_ms": 11389.76,
+            "tool": "rag_search",
+            "step": 1
+          }
+        ]
+      },
+      "span_provenance": true,
+      "fact_anchor_hits": {
+        "débito": true,
+        "crédito": true,
+        "Pix": true,
+        "boleto": true
+      }
+    },
+    {
+      "id": "link-whatsapp",
+      "split": "holdout",
+      "message": "Posso vender pelo WhatsApp com Link de Pagamento?",
+      "relevant_chunk_ids": [
+        "72ab2c4570ec:0"
+      ],
+      "expected_facts": [
+        "WhatsApp"
+      ],
+      "http_status": 200,
+      "duration_ms": 71353.69,
+      "answer": "Trechos documentados para sua pergunta:\n\n- Com o Link de Pagamento inicial você pode vender também\n- Venda online de forma prática e segura com Link de Pagamento\n- Make sales using WhatsApp, SMS or your preferred social network.",
+      "sources": [
+        {
+          "title": "Getnet | Link de Pagamento: venda mais online | Getnet",
+          "url": "https://site.getnet.com.br/link-de-pagamento/",
+          "snippet": "acordo com as condições dos produtos e serviços contratados.\nVeja como é fácil vender com o Link de Pagamento\n1\nAcesse o Portal Minha Conta\nVocê pode acessar o portal com seu login e senha ou pelo Aplicativo Getnet Brasil.\n2\nCrie seu Link de Pagamento\nEm Produtos e Serviços, selecione Link de Pagamento e depois Criar Link de Pagamento\n3\nConfigure\nPreencha as informações do produto, frete e opções para pagamento.\n4\nPronto para vender\nClique em compartilhar ou copiar e compartilhe por onde quiser.\nDúvidas sobre Link de Pagamento?\nVeja nosso FAQ e conte com a gente para tirar todas as suas dúvidas.\nVamos começar o seu atendimento?\nAinda não é cliente?\nAdquira agora e venda mais!\nCENTRAL DE VENDAS\nJá é nosso cliente?\nCENTRAL DE AJUDA\nNão é cliente?\nAdquira nossos produtos e impulsione suas vendas​​\nwhatsApp\n4002-4000\nJá é cliente?\nTenha suporte:\nPor telefone\nLigue 4002-4000\nPor WhatsApp",
+          "score": 0.3241
+        },
+        {
+          "title": "Getnet | Link de Pagamento: venda mais online | Getnet",
+          "url": "https://site.getnet.com.br/link-de-pagamento/",
+          "snippet": "Venda sem complicação com Link de Pagamento Getnet, é mais negócio\nLink personalizável\nSegurança antifraude\nVenda online\nAceite débito, crédito, Pix e boleto\nQuero contratar\nLink de pagamento com benefícios para você e seu cliente. Com Getnet, dá negócio\nNovo\nExpanda seu negócio\nVenda para estrangeiros com documento de identificação (RNE)\nno pagamento\nVenda de onde estiver\nFaça vendas usando o WhatsApp ou sua rede social\nNovo\nLink completo\nInsira diversos produtos no mesmo carrinho\nNovo\nPersonalizável\nPersonalize o link com a imagem do produto\nSegurança\nConte com a segurança do Antifraude da Getnet\nCliente livre\nVocê pode optar por deixar seu comprador escolher entre débito, crédito, Pix e boleto\nMais opções de venda\nCom o Link de Pagamento inicial você pode vender também\natravés do aplicativo com o antifraude da Getnet\nFrete\nOpção de inclusão do valor de frete de cobrança",
+          "score": 0.4101
+        },
+        {
+          "title": "Getnet - Online Payments",
+          "url": "https://www.getnet.net/en/our-solutions/online-payments",
+          "snippet": "Online Payments\nGoing digital? We have the tools you need\nIncrease your sales with Getnet´s solutions without taking risks.\nDIGITAL PAYMENTS\nRevolutionize your business online transactions\nBoost your experience with Getnet's innovative online payment offerings.\nGet Link & Pay\nCreate payment links and sell anywhere.\nMake sales using WhatsApp, SMS or your preferred social network.\nWith security and anti-fraud tolos.\nCustomizable link with product details.\nChoose the payment method: debit or credit.\nCreate payment links and sell anywhere.\nGet Checkout\nOnline payment solutions for your eCommerce store.\nModular : Include a seamless and easy to plug-in payment module on your ecommerce.\nSimple integration : Collect shopper payment quickly and get a full responsive design for mobile devices.\nSafe and sound : Sensitive card data travels only on Getnet platform which simplify PCI requirements.",
+          "score": 0.2746
+        },
+        {
+          "title": "Getnet | Link de Pagamento: venda mais online | Getnet",
+          "url": "https://site.getnet.com.br/link-de-pagamento/",
+          "snippet": "inicial você pode vender também\natravés do aplicativo com o antifraude da Getnet\nFrete\nOpção de inclusão do valor de frete de cobrança\nQuero contratar\nVenda online de forma prática e segura com Link de Pagamento\nRecomendado\nLeve agora\nLink de pagamento Inicial\nGrátis\nR$1,00 por link pago.\nPague somente quando o pagamento do link for aprovado.\nTaxas exclusivas para você.\nQuero contratar\nBásico\nPor\nR$28\n/mês\n60 transações de cartão por mês\n+ R$0,50 por transação excedente\nTaxas exclusivas para você.\nQuero contratar\nSimule o recebimento das suas vendas com o Link de Pagamento\nValor da venda\nR$\nForma de Recebimento\nComo quer receber?\n*Taxa única para compras com:\nCom a Getnet, você recebe:\nR$\n0\n,00\nTaxa 1,90%\nEu quero\nConfira\nnossas taxas\n*Taxa única para compras com:\nTermos e condições",
+          "score": 0.322
+        }
+      ],
+      "escalated": false,
+      "metadata": {
+        "retrieved_documents": 4,
+        "best_score": 0.4100978374481201,
+        "corpus_kind": "official",
+        "chunk_ids": [
+          "72ab2c4570ec:3",
+          "72ab2c4570ec:0",
+          "e00fb1cee7b3:0",
+          "72ab2c4570ec:1"
+        ],
+        "generation_kind": "llm_evidence_selection",
+        "llm_used_for": "evidence_selection",
+        "grounding_status": "source_spans_verified_relevance_requires_review",
+        "selected_evidence_ids": [
+          0,
+          1,
+          4
+        ],
+        "selected_evidence": [
+          {
+            "id": 0,
+            "source_index": 1,
+            "text": "Com o Link de Pagamento inicial você pode vender também"
+          },
+          {
+            "id": 1,
+            "source_index": 3,
+            "text": "Venda online de forma prática e segura com Link de Pagamento"
+          },
+          {
+            "id": 4,
+            "source_index": 2,
+            "text": "Make sales using WhatsApp, SMS or your preferred social network."
+          }
+        ],
+        "generation_duration_ms": 18798.44,
+        "routing_reason": "General product policy without account ownership",
+        "routing_confidence": 0.98,
+        "plans": [
+          {
+            "step": 0,
+            "observed_agent": "knowledge",
+            "failed": false,
+            "next_action": "knowledge",
+            "reviewer": "llm",
+            "allowed": [
+              "finish",
+              "knowledge",
+              "escalate"
+            ]
+          },
+          {
+            "step": 1,
+            "observed_agent": "knowledge",
+            "failed": false,
+            "next_action": "finish",
+            "reviewer": "llm",
+            "allowed": [
+              "finish",
+              "escalate"
+            ]
+          }
+        ],
+        "replans": 1,
+        "max_steps": 4,
+        "supervisor": "observe_replan",
+        "termination": "finish",
+        "outcome": "answered",
+        "resolved": true,
+        "llm_usage": [
+          {
+            "provider": "llama_cpp",
+            "model": "qwen2.5-3b.gguf",
+            "input_tokens": 483,
+            "output_tokens": 9
+          },
+          {
+            "provider": "llama_cpp",
+            "model": "qwen2.5-3b.gguf",
+            "input_tokens": 140,
+            "output_tokens": 38
+          },
+          {
+            "provider": "llama_cpp",
+            "model": "qwen2.5-3b.gguf",
+            "input_tokens": 489,
+            "output_tokens": 9
+          },
+          {
+            "provider": "llama_cpp",
+            "model": "qwen2.5-3b.gguf",
+            "input_tokens": 138,
+            "output_tokens": 41
+          }
+        ],
+        "agents": [
+          "knowledge",
+          "knowledge"
+        ],
+        "products": [
+          "Link de Pagamento"
+        ],
+        "conversation_state": {
+          "visited_products": [
+            "Link de Pagamento"
+          ],
+          "last_account_tool": null,
+          "selected_product": "Link de Pagamento",
+          "candidates": [
+            "Link de Pagamento"
+          ],
+          "intent": "General product policy without account ownership",
+          "stage": "answered",
+          "last_ticket": null
+        },
+        "context_messages": 0,
+        "duration_ms": 71341.18,
+        "stages": [
+          {
+            "agent": "knowledge",
+            "duration_ms": 11163.99,
+            "tool": "rag_search",
+            "step": 0
+          },
+          {
+            "agent": "knowledge",
+            "duration_ms": 21921.0,
+            "tool": "rag_search",
+            "step": 1
+          }
+        ]
+      },
+      "span_provenance": true,
+      "fact_anchor_hits": {
+        "WhatsApp": true
+      }
+    },
+    {
+      "id": "link-cart",
+      "split": "dev",
+      "message": "Posso inserir vários produtos no carrinho do Link de Pagamento?",
+      "relevant_chunk_ids": [
+        "72ab2c4570ec:0"
+      ],
+      "expected_facts": [
+        "diversos produtos"
+      ],
+      "http_status": 200,
+      "duration_ms": 22910.4,
+      "answer": "Trechos documentados para sua pergunta:\n\n- Insira diversos produtos no mesmo carrinho\n- Create payment links and sell anywhere.\n- Venda online de forma prática e segura com Link de Pagamento",
+      "sources": [
+        {
+          "title": "Getnet | Link de Pagamento: venda mais online | Getnet",
+          "url": "https://site.getnet.com.br/link-de-pagamento/",
+          "snippet": "Venda sem complicação com Link de Pagamento Getnet, é mais negócio\nLink personalizável\nSegurança antifraude\nVenda online\nAceite débito, crédito, Pix e boleto\nQuero contratar\nLink de pagamento com benefícios para você e seu cliente. Com Getnet, dá negócio\nNovo\nExpanda seu negócio\nVenda para estrangeiros com documento de identificação (RNE)\nno pagamento\nVenda de onde estiver\nFaça vendas usando o WhatsApp ou sua rede social\nNovo\nLink completo\nInsira diversos produtos no mesmo carrinho\nNovo\nPersonalizável\nPersonalize o link com a imagem do produto\nSegurança\nConte com a segurança do Antifraude da Getnet\nCliente livre\nVocê pode optar por deixar seu comprador escolher entre débito, crédito, Pix e boleto\nMais opções de venda\nCom o Link de Pagamento inicial você pode vender também\natravés do aplicativo com o antifraude da Getnet\nFrete\nOpção de inclusão do valor de frete de cobrança",
+          "score": 0.3855
+        },
+        {
+          "title": "Getnet | Link de Pagamento: venda mais online | Getnet",
+          "url": "https://site.getnet.com.br/link-de-pagamento/",
+          "snippet": "acordo com as condições dos produtos e serviços contratados.\nVeja como é fácil vender com o Link de Pagamento\n1\nAcesse o Portal Minha Conta\nVocê pode acessar o portal com seu login e senha ou pelo Aplicativo Getnet Brasil.\n2\nCrie seu Link de Pagamento\nEm Produtos e Serviços, selecione Link de Pagamento e depois Criar Link de Pagamento\n3\nConfigure\nPreencha as informações do produto, frete e opções para pagamento.\n4\nPronto para vender\nClique em compartilhar ou copiar e compartilhe por onde quiser.\nDúvidas sobre Link de Pagamento?\nVeja nosso FAQ e conte com a gente para tirar todas as suas dúvidas.\nVamos começar o seu atendimento?\nAinda não é cliente?\nAdquira agora e venda mais!\nCENTRAL DE VENDAS\nJá é nosso cliente?\nCENTRAL DE AJUDA\nNão é cliente?\nAdquira nossos produtos e impulsione suas vendas​​\nwhatsApp\n4002-4000\nJá é cliente?\nTenha suporte:\nPor telefone\nLigue 4002-4000\nPor WhatsApp",
+          "score": 0.3368
+        },
+        {
+          "title": "Getnet - Online Payments",
+          "url": "https://www.getnet.net/en/our-solutions/online-payments",
+          "snippet": "Online Payments\nGoing digital? We have the tools you need\nIncrease your sales with Getnet´s solutions without taking risks.\nDIGITAL PAYMENTS\nRevolutionize your business online transactions\nBoost your experience with Getnet's innovative online payment offerings.\nGet Link & Pay\nCreate payment links and sell anywhere.\nMake sales using WhatsApp, SMS or your preferred social network.\nWith security and anti-fraud tolos.\nCustomizable link with product details.\nChoose the payment method: debit or credit.\nCreate payment links and sell anywhere.\nGet Checkout\nOnline payment solutions for your eCommerce store.\nModular : Include a seamless and easy to plug-in payment module on your ecommerce.\nSimple integration : Collect shopper payment quickly and get a full responsive design for mobile devices.\nSafe and sound : Sensitive card data travels only on Getnet platform which simplify PCI requirements.",
+          "score": 0.2836
+        },
+        {
+          "title": "Getnet | Link de Pagamento: venda mais online | Getnet",
+          "url": "https://site.getnet.com.br/link-de-pagamento/",
+          "snippet": "inicial você pode vender também\natravés do aplicativo com o antifraude da Getnet\nFrete\nOpção de inclusão do valor de frete de cobrança\nQuero contratar\nVenda online de forma prática e segura com Link de Pagamento\nRecomendado\nLeve agora\nLink de pagamento Inicial\nGrátis\nR$1,00 por link pago.\nPague somente quando o pagamento do link for aprovado.\nTaxas exclusivas para você.\nQuero contratar\nBásico\nPor\nR$28\n/mês\n60 transações de cartão por mês\n+ R$0,50 por transação excedente\nTaxas exclusivas para você.\nQuero contratar\nSimule o recebimento das suas vendas com o Link de Pagamento\nValor da venda\nR$\nForma de Recebimento\nComo quer receber?\n*Taxa única para compras com:\nCom a Getnet, você recebe:\nR$\n0\n,00\nTaxa 1,90%\nEu quero\nConfira\nnossas taxas\n*Taxa única para compras com:\nTermos e condições",
+          "score": 0.3145
+        }
+      ],
+      "escalated": false,
+      "metadata": {
+        "retrieved_documents": 4,
+        "best_score": 0.38550978899002075,
+        "corpus_kind": "official",
+        "chunk_ids": [
+          "72ab2c4570ec:0",
+          "72ab2c4570ec:3",
+          "e00fb1cee7b3:0",
+          "72ab2c4570ec:1"
+        ],
+        "generation_kind": "llm_evidence_selection",
+        "llm_used_for": "evidence_selection",
+        "grounding_status": "source_spans_verified_relevance_requires_review",
+        "selected_evidence_ids": [
+          0,
+          5,
+          6
+        ],
+        "selected_evidence": [
+          {
+            "id": 0,
+            "source_index": 0,
+            "text": "Insira diversos produtos no mesmo carrinho"
+          },
+          {
+            "id": 5,
+            "source_index": 2,
+            "text": "Create payment links and sell anywhere."
+          },
+          {
+            "id": 6,
+            "source_index": 3,
+            "text": "Venda online de forma prática e segura com Link de Pagamento"
+          }
+        ],
+        "generation_duration_ms": 13630.7,
+        "routing_reason": "General product policy without account ownership",
+        "routing_confidence": 0.98,
+        "plans": [
+          {
+            "step": 0,
+            "observed_agent": "knowledge",
+            "failed": false,
+            "next_action": "finish",
+            "reviewer": "llm",
+            "allowed": [
+              "finish",
+              "knowledge",
+              "escalate"
+            ]
+          }
+        ],
+        "replans": 0,
+        "max_steps": 4,
+        "supervisor": "observe_replan",
+        "termination": "finish",
+        "outcome": "answered",
+        "resolved": true,
+        "llm_usage": [
+          {
+            "provider": "llama_cpp",
+            "model": "qwen2.5-3b.gguf",
+            "input_tokens": 481,
+            "output_tokens": 9
+          },
+          {
+            "provider": "llama_cpp",
+            "model": "qwen2.5-3b.gguf",
+            "input_tokens": 134,
+            "output_tokens": 42
+          }
+        ],
+        "agents": [
+          "knowledge"
+        ],
+        "products": [
+          "Link de Pagamento"
+        ],
+        "conversation_state": {
+          "visited_products": [
+            "Link de Pagamento"
+          ],
+          "last_account_tool": null,
+          "selected_product": "Link de Pagamento",
+          "candidates": [
+            "Link de Pagamento"
+          ],
+          "intent": "General product policy without account ownership",
+          "stage": "answered",
+          "last_ticket": null
+        },
+        "context_messages": 0,
+        "duration_ms": 22902.48,
+        "stages": [
+          {
+            "agent": "knowledge",
+            "duration_ms": 17462.26,
+            "tool": "rag_search",
+            "step": 0
+          }
+        ]
+      },
+      "span_provenance": true,
+      "fact_anchor_hits": {
+        "diversos produtos": true
+      }
+    },
+    {
+      "id": "link-image",
+      "split": "holdout",
+      "message": "O Link de Pagamento permite imagem do produto?",
+      "relevant_chunk_ids": [
+        "72ab2c4570ec:0"
+      ],
+      "expected_facts": [
+        "imagem do produto"
+      ],
+      "http_status": 200,
+      "duration_ms": 30228.46,
+      "answer": "Trechos documentados para sua pergunta:\n\n- Personalize o link com a imagem do produto",
+      "sources": [
+        {
+          "title": "Getnet | Link de Pagamento: venda mais online | Getnet",
+          "url": "https://site.getnet.com.br/link-de-pagamento/",
+          "snippet": "Venda sem complicação com Link de Pagamento Getnet, é mais negócio\nLink personalizável\nSegurança antifraude\nVenda online\nAceite débito, crédito, Pix e boleto\nQuero contratar\nLink de pagamento com benefícios para você e seu cliente. Com Getnet, dá negócio\nNovo\nExpanda seu negócio\nVenda para estrangeiros com documento de identificação (RNE)\nno pagamento\nVenda de onde estiver\nFaça vendas usando o WhatsApp ou sua rede social\nNovo\nLink completo\nInsira diversos produtos no mesmo carrinho\nNovo\nPersonalizável\nPersonalize o link com a imagem do produto\nSegurança\nConte com a segurança do Antifraude da Getnet\nCliente livre\nVocê pode optar por deixar seu comprador escolher entre débito, crédito, Pix e boleto\nMais opções de venda\nCom o Link de Pagamento inicial você pode vender também\natravés do aplicativo com o antifraude da Getnet\nFrete\nOpção de inclusão do valor de frete de cobrança",
+          "score": 0.397
+        },
+        {
+          "title": "Getnet - Online Payments",
+          "url": "https://www.getnet.net/en/our-solutions/online-payments",
+          "snippet": "Online Payments\nGoing digital? We have the tools you need\nIncrease your sales with Getnet´s solutions without taking risks.\nDIGITAL PAYMENTS\nRevolutionize your business online transactions\nBoost your experience with Getnet's innovative online payment offerings.\nGet Link & Pay\nCreate payment links and sell anywhere.\nMake sales using WhatsApp, SMS or your preferred social network.\nWith security and anti-fraud tolos.\nCustomizable link with product details.\nChoose the payment method: debit or credit.\nCreate payment links and sell anywhere.\nGet Checkout\nOnline payment solutions for your eCommerce store.\nModular : Include a seamless and easy to plug-in payment module on your ecommerce.\nSimple integration : Collect shopper payment quickly and get a full responsive design for mobile devices.\nSafe and sound : Sensitive card data travels only on Getnet platform which simplify PCI requirements.",
+          "score": 0.2421
+        },
+        {
+          "title": "Getnet | Link de Pagamento: venda mais online | Getnet",
+          "url": "https://site.getnet.com.br/link-de-pagamento/",
+          "snippet": "acordo com as condições dos produtos e serviços contratados.\nVeja como é fácil vender com o Link de Pagamento\n1\nAcesse o Portal Minha Conta\nVocê pode acessar o portal com seu login e senha ou pelo Aplicativo Getnet Brasil.\n2\nCrie seu Link de Pagamento\nEm Produtos e Serviços, selecione Link de Pagamento e depois Criar Link de Pagamento\n3\nConfigure\nPreencha as informações do produto, frete e opções para pagamento.\n4\nPronto para vender\nClique em compartilhar ou copiar e compartilhe por onde quiser.\nDúvidas sobre Link de Pagamento?\nVeja nosso FAQ e conte com a gente para tirar todas as suas dúvidas.\nVamos começar o seu atendimento?\nAinda não é cliente?\nAdquira agora e venda mais!\nCENTRAL DE VENDAS\nJá é nosso cliente?\nCENTRAL DE AJUDA\nNão é cliente?\nAdquira nossos produtos e impulsione suas vendas​​\nwhatsApp\n4002-4000\nJá é cliente?\nTenha suporte:\nPor telefone\nLigue 4002-4000\nPor WhatsApp",
+          "score": 0.3536
+        },
+        {
+          "title": "Getnet | Link de Pagamento: venda mais online | Getnet",
+          "url": "https://site.getnet.com.br/link-de-pagamento/",
+          "snippet": "inicial você pode vender também\natravés do aplicativo com o antifraude da Getnet\nFrete\nOpção de inclusão do valor de frete de cobrança\nQuero contratar\nVenda online de forma prática e segura com Link de Pagamento\nRecomendado\nLeve agora\nLink de pagamento Inicial\nGrátis\nR$1,00 por link pago.\nPague somente quando o pagamento do link for aprovado.\nTaxas exclusivas para você.\nQuero contratar\nBásico\nPor\nR$28\n/mês\n60 transações de cartão por mês\n+ R$0,50 por transação excedente\nTaxas exclusivas para você.\nQuero contratar\nSimule o recebimento das suas vendas com o Link de Pagamento\nValor da venda\nR$\nForma de Recebimento\nComo quer receber?\n*Taxa única para compras com:\nCom a Getnet, você recebe:\nR$\n0\n,00\nTaxa 1,90%\nEu quero\nConfira\nnossas taxas\n*Taxa única para compras com:\nTermos e condições",
+          "score": 0.3206
+        }
+      ],
+      "escalated": false,
+      "metadata": {
+        "retrieved_documents": 4,
+        "best_score": 0.39701753854751587,
+        "corpus_kind": "official",
+        "chunk_ids": [
+          "72ab2c4570ec:0",
+          "e00fb1cee7b3:0",
+          "72ab2c4570ec:3",
+          "72ab2c4570ec:1"
+        ],
+        "generation_kind": "llm_evidence_selection",
+        "llm_used_for": "evidence_selection",
+        "grounding_status": "source_spans_verified_relevance_requires_review",
+        "selected_evidence_ids": [
+          1
+        ],
+        "selected_evidence": [
+          {
+            "id": 1,
+            "source_index": 0,
+            "text": "Personalize o link com a imagem do produto"
+          }
+        ],
+        "generation_duration_ms": 8469.56,
+        "routing_reason": "Getnet/product knowledge request",
+        "routing_confidence": 0.7799999999999999,
+        "plans": [
+          {
+            "step": 0,
+            "observed_agent": "knowledge",
+            "failed": false,
+            "next_action": "knowledge",
+            "reviewer": "llm",
+            "allowed": [
+              "finish",
+              "knowledge",
+              "escalate"
+            ]
+          },
+          {
+            "step": 1,
+            "observed_agent": "knowledge",
+            "failed": false,
+            "next_action": "finish",
+            "reviewer": "llm",
+            "allowed": [
+              "finish",
+              "escalate"
+            ]
+          }
+        ],
+        "replans": 1,
+        "max_steps": 4,
+        "supervisor": "observe_replan",
+        "termination": "finish",
+        "outcome": "answered",
+        "resolved": true,
+        "llm_usage": [
+          {
+            "provider": "llama_cpp",
+            "model": "qwen2.5-3b.gguf",
+            "input_tokens": 465,
+            "output_tokens": 5
+          },
+          {
+            "provider": "llama_cpp",
+            "model": "qwen2.5-3b.gguf",
+            "input_tokens": 106,
+            "output_tokens": 39
+          },
+          {
+            "provider": "llama_cpp",
+            "model": "qwen2.5-3b.gguf",
+            "input_tokens": 461,
+            "output_tokens": 5
+          },
+          {
+            "provider": "llama_cpp",
+            "model": "qwen2.5-3b.gguf",
+            "input_tokens": 103,
+            "output_tokens": 28
+          }
+        ],
+        "agents": [
+          "knowledge",
+          "knowledge"
+        ],
+        "products": [
+          "Link de Pagamento"
+        ],
+        "conversation_state": {
+          "visited_products": [
+            "Link de Pagamento"
+          ],
+          "last_account_tool": null,
+          "selected_product": "Link de Pagamento",
+          "candidates": [
+            "Link de Pagamento"
+          ],
+          "intent": "Getnet/product knowledge request",
+          "stage": "answered",
+          "last_ticket": null
+        },
+        "context_messages": 0,
+        "duration_ms": 30224.09,
+        "stages": [
+          {
+            "agent": "knowledge",
+            "duration_ms": 9759.46,
+            "tool": "rag_search",
+            "step": 0
+          },
+          {
+            "agent": "knowledge",
+            "duration_ms": 11385.35,
+            "tool": "rag_search",
+            "step": 1
+          }
+        ]
+      },
+      "span_provenance": true,
+      "fact_anchor_hits": {
+        "imagem do produto": true
+      }
+    },
+    {
+      "id": "link-create",
+      "split": "dev",
+      "message": "Como criar um Link de Pagamento no portal?",
+      "relevant_chunk_ids": [
+        "72ab2c4570ec:3"
+      ],
+      "expected_facts": [
+        "Produtos e Serviços",
+        "Criar Link"
+      ],
+      "http_status": 200,
+      "duration_ms": 37858.16,
+      "answer": "Trechos documentados para sua pergunta:\n\n- Em Produtos e Serviços, selecione Link de Pagamento e depois Criar Link de Pagamento\n- Personalize o link com a imagem do produto\n- Preencha as informações do produto, frete e opções para pagamento.",
+      "sources": [
+        {
+          "title": "Getnet | Link de Pagamento: venda mais online | Getnet",
+          "url": "https://site.getnet.com.br/link-de-pagamento/",
+          "snippet": "acordo com as condições dos produtos e serviços contratados.\nVeja como é fácil vender com o Link de Pagamento\n1\nAcesse o Portal Minha Conta\nVocê pode acessar o portal com seu login e senha ou pelo Aplicativo Getnet Brasil.\n2\nCrie seu Link de Pagamento\nEm Produtos e Serviços, selecione Link de Pagamento e depois Criar Link de Pagamento\n3\nConfigure\nPreencha as informações do produto, frete e opções para pagamento.\n4\nPronto para vender\nClique em compartilhar ou copiar e compartilhe por onde quiser.\nDúvidas sobre Link de Pagamento?\nVeja nosso FAQ e conte com a gente para tirar todas as suas dúvidas.\nVamos começar o seu atendimento?\nAinda não é cliente?\nAdquira agora e venda mais!\nCENTRAL DE VENDAS\nJá é nosso cliente?\nCENTRAL DE AJUDA\nNão é cliente?\nAdquira nossos produtos e impulsione suas vendas​​\nwhatsApp\n4002-4000\nJá é cliente?\nTenha suporte:\nPor telefone\nLigue 4002-4000\nPor WhatsApp",
+          "score": 0.3166
+        },
+        {
+          "title": "Getnet - Online Payments",
+          "url": "https://www.getnet.net/en/our-solutions/online-payments",
+          "snippet": "Online Payments\nGoing digital? We have the tools you need\nIncrease your sales with Getnet´s solutions without taking risks.\nDIGITAL PAYMENTS\nRevolutionize your business online transactions\nBoost your experience with Getnet's innovative online payment offerings.\nGet Link & Pay\nCreate payment links and sell anywhere.\nMake sales using WhatsApp, SMS or your preferred social network.\nWith security and anti-fraud tolos.\nCustomizable link with product details.\nChoose the payment method: debit or credit.\nCreate payment links and sell anywhere.\nGet Checkout\nOnline payment solutions for your eCommerce store.\nModular : Include a seamless and easy to plug-in payment module on your ecommerce.\nSimple integration : Collect shopper payment quickly and get a full responsive design for mobile devices.\nSafe and sound : Sensitive card data travels only on Getnet platform which simplify PCI requirements.",
+          "score": 0.249
+        },
+        {
+          "title": "Getnet | Link de Pagamento: venda mais online | Getnet",
+          "url": "https://site.getnet.com.br/link-de-pagamento/",
+          "snippet": "Venda sem complicação com Link de Pagamento Getnet, é mais negócio\nLink personalizável\nSegurança antifraude\nVenda online\nAceite débito, crédito, Pix e boleto\nQuero contratar\nLink de pagamento com benefícios para você e seu cliente. Com Getnet, dá negócio\nNovo\nExpanda seu negócio\nVenda para estrangeiros com documento de identificação (RNE)\nno pagamento\nVenda de onde estiver\nFaça vendas usando o WhatsApp ou sua rede social\nNovo\nLink completo\nInsira diversos produtos no mesmo carrinho\nNovo\nPersonalizável\nPersonalize o link com a imagem do produto\nSegurança\nConte com a segurança do Antifraude da Getnet\nCliente livre\nVocê pode optar por deixar seu comprador escolher entre débito, crédito, Pix e boleto\nMais opções de venda\nCom o Link de Pagamento inicial você pode vender também\natravés do aplicativo com o antifraude da Getnet\nFrete\nOpção de inclusão do valor de frete de cobrança",
+          "score": 0.3358
+        },
+        {
+          "title": "Getnet | Link de Pagamento: venda mais online | Getnet",
+          "url": "https://site.getnet.com.br/link-de-pagamento/",
+          "snippet": "inicial você pode vender também\natravés do aplicativo com o antifraude da Getnet\nFrete\nOpção de inclusão do valor de frete de cobrança\nQuero contratar\nVenda online de forma prática e segura com Link de Pagamento\nRecomendado\nLeve agora\nLink de pagamento Inicial\nGrátis\nR$1,00 por link pago.\nPague somente quando o pagamento do link for aprovado.\nTaxas exclusivas para você.\nQuero contratar\nBásico\nPor\nR$28\n/mês\n60 transações de cartão por mês\n+ R$0,50 por transação excedente\nTaxas exclusivas para você.\nQuero contratar\nSimule o recebimento das suas vendas com o Link de Pagamento\nValor da venda\nR$\nForma de Recebimento\nComo quer receber?\n*Taxa única para compras com:\nCom a Getnet, você recebe:\nR$\n0\n,00\nTaxa 1,90%\nEu quero\nConfira\nnossas taxas\n*Taxa única para compras com:\nTermos e condições",
+          "score": 0.2765
+        }
+      ],
+      "escalated": false,
+      "metadata": {
+        "retrieved_documents": 4,
+        "best_score": 0.33577239513397217,
+        "corpus_kind": "official",
+        "chunk_ids": [
+          "72ab2c4570ec:3",
+          "e00fb1cee7b3:0",
+          "72ab2c4570ec:0",
+          "72ab2c4570ec:1"
+        ],
+        "generation_kind": "llm_evidence_selection",
+        "llm_used_for": "evidence_selection",
+        "grounding_status": "source_spans_verified_relevance_requires_review",
+        "selected_evidence_ids": [
+          0,
+          6,
+          7
+        ],
+        "selected_evidence": [
+          {
+            "id": 0,
+            "source_index": 0,
+            "text": "Em Produtos e Serviços, selecione Link de Pagamento e depois Criar Link de Pagamento"
+          },
+          {
+            "id": 6,
+            "source_index": 2,
+            "text": "Personalize o link com a imagem do produto"
+          },
+          {
+            "id": 7,
+            "source_index": 0,
+            "text": "Preencha as informações do produto, frete e opções para pagamento."
+          }
+        ],
+        "generation_duration_ms": 10472.92,
+        "routing_reason": "General product policy without account ownership",
+        "routing_confidence": 0.98,
+        "plans": [
+          {
+            "step": 0,
+            "observed_agent": "knowledge",
+            "failed": false,
+            "next_action": "knowledge",
+            "reviewer": "llm",
+            "allowed": [
+              "finish",
+              "knowledge",
+              "escalate"
+            ]
+          },
+          {
+            "step": 1,
+            "observed_agent": "knowledge",
+            "failed": false,
+            "next_action": "finish",
+            "reviewer": "llm",
+            "allowed": [
+              "finish",
+              "escalate"
+            ]
+          }
+        ],
+        "replans": 1,
+        "max_steps": 4,
+        "supervisor": "observe_replan",
+        "termination": "finish",
+        "outcome": "answered",
+        "resolved": true,
+        "llm_usage": [
+          {
+            "provider": "llama_cpp",
+            "model": "qwen2.5-3b.gguf",
+            "input_tokens": 496,
+            "output_tokens": 5
+          },
+          {
+            "provider": "llama_cpp",
+            "model": "qwen2.5-3b.gguf",
+            "input_tokens": 120,
+            "output_tokens": 50
+          },
+          {
+            "provider": "llama_cpp",
+            "model": "qwen2.5-3b.gguf",
+            "input_tokens": 498,
+            "output_tokens": 9
+          },
+          {
+            "provider": "llama_cpp",
+            "model": "qwen2.5-3b.gguf",
+            "input_tokens": 146,
+            "output_tokens": 48
+          }
+        ],
+        "agents": [
+          "knowledge",
+          "knowledge"
+        ],
+        "products": [
+          "Link de Pagamento"
+        ],
+        "conversation_state": {
+          "visited_products": [
+            "Link de Pagamento"
+          ],
+          "last_account_tool": null,
+          "selected_product": "Link de Pagamento",
+          "candidates": [
+            "Link de Pagamento"
+          ],
+          "intent": "General product policy without account ownership",
+          "stage": "answered",
+          "last_ticket": null
+        },
+        "context_messages": 0,
+        "duration_ms": 37853.51,
+        "stages": [
+          {
+            "agent": "knowledge",
+            "duration_ms": 10842.12,
+            "tool": "rag_search",
+            "step": 0
+          },
+          {
+            "agent": "knowledge",
+            "duration_ms": 13797.85,
+            "tool": "rag_search",
+            "step": 1
+          }
+        ]
+      },
+      "span_provenance": true,
+      "fact_anchor_hits": {
+        "Produtos e Serviços": true,
+        "Criar Link": true
+      }
+    },
+    {
+      "id": "link-shipping",
+      "split": "holdout",
+      "message": "Posso incluir frete no Link de Pagamento?",
+      "relevant_chunk_ids": [
+        "72ab2c4570ec:0",
+        "72ab2c4570ec:1"
+      ],
+      "expected_facts": [
+        "frete"
+      ],
+      "http_status": 200,
+      "duration_ms": 32751.88,
+      "answer": "Trechos documentados para sua pergunta:\n\n- Opção de inclusão do valor de frete de cobrança\n- Por telefone",
+      "sources": [
+        {
+          "title": "Getnet | Link de Pagamento: venda mais online | Getnet",
+          "url": "https://site.getnet.com.br/link-de-pagamento/",
+          "snippet": "inicial você pode vender também\natravés do aplicativo com o antifraude da Getnet\nFrete\nOpção de inclusão do valor de frete de cobrança\nQuero contratar\nVenda online de forma prática e segura com Link de Pagamento\nRecomendado\nLeve agora\nLink de pagamento Inicial\nGrátis\nR$1,00 por link pago.\nPague somente quando o pagamento do link for aprovado.\nTaxas exclusivas para você.\nQuero contratar\nBásico\nPor\nR$28\n/mês\n60 transações de cartão por mês\n+ R$0,50 por transação excedente\nTaxas exclusivas para você.\nQuero contratar\nSimule o recebimento das suas vendas com o Link de Pagamento\nValor da venda\nR$\nForma de Recebimento\nComo quer receber?\n*Taxa única para compras com:\nCom a Getnet, você recebe:\nR$\n0\n,00\nTaxa 1,90%\nEu quero\nConfira\nnossas taxas\n*Taxa única para compras com:\nTermos e condições",
+          "score": 0.3059
+        },
+        {
+          "title": "Getnet | Link de Pagamento: venda mais online | Getnet",
+          "url": "https://site.getnet.com.br/link-de-pagamento/",
+          "snippet": "Venda sem complicação com Link de Pagamento Getnet, é mais negócio\nLink personalizável\nSegurança antifraude\nVenda online\nAceite débito, crédito, Pix e boleto\nQuero contratar\nLink de pagamento com benefícios para você e seu cliente. Com Getnet, dá negócio\nNovo\nExpanda seu negócio\nVenda para estrangeiros com documento de identificação (RNE)\nno pagamento\nVenda de onde estiver\nFaça vendas usando o WhatsApp ou sua rede social\nNovo\nLink completo\nInsira diversos produtos no mesmo carrinho\nNovo\nPersonalizável\nPersonalize o link com a imagem do produto\nSegurança\nConte com a segurança do Antifraude da Getnet\nCliente livre\nVocê pode optar por deixar seu comprador escolher entre débito, crédito, Pix e boleto\nMais opções de venda\nCom o Link de Pagamento inicial você pode vender também\natravés do aplicativo com o antifraude da Getnet\nFrete\nOpção de inclusão do valor de frete de cobrança",
+          "score": 0.3749
+        },
+        {
+          "title": "Getnet - Online Payments",
+          "url": "https://www.getnet.net/en/our-solutions/online-payments",
+          "snippet": "Online Payments\nGoing digital? We have the tools you need\nIncrease your sales with Getnet´s solutions without taking risks.\nDIGITAL PAYMENTS\nRevolutionize your business online transactions\nBoost your experience with Getnet's innovative online payment offerings.\nGet Link & Pay\nCreate payment links and sell anywhere.\nMake sales using WhatsApp, SMS or your preferred social network.\nWith security and anti-fraud tolos.\nCustomizable link with product details.\nChoose the payment method: debit or credit.\nCreate payment links and sell anywhere.\nGet Checkout\nOnline payment solutions for your eCommerce store.\nModular : Include a seamless and easy to plug-in payment module on your ecommerce.\nSimple integration : Collect shopper payment quickly and get a full responsive design for mobile devices.\nSafe and sound : Sensitive card data travels only on Getnet platform which simplify PCI requirements.",
+          "score": 0.2759
+        },
+        {
+          "title": "Getnet | Link de Pagamento: venda mais online | Getnet",
+          "url": "https://site.getnet.com.br/link-de-pagamento/",
+          "snippet": "acordo com as condições dos produtos e serviços contratados.\nVeja como é fácil vender com o Link de Pagamento\n1\nAcesse o Portal Minha Conta\nVocê pode acessar o portal com seu login e senha ou pelo Aplicativo Getnet Brasil.\n2\nCrie seu Link de Pagamento\nEm Produtos e Serviços, selecione Link de Pagamento e depois Criar Link de Pagamento\n3\nConfigure\nPreencha as informações do produto, frete e opções para pagamento.\n4\nPronto para vender\nClique em compartilhar ou copiar e compartilhe por onde quiser.\nDúvidas sobre Link de Pagamento?\nVeja nosso FAQ e conte com a gente para tirar todas as suas dúvidas.\nVamos começar o seu atendimento?\nAinda não é cliente?\nAdquira agora e venda mais!\nCENTRAL DE VENDAS\nJá é nosso cliente?\nCENTRAL DE AJUDA\nNão é cliente?\nAdquira nossos produtos e impulsione suas vendas​​\nwhatsApp\n4002-4000\nJá é cliente?\nTenha suporte:\nPor telefone\nLigue 4002-4000\nPor WhatsApp",
+          "score": 0.3221
+        }
+      ],
+      "escalated": false,
+      "metadata": {
+        "retrieved_documents": 4,
+        "best_score": 0.37494581937789917,
+        "corpus_kind": "official",
+        "chunk_ids": [
+          "72ab2c4570ec:1",
+          "72ab2c4570ec:0",
+          "e00fb1cee7b3:0",
+          "72ab2c4570ec:3"
+        ],
+        "generation_kind": "llm_evidence_selection",
+        "llm_used_for": "evidence_selection",
+        "grounding_status": "source_spans_verified_relevance_requires_review",
+        "selected_evidence_ids": [
+          0,
+          7
+        ],
+        "selected_evidence": [
+          {
+            "id": 0,
+            "source_index": 0,
+            "text": "Opção de inclusão do valor de frete de cobrança"
+          },
+          {
+            "id": 7,
+            "source_index": 3,
+            "text": "Por telefone"
+          }
+        ],
+        "generation_duration_ms": 7850.41,
+        "routing_reason": "General product policy without account ownership",
+        "routing_confidence": 0.98,
+        "plans": [
+          {
+            "step": 0,
+            "observed_agent": "knowledge",
+            "failed": false,
+            "next_action": "knowledge",
+            "reviewer": "llm",
+            "allowed": [
+              "finish",
+              "knowledge",
+              "escalate"
+            ]
+          },
+          {
+            "step": 1,
+            "observed_agent": "knowledge",
+            "failed": false,
+            "next_action": "finish",
+            "reviewer": "llm",
+            "allowed": [
+              "finish",
+              "escalate"
+            ]
+          }
+        ],
+        "replans": 1,
+        "max_steps": 4,
+        "supervisor": "observe_replan",
+        "termination": "finish",
+        "outcome": "answered",
+        "resolved": true,
+        "llm_usage": [
+          {
+            "provider": "llama_cpp",
+            "model": "qwen2.5-3b.gguf",
+            "input_tokens": 503,
+            "output_tokens": 5
+          },
+          {
+            "provider": "llama_cpp",
+            "model": "qwen2.5-3b.gguf",
+            "input_tokens": 113,
+            "output_tokens": 34
+          },
+          {
+            "provider": "llama_cpp",
+            "model": "qwen2.5-3b.gguf",
+            "input_tokens": 477,
+            "output_tokens": 7
+          },
+          {
+            "provider": "llama_cpp",
+            "model": "qwen2.5-3b.gguf",
+            "input_tokens": 114,
+            "output_tokens": 41
+          }
+        ],
+        "agents": [
+          "knowledge",
+          "knowledge"
+        ],
+        "products": [
+          "Link de Pagamento"
+        ],
+        "conversation_state": {
+          "visited_products": [
+            "Link de Pagamento"
+          ],
+          "last_account_tool": null,
+          "selected_product": "Link de Pagamento",
+          "candidates": [
+            "Link de Pagamento"
+          ],
+          "intent": "General product policy without account ownership",
+          "stage": "answered",
+          "last_ticket": null
+        },
+        "context_messages": 0,
+        "duration_ms": 32746.99,
+        "stages": [
+          {
+            "agent": "knowledge",
+            "duration_ms": 10937.15,
+            "tool": "rag_search",
+            "step": 0
+          },
+          {
+            "agent": "knowledge",
+            "duration_ms": 10985.74,
+            "tool": "rag_search",
+            "step": 1
+          }
+        ]
+      },
+      "span_provenance": true,
+      "fact_anchor_hits": {
+        "frete": true
+      }
+    },
+    {
+      "id": "credit-limit",
+      "split": "dev",
+      "message": "Até quantas parcelas posso fazer no crediário?",
+      "relevant_chunk_ids": [
+        "8c645263d073:0",
+        "8c645263d073:1",
+        "8c645263d073:4",
+        "8c645263d073:5"
+      ],
+      "expected_facts": [
+        "emissor"
+      ],
+      "http_status": 200,
+      "duration_ms": 39427.31,
+      "answer": "Trechos documentados para sua pergunta:\n\n- Com o Crediário, ele pode parcelar em até 48 vezes² no cartão de crédito com taxas que cabem no bolso.\n- Uma opção de pagamento diferenciado com possibilidade de parcelamento em até 48x * para seus clientes.\n- em até 48x* para o seu cliente.\n- Cada emissor de cartão estabelece o limite de parcelas conforme as suas políticas de crédito.",
+      "sources": [
+        {
+          "title": "Crediário - Getnet",
+          "url": "https://site.getnet.com.br/crediario/",
+          "snippet": "Crediário\nUma opção de pagamento diferenciado com possibilidade de parcelamento em até 48x * para seus clientes.\nFaça uma Simulação:\ncom o valor de todas as parcelas e encargos antes da venda para oferecer transparência ao seu cliente\nAumente o Movimento:\nno seu estabelecimento oferecendo mais opções de pagamento aos seus clientes\nMaior poder de compra:\npara o seu cliente\nReceba o valor total de suas vendas:\nem até 2 dias úteis com taxa única e sem custo de antecipação\nOfereça parcelamento:\nem até 48x* para o seu cliente.\n*O prazo máximo e a taxa de juros do parcelamento variam de acordo com o emissor do cartão\nmais vendas para você, mais vantagens para o seu cliente\npara o seu negócio\nO Crediário é mais uma opção de pagamento que você pode oferecer para vender mais. E você recebe o valor da venda em até 2 dias úteis e com taxa única¹, aumentando seu capital de giro!\npara o seu cliente",
+          "score": 0.1607
+        },
+        {
+          "title": "Crediário - Getnet",
+          "url": "https://site.getnet.com.br/crediario/",
+          "snippet": "para vender mais. E você recebe o valor da venda em até 2 dias úteis e com taxa única¹, aumentando seu capital de giro!\npara o seu cliente\nCom o Crediário, ele pode parcelar em até 48 vezes² no cartão de crédito com taxas que cabem no bolso.\nVocê oferece mais comodidade e poder de compra.\n¹ Consulte a taxa de desconto (MDR) no Aplicativo Getnet Brasil ou no Portal do cliente .\n²As taxas de juros podem variar de acordo com o emissor do cartão.\no crediário já está\ndisponível na Getnet\nAproveite ao máximo as vantagens dessa nova opção de pagamento! Confira quais bandeiras e em quais máquinas já estão disponíveis a venda no Crediário\nrealize uma venda no Crediário\nVender no Crediário é fácil! Basta seguir o passo a passo abaixo:\nPasso 01\nPasso 02\nPasso 03\nPasso 04\nPasso 05\nPasso 06\nPasso 07\nPasso 08\nPasso 09\nPasso 10\nPasso 01\nAproxime, passe ou insira o cartão.\nPasso 02\nSelecione a opção 1.",
+          "score": 0.2454
+        },
+        {
+          "title": "Crediário - Getnet",
+          "url": "https://site.getnet.com.br/crediario/",
+          "snippet": "e em que prazo eu recebo?\nAs informações de pagamento podem ser consultadas no Aplicativo Getnet (Vendas) e/ou no Portal do Cliente.\nTodas as vendas realizadas na modalidade Crediário são pagas em até 2 dias úteis após a captura da transação, de uma única vez, independente da quantidade de parcelas escolhida pelo portador. Lembrando que do valor da transação original é subtraído o valor da taxa de desconto.\nQualquer estabelecimento pode ter o Crediário? E se eu não quiser ter o produto?\nA habilitação do produto Crediário está sujeita à análise pela Getnet.\nCaso você não deseje ter o Crediário como mais uma opção de pagamento, basta entrar em contato com a Central de Atendimento da Getnet e solicitar a desabilitação desta modalidade.\nainda tem dúvidas?\nVamos começar o seu atendimento?\nAinda não é cliente?\nAdquira agora e venda mais!\nCENTRAL DE VENDAS\nJá é nosso cliente?\nCENTRAL DE AJUDA",
+          "score": 0.2041
+        },
+        {
+          "title": "Crediário - Getnet",
+          "url": "https://site.getnet.com.br/crediario/",
+          "snippet": ". Você também pode contatar a Central de Atendimento para verificar se o seu Estabelecimento está habilitado para operar com a modalidade. Caso a modalidade esteja habilitada, mas a opção Crediário ainda não esteja disponível em sua máquina, é importante realizar uma transação de adquirência (bandeiras Mastercard, Visa, Elo e Amex) ou proceder com a inicialização do terminal (Suporte > Bandeiras > Funções Técnicas > Inicialização). A taxa de desconto do Crediário é parte integrante do seu contrato de Adesão ao Sistema Getnet e pode ser consultada no Portal do Cliente e/ou no Aplicativo Getnet Brasil.\nAté quantas parcelas posso fazer e como sei os juros para informar ao meu cliente (portador do cartão)?\nCada emissor de cartão estabelece o limite de parcelas conforme as suas políticas de crédito.",
+          "score": 0.2577
+        }
+      ],
+      "escalated": false,
+      "metadata": {
+        "retrieved_documents": 4,
+        "best_score": 0.2576945722103119,
+        "corpus_kind": "official",
+        "chunk_ids": [
+          "8c645263d073:0",
+          "8c645263d073:1",
+          "8c645263d073:6",
+          "8c645263d073:4"
+        ],
+        "generation_kind": "llm_evidence_selection",
+        "llm_used_for": "evidence_selection",
+        "grounding_status": "source_spans_verified_relevance_requires_review",
+        "selected_evidence_ids": [
+          0,
+          1,
+          2
+        ],
+        "selected_evidence": [
+          {
+            "id": 0,
+            "source_index": 1,
+            "text": "Com o Crediário, ele pode parcelar em até 48 vezes² no cartão de crédito com taxas que cabem no bolso."
+          },
+          {
+            "id": 1,
+            "source_index": 0,
+            "text": "Uma opção de pagamento diferenciado com possibilidade de parcelamento em até 48x * para seus clientes."
+          },
+          {
+            "id": 2,
+            "source_index": 0,
+            "text": "em até 48x* para o seu cliente."
+          },
+          {
+            "id": 5,
+            "source_index": 3,
+            "text": "Cada emissor de cartão estabelece o limite de parcelas conforme as suas políticas de crédito."
+          }
+        ],
+        "qualifier_preserved": true,
+        "generation_duration_ms": 10383.36,
+        "routing_reason": "General product policy without account ownership",
+        "routing_confidence": 0.98,
+        "plans": [
+          {
+            "step": 0,
+            "observed_agent": "knowledge",
+            "failed": false,
+            "next_action": "knowledge",
+            "reviewer": "llm",
+            "allowed": [
+              "finish",
+              "knowledge",
+              "escalate"
+            ]
+          },
+          {
+            "step": 1,
+            "observed_agent": "knowledge",
+            "failed": false,
+            "next_action": "finish",
+            "reviewer": "llm",
+            "allowed": [
+              "finish",
+              "escalate"
+            ]
+          }
+        ],
+        "replans": 1,
+        "max_steps": 4,
+        "supervisor": "observe_replan",
+        "termination": "finish",
+        "outcome": "answered",
+        "resolved": true,
+        "llm_usage": [
+          {
+            "provider": "llama_cpp",
+            "model": "qwen2.5-3b.gguf",
+            "input_tokens": 593,
+            "output_tokens": 9
+          },
+          {
+            "provider": "llama_cpp",
+            "model": "qwen2.5-3b.gguf",
+            "input_tokens": 198,
+            "output_tokens": 39
+          },
+          {
+            "provider": "llama_cpp",
+            "model": "qwen2.5-3b.gguf",
+            "input_tokens": 599,
+            "output_tokens": 9
+          },
+          {
+            "provider": "llama_cpp",
+            "model": "qwen2.5-3b.gguf",
+            "input_tokens": 195,
+            "output_tokens": 42
+          }
+        ],
+        "agents": [
+          "knowledge",
+          "knowledge"
+        ],
+        "products": [
+          "crediário"
+        ],
+        "conversation_state": {
+          "visited_products": [
+            "crediário"
+          ],
+          "last_account_tool": null,
+          "selected_product": "crediário",
+          "candidates": [
+            "crediário"
+          ],
+          "intent": "General product policy without account ownership",
+          "stage": "answered",
+          "last_ticket": null
+        },
+        "context_messages": 0,
+        "duration_ms": 39423.09,
+        "stages": [
+          {
+            "agent": "knowledge",
+            "duration_ms": 12806.73,
+            "tool": "rag_search",
+            "step": 0
+          },
+          {
+            "agent": "knowledge",
+            "duration_ms": 13313.49,
+            "tool": "rag_search",
+            "step": 1
+          }
+        ]
+      },
+      "span_provenance": true,
+      "fact_anchor_hits": {
+        "emissor": true
+      }
+    },
+    {
+      "id": "credit-settlement",
+      "split": "holdout",
+      "message": "Em quanto tempo recebo uma venda no crediário Getnet?",
+      "relevant_chunk_ids": [
+        "8c645263d073:6"
+      ],
+      "expected_facts": [
+        "2 dias úteis"
+      ],
+      "http_status": 200,
+      "duration_ms": 21477.19,
+      "answer": "Trechos documentados para sua pergunta:\n\n- Todas as vendas realizadas na modalidade Crediário são pagas em até 2 dias úteis após a captura da transação, de uma única vez, independente da quantidade de parcelas escolhida pelo portador.\n- em até 2 dias úteis com taxa única e sem custo de antecipação\n- 2 dias úteis",
+      "sources": [
+        {
+          "title": "Crediário - Getnet",
+          "url": "https://site.getnet.com.br/crediario/",
+          "snippet": "e em que prazo eu recebo?\nAs informações de pagamento podem ser consultadas no Aplicativo Getnet (Vendas) e/ou no Portal do Cliente.\nTodas as vendas realizadas na modalidade Crediário são pagas em até 2 dias úteis após a captura da transação, de uma única vez, independente da quantidade de parcelas escolhida pelo portador. Lembrando que do valor da transação original é subtraído o valor da taxa de desconto.\nQualquer estabelecimento pode ter o Crediário? E se eu não quiser ter o produto?\nA habilitação do produto Crediário está sujeita à análise pela Getnet.\nCaso você não deseje ter o Crediário como mais uma opção de pagamento, basta entrar em contato com a Central de Atendimento da Getnet e solicitar a desabilitação desta modalidade.\nainda tem dúvidas?\nVamos começar o seu atendimento?\nAinda não é cliente?\nAdquira agora e venda mais!\nCENTRAL DE VENDAS\nJá é nosso cliente?\nCENTRAL DE AJUDA",
+          "score": 0.2665
+        },
+        {
+          "title": "Crediário - Getnet",
+          "url": "https://site.getnet.com.br/crediario/",
+          "snippet": "para vender mais. E você recebe o valor da venda em até 2 dias úteis e com taxa única¹, aumentando seu capital de giro!\npara o seu cliente\nCom o Crediário, ele pode parcelar em até 48 vezes² no cartão de crédito com taxas que cabem no bolso.\nVocê oferece mais comodidade e poder de compra.\n¹ Consulte a taxa de desconto (MDR) no Aplicativo Getnet Brasil ou no Portal do cliente .\n²As taxas de juros podem variar de acordo com o emissor do cartão.\no crediário já está\ndisponível na Getnet\nAproveite ao máximo as vantagens dessa nova opção de pagamento! Confira quais bandeiras e em quais máquinas já estão disponíveis a venda no Crediário\nrealize uma venda no Crediário\nVender no Crediário é fácil! Basta seguir o passo a passo abaixo:\nPasso 01\nPasso 02\nPasso 03\nPasso 04\nPasso 05\nPasso 06\nPasso 07\nPasso 08\nPasso 09\nPasso 10\nPasso 01\nAproxime, passe ou insira o cartão.\nPasso 02\nSelecione a opção 1.",
+          "score": 0.3681
+        },
+        {
+          "title": "Getnet | Maquininha POS 3G + Wi-Fi | 4020-4011",
+          "url": "https://site.getnet.com.br/maquininha/get-classica/",
+          "snippet": "Impulsione o seu negócio com a maquininha de cartão Get Clássica\nMaquininha de cartão Grátis*\nConta e cartão grátis\nRecebimento em 2 dias\nVálido para CPF e CNPJ\nTaxa única nas principais bandeiras\nSAIBA MAIS\n*Mediante vendas a partir de R$10.000\nSua escolha inteligente para vender mais em 2025:\nMaquininha + conta integrada Getnet\nRecomendado para\nPF ou CNPJ que querem alavancar seus negócios vendendo mais sem\npagar aluguel\nOnde você recebe\nGet Conta com cartão grátis\nQuando recebe\n2 dias úteis\nVendendo você ganha máquina grátis\nVenda o quanto quiser de graça pelo celular\nR$ 2mil por mês |\nGet Mini\nR$ 10mil por mês |\nGet Mini ou Get Clássica\nR$ 60mil por mês |\nGet Mini, Get Clássica ou Get Smart\n*As modalidades de Voucher (VA/VR), Crediário não compõem faturamento para isenção do aluguel\n*Termos e condições\nTaxa única para as bandeiras\nA partir de:\nDébito\n1,69%\nCrédito 1x\n3,79%",
+          "score": 0.2119
+        },
+        {
+          "title": "Crediário - Getnet",
+          "url": "https://site.getnet.com.br/crediario/",
+          "snippet": "Crediário\nUma opção de pagamento diferenciado com possibilidade de parcelamento em até 48x * para seus clientes.\nFaça uma Simulação:\ncom o valor de todas as parcelas e encargos antes da venda para oferecer transparência ao seu cliente\nAumente o Movimento:\nno seu estabelecimento oferecendo mais opções de pagamento aos seus clientes\nMaior poder de compra:\npara o seu cliente\nReceba o valor total de suas vendas:\nem até 2 dias úteis com taxa única e sem custo de antecipação\nOfereça parcelamento:\nem até 48x* para o seu cliente.\n*O prazo máximo e a taxa de juros do parcelamento variam de acordo com o emissor do cartão\nmais vendas para você, mais vantagens para o seu cliente\npara o seu negócio\nO Crediário é mais uma opção de pagamento que você pode oferecer para vender mais. E você recebe o valor da venda em até 2 dias úteis e com taxa única¹, aumentando seu capital de giro!\npara o seu cliente",
+          "score": 0.2277
+        }
+      ],
+      "escalated": false,
+      "metadata": {
+        "retrieved_documents": 4,
+        "best_score": 0.36808136105537415,
+        "corpus_kind": "official",
+        "chunk_ids": [
+          "8c645263d073:6",
+          "8c645263d073:1",
+          "1b9945e6790e:0",
+          "8c645263d073:0"
+        ],
+        "generation_kind": "llm_evidence_selection",
+        "llm_used_for": "evidence_selection",
+        "grounding_status": "source_spans_verified_relevance_requires_review",
+        "selected_evidence_ids": [
+          0,
+          3,
+          4
+        ],
+        "selected_evidence": [
+          {
+            "id": 0,
+            "source_index": 0,
+            "text": "Todas as vendas realizadas na modalidade Crediário são pagas em até 2 dias úteis após a captura da transação, de uma única vez, independente da quantidade de parcelas escolhida pelo portador."
+          },
+          {
+            "id": 3,
+            "source_index": 3,
+            "text": "em até 2 dias úteis com taxa única e sem custo de antecipação"
+          },
+          {
+            "id": 4,
+            "source_index": 2,
+            "text": "2 dias úteis"
+          }
+        ],
+        "generation_duration_ms": 10938.21,
+        "routing_reason": "General product policy without account ownership",
+        "routing_confidence": 0.98,
+        "plans": [
+          {
+            "step": 0,
+            "observed_agent": "knowledge",
+            "failed": false,
+            "next_action": "finish",
+            "reviewer": "llm",
+            "allowed": [
+              "finish",
+              "knowledge",
+              "escalate"
+            ]
+          }
+        ],
+        "replans": 0,
+        "max_steps": 4,
+        "supervisor": "observe_replan",
+        "termination": "finish",
+        "outcome": "answered",
+        "resolved": true,
+        "llm_usage": [
+          {
+            "provider": "llama_cpp",
+            "model": "qwen2.5-3b.gguf",
+            "input_tokens": 554,
+            "output_tokens": 9
+          },
+          {
+            "provider": "llama_cpp",
+            "model": "qwen2.5-3b.gguf",
+            "input_tokens": 181,
+            "output_tokens": 46
+          }
+        ],
+        "agents": [
+          "knowledge"
+        ],
+        "products": [
+          "crediário"
+        ],
+        "conversation_state": {
+          "visited_products": [
+            "crediário"
+          ],
+          "last_account_tool": null,
+          "selected_product": "crediário",
+          "candidates": [
+            "crediário"
+          ],
+          "intent": "General product policy without account ownership",
+          "stage": "answered",
+          "last_ticket": null
+        },
+        "context_messages": 0,
+        "duration_ms": 21472.27,
+        "stages": [
+          {
+            "agent": "knowledge",
+            "duration_ms": 14369.38,
+            "tool": "rag_search",
+            "step": 0
+          }
+        ]
+      },
+      "span_provenance": true,
+      "fact_anchor_hits": {
+        "2 dias úteis": true
+      }
+    },
+    {
+      "id": "credit-simulation",
+      "split": "dev",
+      "message": "Como consultar os juros no crediário?",
+      "relevant_chunk_ids": [
+        "8c645263d073:5"
+      ],
+      "expected_facts": [
+        "simulação"
+      ],
+      "http_status": 200,
+      "duration_ms": 42287.9,
+      "answer": "Trechos documentados para sua pergunta:\n\n- Os juros ao cliente (portador do cartão) serão visualizados por meio da simulação realizada diretamente na maquininha: Inserindo o cartão, incluindo o valor e a opção de pagamento na opção crédito > crediário.\n- Aproxime, passe ou insira o cartão.",
+      "sources": [
+        {
+          "title": "Crediário - Getnet",
+          "url": "https://site.getnet.com.br/crediario/",
+          "snippet": "informar ao meu cliente (portador do cartão)?\nCada emissor de cartão estabelece o limite de parcelas conforme as suas políticas de crédito.\nOs juros ao cliente (portador do cartão) serão visualizados por meio da simulação realizada diretamente na maquininha: Inserindo o cartão, incluindo o valor e a opção de pagamento na opção crédito > crediário.\nÉ possível também a impressão do comprovante da simulação na maquininha com bobina, assim o cliente conseguirá avaliar os juros e o valor final da compra.\nLembrando que a simulação é apenas para consulta, sendo sujeita a análise de crédito, portanto, cabe ao emissor do cartão aprovar a transação no momento da contratação.\nOnde visualizo o pagamento e em que prazo eu recebo?\nAs informações de pagamento podem ser consultadas no Aplicativo Getnet (Vendas) e/ou no Portal do Cliente.",
+          "score": 0.2375
+        },
+        {
+          "title": "Crediário - Getnet",
+          "url": "https://site.getnet.com.br/crediario/",
+          "snippet": ". Você também pode contatar a Central de Atendimento para verificar se o seu Estabelecimento está habilitado para operar com a modalidade. Caso a modalidade esteja habilitada, mas a opção Crediário ainda não esteja disponível em sua máquina, é importante realizar uma transação de adquirência (bandeiras Mastercard, Visa, Elo e Amex) ou proceder com a inicialização do terminal (Suporte > Bandeiras > Funções Técnicas > Inicialização). A taxa de desconto do Crediário é parte integrante do seu contrato de Adesão ao Sistema Getnet e pode ser consultada no Portal do Cliente e/ou no Aplicativo Getnet Brasil.\nAté quantas parcelas posso fazer e como sei os juros para informar ao meu cliente (portador do cartão)?\nCada emissor de cartão estabelece o limite de parcelas conforme as suas políticas de crédito.",
+          "score": 0.2008
+        },
+        {
+          "title": "Crediário - Getnet",
+          "url": "https://site.getnet.com.br/crediario/",
+          "snippet": "e para voltar ao menu inicial clique no botão\n4. CANCELAR.\nPasso 09\nAo escolher a opção 1. CONTRATAR, confira novamente as informações. Peça para o seu cliente inserir a senha e aperte o botão de confirmação para concluir a transação.\nPasso 10\nTransação aprovada!\nperguntas frequentes\nComo eu contrato o Crediário e qual a taxa?\nA habilitação pode ser realizada através do aplicativo Getnet (Android e iOS) ou através da central. É possível consultar se o Crediário está habilitado para o seu Estabelecimento no Aplicativo da Getnet (acesse em: Meu negócio > Taxas e modalidades > Cartões) ou no Portal do Cliente . Você também pode contatar a Central de Atendimento para verificar se o seu Estabelecimento está habilitado para operar com a modalidade.",
+          "score": 0.123
+        },
+        {
+          "title": "Crediário - Getnet",
+          "url": "https://site.getnet.com.br/crediario/",
+          "snippet": "para vender mais. E você recebe o valor da venda em até 2 dias úteis e com taxa única¹, aumentando seu capital de giro!\npara o seu cliente\nCom o Crediário, ele pode parcelar em até 48 vezes² no cartão de crédito com taxas que cabem no bolso.\nVocê oferece mais comodidade e poder de compra.\n¹ Consulte a taxa de desconto (MDR) no Aplicativo Getnet Brasil ou no Portal do cliente .\n²As taxas de juros podem variar de acordo com o emissor do cartão.\no crediário já está\ndisponível na Getnet\nAproveite ao máximo as vantagens dessa nova opção de pagamento! Confira quais bandeiras e em quais máquinas já estão disponíveis a venda no Crediário\nrealize uma venda no Crediário\nVender no Crediário é fácil! Basta seguir o passo a passo abaixo:\nPasso 01\nPasso 02\nPasso 03\nPasso 04\nPasso 05\nPasso 06\nPasso 07\nPasso 08\nPasso 09\nPasso 10\nPasso 01\nAproxime, passe ou insira o cartão.\nPasso 02\nSelecione a opção 1.",
+          "score": 0.2571
+        }
+      ],
+      "escalated": false,
+      "metadata": {
+        "retrieved_documents": 4,
+        "best_score": 0.25707271695137024,
+        "corpus_kind": "official",
+        "chunk_ids": [
+          "8c645263d073:5",
+          "8c645263d073:4",
+          "8c645263d073:3",
+          "8c645263d073:1"
+        ],
+        "generation_kind": "llm_evidence_selection",
+        "llm_used_for": "evidence_selection",
+        "grounding_status": "source_spans_verified_relevance_requires_review",
+        "selected_evidence_ids": [
+          0,
+          7
+        ],
+        "selected_evidence": [
+          {
+            "id": 0,
+            "source_index": 0,
+            "text": "Os juros ao cliente (portador do cartão) serão visualizados por meio da simulação realizada diretamente na maquininha: Inserindo o cartão, incluindo o valor e a opção de pagamento na opção crédito > crediário."
+          },
+          {
+            "id": 7,
+            "source_index": 3,
+            "text": "Aproxime, passe ou insira o cartão."
+          }
+        ],
+        "generation_duration_ms": 9786.47,
+        "routing_reason": "General product policy without account ownership",
+        "routing_confidence": 0.98,
+        "plans": [
+          {
+            "step": 0,
+            "observed_agent": "knowledge",
+            "failed": false,
+            "next_action": "knowledge",
+            "reviewer": "llm",
+            "allowed": [
+              "finish",
+              "knowledge",
+              "escalate"
+            ]
+          },
+          {
+            "step": 1,
+            "observed_agent": "knowledge",
+            "failed": false,
+            "next_action": "finish",
+            "reviewer": "llm",
+            "allowed": [
+              "finish",
+              "escalate"
+            ]
+          }
+        ],
+        "replans": 1,
+        "max_steps": 4,
+        "supervisor": "observe_replan",
+        "termination": "finish",
+        "outcome": "answered",
+        "resolved": true,
+        "llm_usage": [
+          {
+            "provider": "llama_cpp",
+            "model": "qwen2.5-3b.gguf",
+            "input_tokens": 596,
+            "output_tokens": 7
+          },
+          {
+            "provider": "llama_cpp",
+            "model": "qwen2.5-3b.gguf",
+            "input_tokens": 192,
+            "output_tokens": 45
+          },
+          {
+            "provider": "llama_cpp",
+            "model": "qwen2.5-3b.gguf",
+            "input_tokens": 576,
+            "output_tokens": 7
+          },
+          {
+            "provider": "llama_cpp",
+            "model": "qwen2.5-3b.gguf",
+            "input_tokens": 163,
+            "output_tokens": 65
+          }
+        ],
+        "agents": [
+          "knowledge",
+          "knowledge"
+        ],
+        "products": [
+          "crediário"
+        ],
+        "conversation_state": {
+          "visited_products": [
+            "crediário"
+          ],
+          "last_account_tool": null,
+          "selected_product": "crediário",
+          "candidates": [
+            "crediário"
+          ],
+          "intent": "General product policy without account ownership",
+          "stage": "answered",
+          "last_ticket": null
+        },
+        "context_messages": 0,
+        "duration_ms": 42281.75,
+        "stages": [
+          {
+            "agent": "knowledge",
+            "duration_ms": 15272.1,
+            "tool": "rag_search",
+            "step": 0
+          },
+          {
+            "agent": "knowledge",
+            "duration_ms": 12198.51,
+            "tool": "rag_search",
+            "step": 1
+          }
+        ]
+      },
+      "span_provenance": true,
+      "fact_anchor_hits": {
+        "simulação": true
+      }
+    },
+    {
+      "id": "credit-enable",
+      "split": "holdout",
+      "message": "Como habilitar crediário na Getnet?",
+      "relevant_chunk_ids": [
+        "8c645263d073:3",
+        "8c645263d073:4"
+      ],
+      "expected_facts": [
+        "aplicativo"
+      ],
+      "http_status": 200,
+      "duration_ms": 38819.56,
+      "answer": "Trechos documentados para sua pergunta:\n\n- A habilitação pode ser realizada através do aplicativo Getnet (Android e iOS) ou através da central.\n- É possível consultar se o Crediário está habilitado para o seu Estabelecimento no Aplicativo da Getnet (acesse em: Meu negócio > Taxas e modalidades > Cartões) ou no Portal do Cliente .",
+      "sources": [
+        {
+          "title": "Crediário - Getnet",
+          "url": "https://site.getnet.com.br/crediario/",
+          "snippet": "e para voltar ao menu inicial clique no botão\n4. CANCELAR.\nPasso 09\nAo escolher a opção 1. CONTRATAR, confira novamente as informações. Peça para o seu cliente inserir a senha e aperte o botão de confirmação para concluir a transação.\nPasso 10\nTransação aprovada!\nperguntas frequentes\nComo eu contrato o Crediário e qual a taxa?\nA habilitação pode ser realizada através do aplicativo Getnet (Android e iOS) ou através da central. É possível consultar se o Crediário está habilitado para o seu Estabelecimento no Aplicativo da Getnet (acesse em: Meu negócio > Taxas e modalidades > Cartões) ou no Portal do Cliente . Você também pode contatar a Central de Atendimento para verificar se o seu Estabelecimento está habilitado para operar com a modalidade.",
+          "score": 0.1661
+        },
+        {
+          "title": "Crediário - Getnet",
+          "url": "https://site.getnet.com.br/crediario/",
+          "snippet": ". Você também pode contatar a Central de Atendimento para verificar se o seu Estabelecimento está habilitado para operar com a modalidade. Caso a modalidade esteja habilitada, mas a opção Crediário ainda não esteja disponível em sua máquina, é importante realizar uma transação de adquirência (bandeiras Mastercard, Visa, Elo e Amex) ou proceder com a inicialização do terminal (Suporte > Bandeiras > Funções Técnicas > Inicialização). A taxa de desconto do Crediário é parte integrante do seu contrato de Adesão ao Sistema Getnet e pode ser consultada no Portal do Cliente e/ou no Aplicativo Getnet Brasil.\nAté quantas parcelas posso fazer e como sei os juros para informar ao meu cliente (portador do cartão)?\nCada emissor de cartão estabelece o limite de parcelas conforme as suas políticas de crédito.",
+          "score": 0.2503
+        },
+        {
+          "title": "Crediário - Getnet",
+          "url": "https://site.getnet.com.br/crediario/",
+          "snippet": "e em que prazo eu recebo?\nAs informações de pagamento podem ser consultadas no Aplicativo Getnet (Vendas) e/ou no Portal do Cliente.\nTodas as vendas realizadas na modalidade Crediário são pagas em até 2 dias úteis após a captura da transação, de uma única vez, independente da quantidade de parcelas escolhida pelo portador. Lembrando que do valor da transação original é subtraído o valor da taxa de desconto.\nQualquer estabelecimento pode ter o Crediário? E se eu não quiser ter o produto?\nA habilitação do produto Crediário está sujeita à análise pela Getnet.\nCaso você não deseje ter o Crediário como mais uma opção de pagamento, basta entrar em contato com a Central de Atendimento da Getnet e solicitar a desabilitação desta modalidade.\nainda tem dúvidas?\nVamos começar o seu atendimento?\nAinda não é cliente?\nAdquira agora e venda mais!\nCENTRAL DE VENDAS\nJá é nosso cliente?\nCENTRAL DE AJUDA",
+          "score": 0.3363
+        },
+        {
+          "title": "Crediário - Getnet",
+          "url": "https://site.getnet.com.br/crediario/",
+          "snippet": "para vender mais. E você recebe o valor da venda em até 2 dias úteis e com taxa única¹, aumentando seu capital de giro!\npara o seu cliente\nCom o Crediário, ele pode parcelar em até 48 vezes² no cartão de crédito com taxas que cabem no bolso.\nVocê oferece mais comodidade e poder de compra.\n¹ Consulte a taxa de desconto (MDR) no Aplicativo Getnet Brasil ou no Portal do cliente .\n²As taxas de juros podem variar de acordo com o emissor do cartão.\no crediário já está\ndisponível na Getnet\nAproveite ao máximo as vantagens dessa nova opção de pagamento! Confira quais bandeiras e em quais máquinas já estão disponíveis a venda no Crediário\nrealize uma venda no Crediário\nVender no Crediário é fácil! Basta seguir o passo a passo abaixo:\nPasso 01\nPasso 02\nPasso 03\nPasso 04\nPasso 05\nPasso 06\nPasso 07\nPasso 08\nPasso 09\nPasso 10\nPasso 01\nAproxime, passe ou insira o cartão.\nPasso 02\nSelecione a opção 1.",
+          "score": 0.265
+        }
+      ],
+      "escalated": false,
+      "metadata": {
+        "retrieved_documents": 4,
+        "best_score": 0.33630597591400146,
+        "corpus_kind": "official",
+        "chunk_ids": [
+          "8c645263d073:3",
+          "8c645263d073:4",
+          "8c645263d073:6",
+          "8c645263d073:1"
+        ],
+        "generation_kind": "llm_evidence_selection",
+        "llm_used_for": "evidence_selection",
+        "grounding_status": "source_spans_verified_relevance_requires_review",
+        "selected_evidence_ids": [
+          0,
+          1
+        ],
+        "selected_evidence": [
+          {
+            "id": 0,
+            "source_index": 0,
+            "text": "A habilitação pode ser realizada através do aplicativo Getnet (Android e iOS) ou através da central."
+          },
+          {
+            "id": 1,
+            "source_index": 0,
+            "text": "É possível consultar se o Crediário está habilitado para o seu Estabelecimento no Aplicativo da Getnet (acesse em: Meu negócio > Taxas e modalidades > Cartões) ou no Portal do Cliente ."
+          }
+        ],
+        "generation_duration_ms": 10151.7,
+        "routing_reason": "General product policy without account ownership",
+        "routing_confidence": 0.98,
+        "plans": [
+          {
+            "step": 0,
+            "observed_agent": "knowledge",
+            "failed": false,
+            "next_action": "knowledge",
+            "reviewer": "llm",
+            "allowed": [
+              "finish",
+              "knowledge",
+              "escalate"
+            ]
+          },
+          {
+            "step": 1,
+            "observed_agent": "knowledge",
+            "failed": false,
+            "next_action": "finish",
+            "reviewer": "llm",
+            "allowed": [
+              "finish",
+              "escalate"
+            ]
+          }
+        ],
+        "replans": 1,
+        "max_steps": 4,
+        "supervisor": "observe_replan",
+        "termination": "finish",
+        "outcome": "answered",
+        "resolved": true,
+        "llm_usage": [
+          {
+            "provider": "llama_cpp",
+            "model": "qwen2.5-3b.gguf",
+            "input_tokens": 577,
+            "output_tokens": 7
+          },
+          {
+            "provider": "llama_cpp",
+            "model": "qwen2.5-3b.gguf",
+            "input_tokens": 174,
+            "output_tokens": 39
+          },
+          {
+            "provider": "llama_cpp",
+            "model": "qwen2.5-3b.gguf",
+            "input_tokens": 552,
+            "output_tokens": 7
+          },
+          {
+            "provider": "llama_cpp",
+            "model": "qwen2.5-3b.gguf",
+            "input_tokens": 170,
+            "output_tokens": 55
+          }
+        ],
+        "agents": [
+          "knowledge",
+          "knowledge"
+        ],
+        "products": [
+          "crediário"
+        ],
+        "conversation_state": {
+          "visited_products": [
+            "crediário"
+          ],
+          "last_account_tool": null,
+          "selected_product": "crediário",
+          "candidates": [
+            "crediário"
+          ],
+          "intent": "General product policy without account ownership",
+          "stage": "answered",
+          "last_ticket": null
+        },
+        "context_messages": 0,
+        "duration_ms": 38814.9,
+        "stages": [
+          {
+            "agent": "knowledge",
+            "duration_ms": 12744.23,
+            "tool": "rag_search",
+            "step": 0
+          },
+          {
+            "agent": "knowledge",
+            "duration_ms": 12952.69,
+            "tool": "rag_search",
+            "step": 1
+          }
+        ]
+      },
+      "span_provenance": true,
+      "fact_anchor_hits": {
+        "aplicativo": true
+      }
+    },
+    {
+      "id": "credit-disable",
+      "split": "dev",
+      "message": "Como desabilitar o crediário?",
+      "relevant_chunk_ids": [
+        "8c645263d073:6"
+      ],
+      "expected_facts": [
+        "Central de Atendimento"
+      ],
+      "http_status": 200,
+      "duration_ms": 12088.86,
+      "answer": "Não consegui resolver esta solicitação com evidência suficiente. Vou encaminhá-la para atendimento humano.\nAtendimento humano solicitado. Protocolo: T-57f3741701a44219",
+      "sources": [
+        {
+          "title": "Crediário - Getnet",
+          "url": "https://site.getnet.com.br/crediario/",
+          "snippet": "e em que prazo eu recebo?\nAs informações de pagamento podem ser consultadas no Aplicativo Getnet (Vendas) e/ou no Portal do Cliente.\nTodas as vendas realizadas na modalidade Crediário são pagas em até 2 dias úteis após a captura da transação, de uma única vez, independente da quantidade de parcelas escolhida pelo portador. Lembrando que do valor da transação original é subtraído o valor da taxa de desconto.\nQualquer estabelecimento pode ter o Crediário? E se eu não quiser ter o produto?\nA habilitação do produto Crediário está sujeita à análise pela Getnet.\nCaso você não deseje ter o Crediário como mais uma opção de pagamento, basta entrar em contato com a Central de Atendimento da Getnet e solicitar a desabilitação desta modalidade.\nainda tem dúvidas?\nVamos começar o seu atendimento?\nAinda não é cliente?\nAdquira agora e venda mais!\nCENTRAL DE VENDAS\nJá é nosso cliente?\nCENTRAL DE AJUDA",
+          "score": 0.2325
+        },
+        {
+          "title": "Crediário - Getnet",
+          "url": "https://site.getnet.com.br/crediario/",
+          "snippet": "03\nPasso 04\nPasso 05\nPasso 06\nPasso 07\nPasso 08\nPasso 09\nPasso 10\nPasso 01\nAproxime, passe ou insira o cartão.\nPasso 02\nSelecione a opção 1. CREDITO e aperte o botão de confirmação.\nPasso 03\nInsira o valor desejado e aperte o botão de confirmação.\nPasso 04\nSelecione a opção 4. CREDIARIO e aperte o botão de confirmação.\nPasso 05\nInsira o número de parcelas desejado e aperte o botão de confirmação.\nPasso 06\nAguarde o processamento.\nPasso 07\nEscolha a opção de parcelamento desejada e aperte o botão de confirmação.\nPasso 08\nAperte o botão 1. CONTRATAR para efetivar a transação. Caso queira gerar um novo plano de parcelamento aperte o botão 2. NOVA SIMUL. Para gerar uma via impressa da simulação aperte o botão 3. IMPRIMIR e para voltar ao menu inicial clique no botão\n4. CANCELAR.\nPasso 09\nAo escolher a opção 1. CONTRATAR, confira novamente as informações.",
+          "score": 0.1325
+        },
+        {
+          "title": "Crediário - Getnet",
+          "url": "https://site.getnet.com.br/crediario/",
+          "snippet": "e para voltar ao menu inicial clique no botão\n4. CANCELAR.\nPasso 09\nAo escolher a opção 1. CONTRATAR, confira novamente as informações. Peça para o seu cliente inserir a senha e aperte o botão de confirmação para concluir a transação.\nPasso 10\nTransação aprovada!\nperguntas frequentes\nComo eu contrato o Crediário e qual a taxa?\nA habilitação pode ser realizada através do aplicativo Getnet (Android e iOS) ou através da central. É possível consultar se o Crediário está habilitado para o seu Estabelecimento no Aplicativo da Getnet (acesse em: Meu negócio > Taxas e modalidades > Cartões) ou no Portal do Cliente . Você também pode contatar a Central de Atendimento para verificar se o seu Estabelecimento está habilitado para operar com a modalidade.",
+          "score": 0.1757
+        },
+        {
+          "title": "Crediário - Getnet",
+          "url": "https://site.getnet.com.br/crediario/",
+          "snippet": "Crediário\nUma opção de pagamento diferenciado com possibilidade de parcelamento em até 48x * para seus clientes.\nFaça uma Simulação:\ncom o valor de todas as parcelas e encargos antes da venda para oferecer transparência ao seu cliente\nAumente o Movimento:\nno seu estabelecimento oferecendo mais opções de pagamento aos seus clientes\nMaior poder de compra:\npara o seu cliente\nReceba o valor total de suas vendas:\nem até 2 dias úteis com taxa única e sem custo de antecipação\nOfereça parcelamento:\nem até 48x* para o seu cliente.\n*O prazo máximo e a taxa de juros do parcelamento variam de acordo com o emissor do cartão\nmais vendas para você, mais vantagens para o seu cliente\npara o seu negócio\nO Crediário é mais uma opção de pagamento que você pode oferecer para vender mais. E você recebe o valor da venda em até 2 dias úteis e com taxa única¹, aumentando seu capital de giro!\npara o seu cliente",
+          "score": 0.21
+        }
+      ],
+      "escalated": true,
+      "metadata": {
+        "handoff_reason": "plan_unresolved",
+        "handoff_status": "OPEN",
+        "ticket_created": true,
+        "retrieved_documents": 4,
+        "best_score": 0.2325427234172821,
+        "corpus_kind": "official",
+        "chunk_ids": [
+          "8c645263d073:6",
+          "8c645263d073:2",
+          "8c645263d073:3",
+          "8c645263d073:0"
+        ],
+        "generation_kind": "validation_abstention",
+        "abstained": true,
+        "fallback": "feature_coverage_missing",
+        "missing_features": [
+          "desabilitar"
+        ],
+        "generation_duration_ms": 9202.94,
+        "previous_agent": "knowledge",
+        "previous_tool": "rag_search",
+        "routing_reason": "General product policy without account ownership",
+        "routing_confidence": 0.98,
+        "plans": [
+          {
+            "step": 0,
+            "observed_agent": "knowledge",
+            "failed": true,
+            "next_action": "escalate",
+            "reviewer": "policy",
+            "allowed": [
+              "escalate"
+            ]
+          }
+        ],
+        "replans": 0,
+        "max_steps": 4,
+        "supervisor": "observe_replan",
+        "termination": "escalate",
+        "ticket_id": "T-57f3741701a44219",
+        "outcome": "escalated",
+        "resolved": false,
+        "llm_usage": [
+          {
+            "provider": "llama_cpp",
+            "model": "qwen2.5-3b.gguf",
+            "input_tokens": 521,
+            "output_tokens": 5
+          }
+        ],
+        "agents": [
+          "knowledge",
+          "escalation"
+        ],
+        "products": [
+          "crediário"
+        ],
+        "conversation_state": {
+          "visited_products": [
+            "crediário"
+          ],
+          "last_account_tool": null,
+          "selected_product": "crediário",
+          "candidates": [
+            "crediário"
+          ],
+          "intent": "General product policy without account ownership",
+          "stage": "escalated",
+          "last_ticket": "T-57f3741701a44219"
+        },
+        "context_messages": 0,
+        "duration_ms": 12072.96,
+        "stages": [
+          {
+            "agent": "knowledge",
+            "duration_ms": 12071.65,
+            "tool": "rag_search",
+            "step": 0
+          },
+          {
+            "agent": "escalation",
+            "duration_ms": 0.0,
+            "tool": "human_handoff"
+          }
+        ]
+      },
+      "span_provenance": null,
+      "fact_anchor_hits": {
+        "Central de Atendimento": false
+      }
+    },
+    {
+      "id": "credit-eligibility",
+      "split": "holdout",
+      "message": "Qualquer estabelecimento pode ter o crediário Getnet?",
+      "relevant_chunk_ids": [
+        "8c645263d073:6"
+      ],
+      "expected_facts": [
+        "sujeita à análise"
+      ],
+      "http_status": 200,
+      "duration_ms": 40085.46,
+      "answer": "Não consegui resolver esta solicitação com evidência suficiente. Vou encaminhá-la para atendimento humano.\nAtendimento humano solicitado. Protocolo: T-114c329931cc465b",
+      "sources": [
+        {
+          "title": "Crediário - Getnet",
+          "url": "https://site.getnet.com.br/crediario/",
+          "snippet": "e em que prazo eu recebo?\nAs informações de pagamento podem ser consultadas no Aplicativo Getnet (Vendas) e/ou no Portal do Cliente.\nTodas as vendas realizadas na modalidade Crediário são pagas em até 2 dias úteis após a captura da transação, de uma única vez, independente da quantidade de parcelas escolhida pelo portador. Lembrando que do valor da transação original é subtraído o valor da taxa de desconto.\nQualquer estabelecimento pode ter o Crediário? E se eu não quiser ter o produto?\nA habilitação do produto Crediário está sujeita à análise pela Getnet.\nCaso você não deseje ter o Crediário como mais uma opção de pagamento, basta entrar em contato com a Central de Atendimento da Getnet e solicitar a desabilitação desta modalidade.\nainda tem dúvidas?\nVamos começar o seu atendimento?\nAinda não é cliente?\nAdquira agora e venda mais!\nCENTRAL DE VENDAS\nJá é nosso cliente?\nCENTRAL DE AJUDA",
+          "score": 0.3635
+        },
+        {
+          "title": "Crediário - Getnet",
+          "url": "https://site.getnet.com.br/crediario/",
+          "snippet": ". Você também pode contatar a Central de Atendimento para verificar se o seu Estabelecimento está habilitado para operar com a modalidade. Caso a modalidade esteja habilitada, mas a opção Crediário ainda não esteja disponível em sua máquina, é importante realizar uma transação de adquirência (bandeiras Mastercard, Visa, Elo e Amex) ou proceder com a inicialização do terminal (Suporte > Bandeiras > Funções Técnicas > Inicialização). A taxa de desconto do Crediário é parte integrante do seu contrato de Adesão ao Sistema Getnet e pode ser consultada no Portal do Cliente e/ou no Aplicativo Getnet Brasil.\nAté quantas parcelas posso fazer e como sei os juros para informar ao meu cliente (portador do cartão)?\nCada emissor de cartão estabelece o limite de parcelas conforme as suas políticas de crédito.",
+          "score": 0.2265
+        },
+        {
+          "title": "Crediário - Getnet",
+          "url": "https://site.getnet.com.br/crediario/",
+          "snippet": "e para voltar ao menu inicial clique no botão\n4. CANCELAR.\nPasso 09\nAo escolher a opção 1. CONTRATAR, confira novamente as informações. Peça para o seu cliente inserir a senha e aperte o botão de confirmação para concluir a transação.\nPasso 10\nTransação aprovada!\nperguntas frequentes\nComo eu contrato o Crediário e qual a taxa?\nA habilitação pode ser realizada através do aplicativo Getnet (Android e iOS) ou através da central. É possível consultar se o Crediário está habilitado para o seu Estabelecimento no Aplicativo da Getnet (acesse em: Meu negócio > Taxas e modalidades > Cartões) ou no Portal do Cliente . Você também pode contatar a Central de Atendimento para verificar se o seu Estabelecimento está habilitado para operar com a modalidade.",
+          "score": 0.2678
+        },
+        {
+          "title": "Crediário - Getnet",
+          "url": "https://site.getnet.com.br/crediario/",
+          "snippet": "para vender mais. E você recebe o valor da venda em até 2 dias úteis e com taxa única¹, aumentando seu capital de giro!\npara o seu cliente\nCom o Crediário, ele pode parcelar em até 48 vezes² no cartão de crédito com taxas que cabem no bolso.\nVocê oferece mais comodidade e poder de compra.\n¹ Consulte a taxa de desconto (MDR) no Aplicativo Getnet Brasil ou no Portal do cliente .\n²As taxas de juros podem variar de acordo com o emissor do cartão.\no crediário já está\ndisponível na Getnet\nAproveite ao máximo as vantagens dessa nova opção de pagamento! Confira quais bandeiras e em quais máquinas já estão disponíveis a venda no Crediário\nrealize uma venda no Crediário\nVender no Crediário é fácil! Basta seguir o passo a passo abaixo:\nPasso 01\nPasso 02\nPasso 03\nPasso 04\nPasso 05\nPasso 06\nPasso 07\nPasso 08\nPasso 09\nPasso 10\nPasso 01\nAproxime, passe ou insira o cartão.\nPasso 02\nSelecione a opção 1.",
+          "score": 0.2672
+        }
+      ],
+      "escalated": true,
+      "metadata": {
+        "handoff_reason": "plan_unresolved",
+        "handoff_status": "OPEN",
+        "ticket_created": true,
+        "retrieved_documents": 4,
+        "best_score": 0.36354440450668335,
+        "corpus_kind": "official",
+        "chunk_ids": [
+          "8c645263d073:6",
+          "8c645263d073:4",
+          "8c645263d073:3",
+          "8c645263d073:1"
+        ],
+        "generation_kind": "llm_evidence_selection",
+        "llm_used_for": "evidence_selection",
+        "grounding_status": "source_spans_verified_relevance_requires_review",
+        "selected_evidence_ids": [
+          1,
+          3
+        ],
+        "selected_evidence": [
+          {
+            "id": 1,
+            "source_index": 0,
+            "text": "A habilitação do produto Crediário está sujeita à análise pela Getnet."
+          },
+          {
+            "id": 3,
+            "source_index": 2,
+            "text": "A habilitação pode ser realizada através do aplicativo Getnet (Android e iOS) ou através da central."
+          }
+        ],
+        "generation_duration_ms": 10048.29,
+        "previous_agent": "knowledge",
+        "previous_tool": "rag_search",
+        "routing_reason": "General product policy without account ownership",
+        "routing_confidence": 0.98,
+        "plans": [
+          {
+            "step": 0,
+            "observed_agent": "knowledge",
+            "failed": false,
+            "next_action": "knowledge",
+            "reviewer": "llm",
+            "allowed": [
+              "finish",
+              "knowledge",
+              "escalate"
+            ]
+          },
+          {
+            "step": 1,
+            "observed_agent": "knowledge",
+            "failed": false,
+            "next_action": "escalate",
+            "reviewer": "llm",
+            "allowed": [
+              "finish",
+              "escalate"
+            ]
+          }
+        ],
+        "replans": 1,
+        "max_steps": 4,
+        "supervisor": "observe_replan",
+        "termination": "escalate",
+        "ticket_id": "T-114c329931cc465b",
+        "outcome": "escalated",
+        "resolved": false,
+        "llm_usage": [
+          {
+            "provider": "llama_cpp",
+            "model": "qwen2.5-3b.gguf",
+            "input_tokens": 580,
+            "output_tokens": 7
+          },
+          {
+            "provider": "llama_cpp",
+            "model": "qwen2.5-3b.gguf",
+            "input_tokens": 146,
+            "output_tokens": 51
+          },
+          {
+            "provider": "llama_cpp",
+            "model": "qwen2.5-3b.gguf",
+            "input_tokens": 583,
+            "output_tokens": 7
+          },
+          {
+            "provider": "llama_cpp",
+            "model": "qwen2.5-3b.gguf",
+            "input_tokens": 143,
+            "output_tokens": 69
+          }
+        ],
+        "agents": [
+          "knowledge",
+          "knowledge",
+          "escalation"
+        ],
+        "products": [
+          "crediário"
+        ],
+        "conversation_state": {
+          "visited_products": [
+            "crediário"
+          ],
+          "last_account_tool": null,
+          "selected_product": "crediário",
+          "candidates": [
+            "crediário"
+          ],
+          "intent": "General product policy without account ownership",
+          "stage": "escalated",
+          "last_ticket": "T-114c329931cc465b"
+        },
+        "context_messages": 0,
+        "duration_ms": 40080.99,
+        "stages": [
+          {
+            "agent": "knowledge",
+            "duration_ms": 11620.79,
+            "tool": "rag_search",
+            "step": 0
+          },
+          {
+            "agent": "knowledge",
+            "duration_ms": 12878.83,
+            "tool": "rag_search",
+            "step": 1
+          },
+          {
+            "agent": "escalation",
+            "duration_ms": 0.0,
+            "tool": "human_handoff"
+          }
+        ]
+      },
+      "span_provenance": true,
+      "fact_anchor_hits": {
+        "sujeita à análise": false
+      }
+    }
+  ],
+  "note": "Actual model inference. Anchor checks do not prove entailment, completeness, external truth or absence of omitted qualifiers. Review evaluation/reviewed_v4.json for semantic judgments.",
+  "manual_review_file": "evaluation/reviewed_v4.json"
+}

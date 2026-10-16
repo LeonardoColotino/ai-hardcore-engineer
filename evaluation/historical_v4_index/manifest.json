@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "built_at": "2026-10-13T13:38:58.598376+00:00",
+  "dimension": 384,
+  "documents": 32,
+  "corpus_sha256": "48d84ea953281217f7eacde6dd01ac5e7c7387c954f7d6f1d2a904765a432e41",
+  "corpus_kind": "official"
+}

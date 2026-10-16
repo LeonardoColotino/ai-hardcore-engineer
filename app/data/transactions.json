@@ -1,0 +1,26 @@
+[
+  {
+    "user_id": "cliente1988",
+    "reference": "TX-9001",
+    "status": "declined",
+    "amount": "R$ 129,90",
+    "channel": "Get Smart",
+    "reason": "issuer_declined"
+  },
+  {
+    "user_id": "cliente1988",
+    "reference": "TX-9000",
+    "status": "approved",
+    "amount": "R$ 250,00",
+    "channel": "Payment Link",
+    "reason": null
+  },
+  {
+    "user_id": "cliente2026",
+    "reference": "TX-8001",
+    "status": "approved",
+    "amount": "R$ 80,00",
+    "channel": "Get Clássica",
+    "reason": null
+  }
+]

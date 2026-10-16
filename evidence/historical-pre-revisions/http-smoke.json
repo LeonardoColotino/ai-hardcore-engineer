@@ -1,0 +1,22 @@
+{
+  "category": "real_http_synthetic_support_no_llm",
+  "semantic_quality": "not_evaluated",
+  "checks": {
+    "idempotent_chat": true,
+    "ownership": true,
+    "operator_lifecycle": true,
+    "restart_persistence": true
+  },
+  "health": {
+    "status": "ok",
+    "llm_provider": "disabled",
+    "rag_index_ready": false,
+    "release": "getnet-v4-consolidado-2026-10-15",
+    "source_sha256": "5cf6cd42d4796a9d3bd23caa5fc98fcbcdd642f905bdca47fde6b9890ac140eb",
+    "corpus_manifest_sha256": null,
+    "chat_model": "disabled",
+    "embedding_model": "nomic-embed-text",
+    "inference_verified": false
+  },
+  "status": "passed"
+}

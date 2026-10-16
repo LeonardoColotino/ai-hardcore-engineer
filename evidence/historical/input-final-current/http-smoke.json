@@ -1,0 +1,22 @@
+{
+  "category": "real_http_synthetic_support_no_llm",
+  "semantic_quality": "not_evaluated",
+  "checks": {
+    "idempotent_chat": true,
+    "ownership": true,
+    "operator_lifecycle": true,
+    "restart_persistence": true
+  },
+  "health": {
+    "status": "ok",
+    "llm_provider": "disabled",
+    "rag_index_ready": false,
+    "release": "getnet-candidate-2026-10-15",
+    "source_sha256": "6fcbbb48505ed19fd030d473979e1dd3e7a188dfa4e5f7571226109f76928dc2",
+    "corpus_manifest_sha256": null,
+    "chat_model": "llama3.2:3b",
+    "embedding_model": "nomic-embed-text",
+    "inference_verified": false
+  },
+  "status": "passed"
+}

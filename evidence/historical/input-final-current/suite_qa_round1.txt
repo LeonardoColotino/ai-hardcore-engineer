@@ -1,0 +1,73 @@
+...................................F..................................F. [ 64%]
+........................................                                 [100%]
+=================================== FAILURES ===================================
+____________ test_trace_context_reset_after_unhandled_tool_failure _____________
+
+client = <starlette.testclient.TestClient object at 0x7fa3e4155160>
+api_auth = <function api_auth.<locals>.<lambda> at 0x7fa3e40deac0>
+
+    def test_trace_context_reset_after_unhandled_tool_failure(client, api_auth):
+        from app.observability.logging import trace_context
+        orch = app.dependency_overrides[get_orchestrator]()
+        orch.support.handle = Mock(side_effect=RuntimeError('synthetic failure'))
+        from app.orchestration.supervisor import Supervisor
+        from app.api.routes import Chat
+        before = trace_context.get()
+>       with pytest.raises(RuntimeError):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       Failed: DID NOT RAISE RuntimeError
+
+tests/integration/test_audit_regressions.py:85: Failed
+________________________ test_html_div_content_survives ________________________
+
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x7fa3e41b18e0>
+
+    def test_html_div_content_survives(monkeypatch):
+     from app.rag.ingest import fetch_page
+     response=Mock();response.content=b'<html><title>Link</title><body><nav>MENU</nav><main><h2>Crie seu Link</h2><div>Acesse Produtos e Servicos e preencha produto e frete.</div><p>Compartilhe.</p></main></body></html>'
+     monkeypatch.setattr('app.rag.ingest.requests.get',Mock(return_value=response))
+>    _,text=fetch_page('https://site.getnet.com.br/link-de-pagamento/',1)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/integration/test_live_regressions.py:59: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+app/rag/ingest.py:40: in fetch_page
+    addresses = socket.getaddrinfo(urlparse(current).hostname, 443, type=socket.SOCK_STREAM)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+host = 'site.getnet.com.br', port = 443, family = 0
+type = <SocketKind.SOCK_STREAM: 1>, proto = 0, flags = 0
+
+    def getaddrinfo(host, port, family=0, type=0, proto=0, flags=0):
+        """Resolve host and port into list of address info entries.
+    
+        Translate the host/port argument into a sequence of 5-tuples that contain
+        all the necessary arguments for creating a socket connected to that service.
+        host is a domain name, a string representation of an IPv4/v6 address or
+        None. port is a string service name such as 'http', a numeric port number or
+        None. By passing None as the value of host and port, you can pass NULL to
+        the underlying C API.
+    
+        The family, type and proto arguments can be optionally specified in order to
+        narrow the list of addresses returned. Passing zero as a value for each of
+        these arguments selects the full range of results.
+        """
+        # We override this function since we want to translate the numeric family
+        # and socket type values to enum constants.
+        addrlist = []
+>       for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/socket.py:978: gaierror
+=============================== warnings summary ===============================
+../../../../root/.local/lib/python3.12/site-packages/fastapi/testclient.py:1
+  /root/.local/lib/python3.12/site-packages/fastapi/testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+    from starlette.testclient import TestClient as TestClient  # noqa
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED tests/integration/test_audit_regressions.py::test_trace_context_reset_after_unhandled_tool_failure
+FAILED tests/integration/test_live_regressions.py::test_html_div_content_survives
+2 failed, 110 passed, 1 warning in 7.66s

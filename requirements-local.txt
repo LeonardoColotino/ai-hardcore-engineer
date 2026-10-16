@@ -1,0 +1,2 @@
+# Install CPU wheel as documented in README; no API subscription required.
+llama-cpp-python==0.3.36

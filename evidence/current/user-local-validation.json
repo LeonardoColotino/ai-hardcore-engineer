@@ -1,0 +1,22 @@
+{
+  "provenance": "user_reported_outputs_in_conversation",
+  "docker_pytest": {
+    "passed": 248,
+    "warnings": 1,
+    "seconds": 38.45
+  },
+  "ingestion_reported": {
+    "sources": 14,
+    "chunks": 123,
+    "embedding_provider": "OllamaEmbeddingService"
+  },
+  "manual_confirmations": [
+    "payment_status_demo_record_returned_without_ticket",
+    "link_payment_procedure_and_followup_preserved",
+    "Argentina_capital_answered_using_web_sources",
+    "operator_reply_visible_to_customer",
+    "ticket_T-131d79c350dc4c59_closed"
+  ],
+  "not_independently_recorded": true,
+  "conversation_cleanup": "user_requested_backup_then_removed_11_historical_sessions; not a quality statistic"
+}

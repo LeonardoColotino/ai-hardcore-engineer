@@ -1,0 +1,15 @@
+{
+  "category": "external_runtime_availability",
+  "docker_cli": null,
+  "ollama_cli": null,
+  "browser": {
+    "status": "blocked",
+    "attempted_command": "python scripts/http_smoke.py --browser",
+    "reason": "Playwright installed; bundled Chromium missing at /root/.cache/ms-playwright/chromium_headless_shell-1234/chrome-headless-shell-linux64/chrome-headless-shell; channel chrome missing at /opt/google/chrome/chrome. Observed launch failures, no browser tests executed."
+  },
+  "ollama_http": {
+    "status": "blocked",
+    "error_type": "URLError",
+    "reason": "localhost:11434 unreachable"
+  }
+}

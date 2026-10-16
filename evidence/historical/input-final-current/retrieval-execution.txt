@@ -1,0 +1,17 @@
+{
+  "vector": {
+    "recall_at_3": 1.0,
+    "mrr": 1.0,
+    "ndcg_at_3": 1.0
+  },
+  "lexical": {
+    "recall_at_3": 1.0,
+    "mrr": 1.0,
+    "ndcg_at_3": 1.0
+  },
+  "hybrid": {
+    "recall_at_3": 1.0,
+    "mrr": 1.0,
+    "ndcg_at_3": 1.0
+  }
+}

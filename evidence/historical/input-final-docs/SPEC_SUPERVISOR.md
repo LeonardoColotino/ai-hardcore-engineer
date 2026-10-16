@@ -1,0 +1,7 @@
+# Bounded task supervisor specification
+
+Preserve session authentication, memory and ticket lifecycle. Replace single specialist execution with validated plans (max 4 tasks, one bounded evidence retry, no model identity fields). Simple questions keep one step. Semantic planner uses local configured LLM only for compound/ambiguous requests; offline fallback splits punctuation/conjunction clauses and routes independently, with documented linguistic limits. Failure at any position retains accepted task outputs. Synthesis is deterministic assembly and cannot discard valid results. Technical completion is distinct from evidence coverage. Terminal collaboration consumes only model/connectivity/error-category from a synthetic server-side record. No customer attributes are forwarded.
+
+Acceptance: malformed plans fall back; dependency graph is acyclic/backward-only; limits server enforced; support identity supplied from authenticated call; exceptions isolated per task; two execution orders retain partial results; Knowledge uses terminal diagnosis; private output never sent for synthesis; all escalation failures preserve accepted parts.
+
+Baseline inspection: supervisor was fixed Support→Knowledge and passed complete support answer to Knowledge; single route erased specialized result during escalation. Support terminal path was generic advice without diagnosis tool. References studied as mechanisms only; no code reused.
